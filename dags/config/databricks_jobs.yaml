@@ -1,0 +1,166 @@
+sqs:
+  landing:
+    dev: 297899484286241
+    prd: 44028172234552
+  bronze:
+    dev: 975537874390159
+    prd: 720955823521071
+app:
+  landing:
+    dev: 382187990458655
+    prd: 900034060494465
+  bronze:
+    dev: 553916301741581
+    prd: 682909526355436
+five9:
+  hourly:
+    landing:
+      dev: 239390520088402
+      prd: 773055551934731
+    bronze:
+      dev: 137759438786198
+      prd: 624607344989966
+  daily:
+    landing:
+      dev: 1106478814523940
+      prd: 468892120829098
+    bronze:
+      dev: 390171465593628
+      prd: 329215871390706
+db_financeiro:
+  daily:
+    landing:
+      dev: 901447793501965
+      prd: 1054720146443100
+    bronze:
+      dev: 756280123037959
+      prd: 812643550267784
+fintalk:
+  hourly:
+    landing:
+      dev: 441432157522559
+      prd: 246274272034617
+    bronze:
+      dev: 418622557190221
+      prd: 77223522223696
+  daily:
+    landing:
+      dev: 1111722099731310
+      prd: 827367239587888
+    bronze:
+      dev: 795087398026358
+      prd: 915665174909549
+cleanup:
+  dev: 1075079454293589
+  prd: 566814346943230
+cleanup_xcoms:
+  dev: 643487104366991
+loja:
+  landing:
+    dev: 959969167385560
+  bronze:
+    dev: 777774927970976
+hub_sva:
+  daily:
+    landing:
+      dev: 692607825364968
+      prd: 358535946906483
+    bronze:
+      dev: 226170712198260
+      prd: 703525377158681
+
+air:
+  hourly:
+    landing:
+      dev: 352375822861517
+      prd: 837517528982896
+    bronze:
+      dev: 1109073664697212
+      prd: 375611472883488
+
+  4x_hourly:
+    landing:
+      dev: 683629693927900
+    bronze:
+      dev: 268811612765018
+
+  daily:
+    landing:
+      dev: 1110146701135133
+      prd: 567896094254112
+    bronze:
+      dev: 180836177786693
+      prd: 1080227424250169
+
+assine:
+  hourly:
+    landing:
+      dev: 1005726460735041
+      prd: 808144207681618
+    bronze:
+      dev: 521385364926372
+      prd: 743451971270774
+
+  daily:
+    landing:
+      dev: 26616827890676
+      prd: 697691048902551
+    bronze:
+      dev: 485203826418222
+      prd: 329116237394433
+
+venda_hora:
+  dev: 986517822337907
+  prd: 954398584150495
+
+ofs:
+  daily:
+    landing:
+      dev: 837862811976913
+    bronze:
+      dev: 29564576689106
+
+infobip:
+  daily:
+    landing:
+      dev: 619667960131251
+    bronze:
+      dev: 743152190647964
+
+ytpremium:
+  daily:
+    landing:
+      dev: 359571783075283
+    bronze:
+      dev: 901527081115427
+
+watch:
+  daily:
+    landing:
+      dev: 952806517672002
+    bronze:
+      dev: 453145223169801
+
+central_assinante:
+  landing:
+    dev: 1001231241160423
+    prd: 748974918015332
+  bronze:
+    dev: 922076757059968
+    prd: 256892594601656
+
+atrix:
+  daily:
+    landing:
+      dev: 985414445255666
+    bronze:
+      dev: 119068540095907
+
+ecare:
+  daily:
+    landing:
+      dev: 298851685249654
+      prd: 730113495687710
+    bronze:
+      dev: 68597590019913
+      prd: 546836014787969

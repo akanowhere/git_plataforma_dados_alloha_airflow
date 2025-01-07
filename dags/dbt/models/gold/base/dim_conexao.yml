@@ -1,0 +1,124 @@
+version: 2
+
+models:
+  - name: dim_conexao
+    description: Tabela dimensão com informações sobre as conexões dos clientes
+    columns:
+      - name: id_login
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: long
+      - name: contrato_codigo
+        data_type: long
+      - name: contrato_cancelado
+        data_type: boolean
+      - name: contrato_unidade
+        data_type: string
+      - name: contrato_cidade
+        data_type: string
+      - name: contrato_bairro
+        data_type: string
+      - name: contrato_pacote_codigo
+        data_type: string
+      - name: contrato_pacote_nome
+        data_type: string
+      - name: id_banda
+        data_type: long
+      - name: endereco_ip
+        data_type: string
+      - name: usuario
+        data_type: string
+      - name: senha
+        data_type: string
+      - name: rota
+        data_type: string
+      - name: habilitado
+        data_type: long
+      - name: integracao_status
+        data_type: string
+      - name: integracao_mensagem
+        data_type: string
+      - name: wifi_nome
+        data_type: string
+      - name: wifi_senha
+        data_type: string
+      - name: onu_serial
+        data_type: string
+      - name: integracao_transacao
+        data_type: string
+      - name: cliente_nome
+        data_type: string
+      - name: onu_modelo
+        data_type: string
+      - name: olt_ip
+        data_type: string
+      - name: slot
+        data_type: long
+      - name: pon
+        data_type: long
+      - name: roteador_serial
+        data_type: string
+      - name: possui_circuit_id
+        data_type: boolean
+      - name: data_criacao_banda
+        data_type: timestamp
+      - name: usuario_criacao_banda
+        data_type: string
+      - name: data_alteracao_banda
+        data_type: timestamp
+      - name: usuario_alteracao_banda
+        data_type: string
+      - name: excluido_banda
+        data_type: long
+      - name: codigo_radius_banda
+        data_type: string
+      - name: descricao_banda
+        data_type: string
+      - name: mikrotik_banda
+        data_type: string
+      - name: juniper_in_banda
+        data_type: string
+      - name: juniper_out_banda
+        data_type: string
+      - name: juniper_in_v6_banda
+        data_type: string
+      - name: juniper_out_v6_banda
+        data_type: string
+      - name: ativo_banda
+        data_type: long
+      - name: id_onu
+        data_type: long
+      - name: data_criacao_onu
+        data_type: timestamp
+      - name: usuario_criacao_onu
+        data_type: string
+      - name: data_alteracao_onu
+        data_type: timestamp
+      - name: usuario_alteracao_onu
+        data_type: string
+      - name: excluido_onu
+        data_type: boolean
+      - name: nome_onu
+        data_type: string
+      - name: fabricante_onu
+        data_type: string
+      - name: qtd_portas_lan_onu
+        data_type: long
+      - name: qtd_portas_telefonia_onu
+        data_type: long
+      - name: possui_wifi_onu
+        data_type: boolean
+      - name: porta_giga_onu
+        data_type: boolean
+      - name: wifi_onu
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz

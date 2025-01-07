@@ -1,0 +1,119 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_venda_qualify_vendedor
+    columns:
+      - name: id_sydle_one
+        data_type: string
+      - name: nome_aprovacao
+        data_type: string
+      - name: status_aprovacao
+        data_type: string
+      - name: nome_aprovador_final_da_venda
+        data_type: string
+      - name: executor_aprovacao
+        data_type: string
+      - name: data_atendimento
+        data_type: timestamp
+      - name: data_conclusao
+        data_type: timestamp
+      - name: duracao_total
+        data_type: string
+      - name: duracao_atendimento
+        data_type: string
+      - name: canal_venda
+        data_type: string
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_venda
+        data_type: timestamp
+      - name: aprovado_pela_auditoria
+        data_type: string
+      - name: venda_refeita
+        data_type: string
+      - name: justificativa_aprovacao
+        data_type: string
+      - name: justificativa_aprovacao_id_sydle_one
+        data_type: string
+      - name: status_processo
+        data_type: string
+      - name: analise_financeira
+        data_type: string
+      - name: id_prospecto
+        data_type: string
+      - name: prospecto
+        data_type: string
+      - name: endereco_instalacao_estado
+        data_type: string
+      - name: endereco_instalacao_cidade
+        data_type: string
+      - name: endereco_instalacao_bairro
+        data_type: string
+      - name: endereco_instalacao_logradouro
+        data_type: string
+      - name: endereco_instalacao_numero
+        data_type: string
+      - name: oferta_selecionada
+        data_type: string
+      - name: parceiro
+        data_type: string
+      - name: responsavel_pela_venda_id_sydle_one
+        data_type: string
+      - name: responsavel_pela_venda_nome
+        data_type: string
+      - name: condominio_nome
+        data_type: string
+      - name: condominio_id_sydle_one
+        data_type: string
+      - name: cpf
+        data_type: string
+      - name: cnpj
+        data_type: string
+      - name: contrato_codigo
+        data_type: string
+      - name: status_venda
+        data_type: string
+      - name: resultado_analise_financeira_valor_maximo_restricoes_spc_soma
+        data_type: string
+      - name: resultado_analise_financeira_quantidade_maxima_restricoes_spc
+        data_type: string
+      - name: resultado_analise_financeira_aprovado_serasa
+        data_type: string
+      - name: resultado_analise_financeira_classificacao_minima_serasa
+        data_type: string
+      - name: regional_nome
+        data_type: string
+      - name: regional_id_sydle_one
+        data_type: string
+      - name: telefone_utilizado_na_venda
+        data_type: string
+      - name: air_codigo_contrato
+        data_type: string
+      - name: responsavel_analise_financeira_interna_nome
+        data_type: string
+      - name: responsavel_analise_financeira_interna_id_sydle_one
+        data_type: string
+      - name: responsavel_analise_financeira_externa_nome
+        data_type: string
+      - name: responsavel_analise_financeira_externa_id_sydle_one
+        data_type: string
+      - name: responsavel_analise_tecnica_nome
+        data_type: string
+      - name: responsavel_analise_tecnica_id_sydle_one
+        data_type: string
+      - name: marca_associada
+        data_type: string
+      - name: unidade_nome
+        data_type: string
+      - name: unidade_sigla
+        data_type: string
+      - name: motivo_auditoria_qualify
+        data_type: string
+      - name: valor_total_mensalidade_com_desconto
+        data_type: string
+      - name: data_ativacao
+        data_type: timestamp
+      - name: data_integracao
+        data_type: timestamp
+      - name: data_extracao
+        data_type: timestamp

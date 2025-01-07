@@ -1,0 +1,72 @@
+version: 2
+
+models:
+  - name: fato_disparos_whatsapp
+    description: Tabela fato de disparos de números whatsapp da infobip
+    columns:
+      - name: sk_chamada
+        data_type: string
+      - name: message_id
+        data_type: string
+      - name: account_name
+        data_type: string
+      - name: traffic_source
+        data_type: string
+      - name: communication_name
+        data_type: string
+      - name: communication_scheduled_for
+        data_type: string
+      - name: communication_start_date
+        data_type: string
+      - name: communication_template
+        data_type: string
+      - name: from
+        data_type: string
+      - name: to
+        data_type: string
+      - name: send_at
+        data_type: timestamp
+      - name: country_prefix
+        data_type: integer
+      - name: country_name
+        data_type: string
+      - name: network_name
+        data_type: string
+      - name: purchase_price
+        data_type: unknown
+      - name: status
+        data_type: string
+      - name: reason
+        data_type: string
+      - name: action
+        data_type: string
+      - name: error_group
+        data_type: string
+      - name: error_name
+        data_type: string
+      - name: done_at
+        data_type: timestamp
+      - name: text
+        data_type: string
+      - name: messages_count
+        data_type: integer
+      - name: service_name
+        data_type: string
+      - name: user_name
+        data_type: string
+      - name: seen_at
+        data_type: timestamp
+      - name: clicks
+        data_type: string
+      - name: paired_message_id
+        data_type: string
+      - name: data_payload
+        data_type: string
+      - name: campaign_reference
+        data_type: string
+      - name: application_id
+        data_type: string
+      - name: entity_id
+        data_type: string
+      - name: _file_generation_date
+        data_type: date

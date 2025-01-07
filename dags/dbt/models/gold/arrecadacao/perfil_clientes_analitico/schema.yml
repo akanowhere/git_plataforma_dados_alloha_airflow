@@ -1,0 +1,57 @@
+models:
+  - name: perfil_clientes_analitico
+    column:
+      - name: contrato_air
+        data_type: long
+      - name: mes_referencia
+        data_type: string
+      - name: status_contrato
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: id_cliente_air
+        data_type: long
+      - name: tipo_pessoa
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: UF
+        data_type: string
+      - name: Regiao
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: sub_regional
+        data_type: string
+      - name: codigo_fatura_sydle
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_vencimento
+        data_type: timestamp
+      - name: status_fatura
+        data_type: string
+      - name: data_pagamento
+        data_type: timestamp
+      - name: forma_pagamento
+        data_type: string
+      - name: classificacao_fatura
+        data_type: string
+      - name: valor_fatura
+        data_type: double
+      - name: valor_pago
+        data_type: double
+      - name: aging_pagamento
+        data_type: long
+      - name: comportamento_mensal
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz
+      - name: sistema
+        data_type: string
+      - name: contrato_legado
+        data_type: integer

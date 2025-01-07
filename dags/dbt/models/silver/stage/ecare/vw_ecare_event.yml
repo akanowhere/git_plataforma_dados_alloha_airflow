@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: vw_ecare_event
+    description: View na camada Silver, schema stage vw_stg_ecare_event
+    columns:
+      - name: id
+        data_type: long
+      - name: event_type_id
+        data_type: long
+      # - name: event_identifier
+      #   data_type: string
+      - name: created_at
+        data_type: timestamp
+      - name: incident_id
+        data_type: long
+      - name: origin
+        data_type: string

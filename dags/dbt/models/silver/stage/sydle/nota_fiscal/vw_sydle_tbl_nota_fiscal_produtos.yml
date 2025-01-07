@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_nota_fiscal_produtos
+    columns:
+      - name: id_nota_fiscal
+        data_type: string
+      - name: descricao_produto
+        data_type: string
+      - name: nome_produto
+        data_type: string
+      - name: valor_base_produto
+        data_type: double
+      - name: servico_tributavel_id
+        data_type: string
+      - name: servico_tributavel_nome
+        data_type: string
+      - name: valor_total_dos_impostos_do_produto
+        data_type: double

@@ -1,0 +1,103 @@
+models:
+    - name: vw_fluxo_chamados_backoffice
+      description: "Fluxo para analisar volumetria de chamados abertos"
+      column:
+      - name: protocolo
+        description: Identificador único do chamado.
+        data_type: integer
+      - name: contrato
+        description: Código do contrato associado ao chamado.
+        data_type: integer
+      - name: unidade
+        description: Endereço da unidade associada ao chamado.
+        data_type: string
+      - name: marca
+        description: Marca da unidade associada ao chamado.
+        data_type: string
+      - name: regional
+        description: Regional da unidade.
+        data_type: string
+      - name: cidade
+        description: Nome da cidade da unidade.
+        data_type: string
+      - name: n_atendimento
+        description: Número do atendimento dentro do chamado, indicando a ordem de atendimento.
+        data_type: integer
+      - name: data_inicio_atendimento
+        description: Data do início do atendimento.
+        data_type: date
+      - name: datahora_inicio_atendimento
+        description: Data e hora exata do início do atendimento.
+        data_type: timestamp
+      - name: data_fim_atendimento
+        description: Data do fim do atendimento.
+        data_type: date
+      - name: data_final
+        description: Data final considerada para o atendimento, considerando data de conclusão ou data atual.
+        data_type: timestamp
+      - name: datahora_fim_atendimento
+        description: Data e hora exata do fim do atendimento.
+        data_type: timestamp
+      - name: usuario_atendimento
+        description: Código do usuário que realizou o atendimento.
+        data_type: string
+      - name: email_usuario_atendimento_chamado
+        description: E-mail do usuário que realizou o atendimento.
+        data_type: string
+      - name: fila_atendimento
+        description: Nome da fila de atendimento.
+        data_type: string
+      - name: classificacao
+        description: Classificação da fila (ex. 'FINANCEIRO' ou 'OUTRAS').
+        data_type: string
+      - name: usuario_abertura_chamado
+        description: Código do usuário que abriu o chamado.
+        data_type: string
+      - name: email_usuario_abertura_chamado
+        description: E-mail do usuário que abriu o chamado.
+        data_type: string
+      - name: usuario_conclusao_chamado
+        description: Código do usuário que concluiu o chamado.
+        data_type: string
+      - name: email_usuario_conclusao_chamado
+        description: E-mail do usuário que concluiu o chamado.
+        data_type: string
+      - name: data_abertura_chamado
+        description: Data de abertura do chamado.
+        data_type: date
+      - name: datahora_abertura_chamado
+        description: Data e hora de abertura do chamado.
+        data_type: timestamp
+      - name: data_conclusao_chamado
+        description: Data de conclusão do chamado.
+        data_type: date
+      - name: datahora_conclusao_chamado
+        description: Data e hora de conclusão do chamado.
+        data_type: timestamp
+      - name: sla_chamado
+        description: Tempo de SLA do chamado, calculado em dias.
+        data_type: integer
+      - name: status_chamado
+        description: Status atual do chamado (ex. 'Concluido', 'Transferida', 'Aguardando Atendimento').
+        data_type: string
+      - name: motivo_abertura
+        description: Motivo da abertura do chamado.
+        data_type: string
+      - name: tipo_classificacao
+        description: Tipo de classificação do motivo de abertura.
+        data_type: string
+      - name: motivo_conclusao
+        description: Motivo da conclusão do chamado.
+        data_type: string
+      - name: observacoes
+        description: Observações adicionais sobre o atendimento.
+        data_type: string
+      - name: duracao_util_atendimento
+        description: Duração do atendimento em segundos considerando apenas dias úteis.
+        data_type: integer
+      - name: categoria_sla_atendimento_48h
+        description: Categoria de SLA do atendimento (ex. 'Até 48h', 'Mais de 48h').
+        data_type: string
+      - name: categoria_sla_atendimento
+        description: Categoria de SLA do atendimento em faixas de dias (ex. 'Até 1 dia', '1-2 dias', 'Mais de 15 dias').
+        data_type: string

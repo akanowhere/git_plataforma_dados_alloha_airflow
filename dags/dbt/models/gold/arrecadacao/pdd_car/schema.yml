@@ -1,0 +1,49 @@
+models:
+  - name: pdd_car
+    column:
+      - name: contrato_air
+        data_type: long
+      - name: mes_referencia
+        data_type: string
+      - name: status_contrato
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: id_cliente_air
+        data_type: long
+      - name: tipo_pessoa
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: UF
+        data_type: string
+      - name: Regiao
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: sub_regional
+        data_type: string
+      - name: codigo_fatura_sydle
+        data_type: long
+      - name: data_vencimento
+        data_type: timestamp
+      - name: status_fatura
+        data_type: string
+      - name: classificacao_fatura
+        data_type: string
+      - name: valor_fatura
+        data_type: double
+      - name: aging
+        data_type: long
+      - name: classificacao_pdd
+        data_type: string
+      - name: classificacao_car
+        data_type: string
+      - name: forma_pagamento
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz

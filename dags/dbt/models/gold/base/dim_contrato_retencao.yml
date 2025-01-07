@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: dim_contrato_retencao
+    description: Tabela dimensão com informações sobre retenção de cliente
+    column:
+      - name: id_contrato_retencao
+        data_type: long
+      - name: data_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: usuario_criacao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_contrato
+        data_type: long
+      - name: status
+        data_type: string
+      - name: usuario_atribuido
+        data_type: string
+      - name: motivo_solicitacao
+        data_type: string
+      - name: motivo_investigado
+        data_type: string
+      - name: data_reversao_cancelamento
+        data_type: string
+      - name: desconto_aplicado
+        data_type: double
+      - name: sub_motivo_cancelamento
+        data_type: string
+      - name: origem_contato
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz

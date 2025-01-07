@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: dim_faturas_all_versions
+    description: Tabela com informações de todas as versões das faturas.
+    columns:
+      - name: codigo_fatura_sydle
+        data_type: long
+      - name: valor_fatura
+        data_type: double
+      - name: codigo_contrato_air
+        data_type: long
+      - name: forma_pagamento
+        data_type: string
+      - name: valor_pago
+        data_type: double
+      - name: data_pagamento
+        data_type: unknown
+      - name: data_atualizacao
+        data_type: timestamp
+      - name: status_fatura
+        data_type: string
+      - name: data_vencimento
+        data_type: unknown
+      - name: versao
+        data_type: integer
+      - name: data_negociacao
+        data_type: timestamp
+      - name: codigo_legado_fatura
+        data_type: string
+      - name: classificacao
+        data_type: string
+      - name: valor_sem_multa_juros
+        data_type: double
+      - name: mes_referencia
+        data_type: string
+      - name: data_criacao
+        data_type: string
+      - name: codigo_cliente_air
+        data_type: long
+      - name: is_last
+        data_type: boolean

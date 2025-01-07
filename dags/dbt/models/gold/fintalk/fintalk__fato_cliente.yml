@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: fato_cliente
+    description: Tabela fato de clientes com origem na Fintalk
+    columns:
+      - name: id
+        data_type: string
+      - name: session_id
+        data_type: string
+      - name: name
+        data_type: string
+      - name: nickname
+        data_type: string
+      - name: email
+        data_type: string
+      - name: cpf
+        data_type: string
+      - name: phone_number
+        data_type: string
+      - name: birthdate
+        data_type: string
+      - name: whatsapp_id
+        data_type: string
+      - name: app_client
+        data_type: string
+      - name: created_at
+        data_type: timestamp
+      - name: updated_at
+        data_type: timestamp
+      - name: stage
+        data_type: string
+      - name: bot
+        data_type: string

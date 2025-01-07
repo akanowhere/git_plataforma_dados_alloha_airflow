@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: ecare
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: db_ecare
+    tables:
+      - name: event
+      - name: event_onu
+      - name: event_type
+      - name: onu
+      - name: incident

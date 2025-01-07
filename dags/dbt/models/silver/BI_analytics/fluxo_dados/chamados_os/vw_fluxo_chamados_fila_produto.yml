@@ -1,0 +1,82 @@
+models:
+    - name: vw_fluxo_chamados_fila_produto
+      description: "Fluxo para analisar volumetria de chamados e atendimentos na fila de produto"
+      column:
+      - name: protocolo
+        description: Identificador único do chamado.
+        data_type: integer
+      - name: contrato
+        description: Identificador do contrato associado ao chamado.
+        data_type: integer
+      - name: unidade
+        description: Endereço da unidade associada ao contrato.
+        data_type: string
+      - name: cidade
+        description: Cidade onde está localizada a unidade do contrato.
+        data_type: string
+      - name: estado
+        description: Estado onde está localizada a unidade do contrato.
+        data_type: string
+      - name: nome_classificacao
+        description: Nome da classificação do chamado.
+        data_type: string
+      - name: tipo_classificacao
+        description: Tipo de classificação do chamado.
+        data_type: string
+      - name: status_chamado
+        description: Status atual do chamado (Aberto ou Concluído).
+        data_type: string
+      - name: motivo_conclusao
+        description: Motivo pelo qual o chamado foi concluído.
+        data_type: string
+      - name: data_abertura_chamado
+        description: Data e hora em que o chamado foi aberto.
+        data_type: timestamp
+      - name: data_conclusao_chamado
+        description: Data e hora em que o chamado foi concluído.
+        data_type: timestamp
+      - name: usuario_abertura_chamado
+        description: usuário que abriu o chamado.
+        data_type: string
+      - name: usuario_conclusao_chamado
+        description: usuário que concluiu o chamado.
+        data_type: string
+      - name: numero_atendimento
+        description: Número do atendimento dentro do chamado, baseado na ordem de início do atendimento.
+        data_type: integer
+      - name: id_fila_atendimento
+        description: Identificador da fila de atendimento associada ao chamado.
+        data_type: integer
+      - name: fila_atual
+        description: Nome da fila em que o atendimento foi realizado.
+        data_type: string
+      - name: data_inicio_atendimento
+        description: Data e hora de início do atendimento.
+        data_type: timestamp
+      - name: data_fim_atendimento
+        description: Data e hora de fim do atendimento.
+        data_type: timestamp
+      - name: codigo_usuario_atendimento
+        description: Identificador do usuário responsável pelo atendimento.
+        data_type: integer
+      - name: usuario_atendimento
+        description: usuário responsável pelo atendimento.
+        data_type: string
+      - name: nome_pacote
+        description: Nome do pacote do cliente no momento da abertura chamado.
+        data_type: string
+      - name: data_ultimo_chamado
+        description: Data de abertura do último chamado para o mesmo contrato, anterior ao chamado atual.
+        data_type: timestamp
+      - name: ultima_observacao_atendimento
+        description: Texto da última observação registrada no atendimento.
+        data_type: string
+      - name: primeira_observacao_chamado
+        description: Texto da Primeira observação registrada no chamado.
+        data_type: string
+      - name: flag_recorrencia_24h
+        description: Indicador de recorrência em até 24 horas do último chamado (1 para sim, 0 para não).
+        data_type: integer
+      - name: flag_recorrencia_7d
+        description: Indicador de recorrência em até 7 dias do último chamado (1 para sim, 0 para não).
+        data_type: integer

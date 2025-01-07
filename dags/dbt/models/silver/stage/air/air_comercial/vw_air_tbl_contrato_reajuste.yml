@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_contrato_reajuste
+    columns:
+      - name: id
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: data_processamento
+        data_type: timestamp
+      - name: valor_anterior
+        data_type: double
+      - name: valor_indice
+        data_type: double
+      - name: valor_final
+        data_type: double
+      - name: versao_contrato
+        data_type: long
+      - name: data_primeira_consulta
+        data_type: timestamp
+      - name: data_segunda_consulta
+        data_type: timestamp

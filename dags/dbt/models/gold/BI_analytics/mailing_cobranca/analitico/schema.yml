@@ -1,0 +1,121 @@
+models:
+  - name: tbl_analitico
+    description: "Tabela analítica do mailing de cobrança"
+    columns:
+      - name: marca
+        description: "Marca do contrato"
+        data_type: string
+      - name: id_contrato
+        description: "ID de identificação do contrato"
+        data_type: long
+      - name: versao_contrato
+        description: "Versão atual do contrato"
+        data_type: long
+      - name: status_contrato
+        description: "Status atual do contrato"
+        data_type: string
+      - name: nome_cliente
+        description: "Nome completo do cliente"
+        data_type: string
+      - name: id_cliente
+        description: ID de identificação do cliente"
+        data_type: long
+      - name: cpf_cnpj
+        description: "Número de documentação do cliente"
+        data_type: long
+      - name: tipo_documento
+        description: "Tipo de documento do cliente"
+        data_type: string
+      - name: fatura_motivadora
+        description: "Código da fatura pela qual o contrato entrou no mailing"
+        data_type: long
+      - name: versao_fatura
+        description: "Versão atual da fatura"
+        data_type: long
+      - name: status_fatura
+        description: "Status atual da fatura"
+        data_type: string
+      - name: mes_vencimento
+        description: "Mês de vencimento da fatura"
+        data_type: date
+      - name: data_vencimento_antigo
+        description: Data do vencimento da fatura mais antiga"
+        data_type: date
+      - name: data_ultimo_pagamento
+        description: "Data do último pagamento realizado pelo cliente"
+        data_type: date
+      - name: negociacao
+        description: "Flag que indica se o cliente possui negociações ativas"
+        data_type: bool
+      - name: aging_mes
+        description: "Tempo em meses da fatura mais mais antiga não paga"
+        data_type: long
+      - name: divida_atual
+        description: "Total da dívida do cliente"
+        data_type: double
+      - name: faturas_abertas
+        description: "Código das faturas em aberto"
+        data_type: string
+      - name: cidade
+        description: "Cidade do contrato"
+        data_type: string
+      - name: regional
+        description: "Regional do contrato"
+        data_type: string
+      - name: faixa_aging
+        description: "Faixa de aging do contrato no mailing"
+        data_type: string
+      - name: status_mailing
+        description: "Flag que indica se cliente é ativo ou inativo"
+        data_type: string
+      - name: localidade
+        description: "País do contrato"
+        data_type: string
+      - name: ultima_chance
+        description: "Flag que indica se contrato é última chance de cobrança"
+        data_type: bool
+      - name: faixa_mailing_anterior
+        description: "Faixa de aging no mailing do mês anterior"
+        data_type: string
+      - name: fila_ouvidoria_contestacao_fatura
+        description: "Flag que indica se contrato tem ouvidoria ou constação de fatura aberta"
+        data_type: bool
+      - name: aging_atual
+        description: "Aging atual da última fatura em dias"
+        data_type: long
+      - name: data_saida
+        description: "Data que foi identificado o motivos de saída do mailing"
+        data_type: date
+      - name: data_motivo_saida
+        description: "Data real do evento que ocasionou a saída do mailing"
+        data_type: date
+      - name: data_atualizacao_motivo_saida
+        description: "Data de atualização no banco do evento que ocasionou a saída do mailing"
+        data_type: date
+      - name: data_cancelamento_contrato
+        description: "Data que o contrato foi cancelado"
+        data_type: date
+      - name: data_pagamento
+        description: "Data de pagamento da fatura motivadora"
+        data_type: date
+      - name: saida_tipo
+        description: "Flag que indica se contrato saiu por motivos de CONTRATO ou FATURA"
+        data_type: string
+      - name: motivo_saida
+        description: "Evento que motivou a saída do mailing"
+        data_type: string
+      - name: tipo_pagamento
+        description: "Flag que indica se o pagamento foi ESPONTÂNEO ou NEGOCIAÇÃO"
+        data_type: string
+      - name: motivo_cancelamento_contrato
+        description: "Flag que indica se contrato foi cancelado VOLUNTÁRIO, INVOLUNTÁRIO ou INVOLUNTÁRIO ADICIONAL"
+        data_type: string
+      - name: data_referencia
+        description: "Data de referência do mailing"
+        data_type: date
+      - name: valor_fatura_motivadora
+        description: "Valor da fatura motivadora"
+        data_type: double
+      - name: valor_pago
+        description: "Valor efetivamente pago da fatura motivadora"
+        data_type: double

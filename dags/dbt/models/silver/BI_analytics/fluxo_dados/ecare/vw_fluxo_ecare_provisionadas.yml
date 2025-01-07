@@ -1,0 +1,19 @@
+models:
+  - name: vw_fluxo_ecare_provisionadas
+    description: "Fluxo para obter informacoes sobre as ONUs provisionadas no AIR"
+    column:
+      - name: Data
+        description: ""
+        data_type: date
+      - name: Cidade
+        description: ""
+        data_type: string
+      - name: Unidade
+        description: ""
+        data_type: string
+      - name: onu_serial
+        description: ""
+        data_type: string
+      - name: Qtd
+        description: ""
+        data_type: long

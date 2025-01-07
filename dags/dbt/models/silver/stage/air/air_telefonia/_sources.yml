@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: air_telefonia
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: air_telefonia
+    tables:
+      - name: tbl_numero_portado
+      - name: tbl_numero_proprio
+      - name: tbl_reserva

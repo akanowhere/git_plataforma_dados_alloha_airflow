@@ -1,0 +1,16 @@
+models:
+  - name: vw_fluxo_senhaSac
+    description: "Fluxo para analisar as senhaSac do Cliente"
+    column:
+      - name: id_cliente
+        description: ""
+        data_type: string
+      - name: Nome_Cliente
+        description: ""
+        data_type: string
+      - name: categoria_senha
+        description: ""
+        data_type: string
+
+
+        

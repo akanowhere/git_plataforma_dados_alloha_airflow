@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: central_assinante
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: central_assinante
+    tables:
+      - name: sessions
+      - name: events

@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_numero_portado
+    description: Tabela stage com informações de numeros portados
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_arealocal
+        data_type: long
+      - name: data_portabilidade
+        data_type: timestamp
+      - name: devolvido
+        data_type: boolean
+      - name: motivo
+        data_type: string
+      - name: numero
+        data_type: long
+      - name: operadora
+        data_type: string
+      - name: id_reserva
+        data_type: long

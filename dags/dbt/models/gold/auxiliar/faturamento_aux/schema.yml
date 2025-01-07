@@ -1,0 +1,66 @@
+models:
+  - name: faturamento_air_contrato_campanha
+    column:
+      - name: id_campanha
+        data_type: long
+      - name: nome_campanha
+        data_type: string
+      - name: id_contrato
+        data_type: long
+      - name: pacote_codigo
+        data_type: string
+      - name: pacote_nome
+        data_type: string
+
+  - name: faturamento_air_vendas_migracao
+    column:
+      - name: id
+        data_type: long
+      - name: id_campanha
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: data_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: data_venda
+        data_type: string
+      - name: natureza
+        data_type: string
+
+  - name: faturamento_alteracao_vencimento
+    column:
+      - name: id_evento
+        data_type: long
+      - name: momento
+        data_type: timestamp
+      - name: ID_CONTRATO_AIR
+        data_type: long
+      - name: motivo_associado
+        data_type: string
+      - name: tipo
+        data_type: string
+      - name: Fechamento_Antigo
+        data_type: string
+      - name: Vencimento_Antigo
+        data_type: string
+      - name: Fechamento_Novo
+        data_type: string
+      - name: Vencimento_Novo
+        data_type: string
+
+  - name: faturamento_suspensao
+    column:
+      - name: ID_CONTRATO_SUSPENSAO
+        data_type: integer
+      - name: ID_CONTRATO_AIR
+        data_type: long
+      - name: dtSuspensao
+        data_type: unknown
+      - name: dtAtivacao
+        data_type: unknown
+      - name: ID_EVENTO_SUSPENSAO
+        data_type: long
+      - name: ID_EVENTO_ATIVACAO
+        data_type: long

@@ -1,0 +1,16 @@
+models:
+  - name: vw_fluxo_eventos_legado_app
+    description: "Fluxo para analisar Acessos no APP legado"
+    column:
+      - name: MesAno
+        description: ""
+        data_type: string
+      - name: Marca
+        description: ""
+        data_type: string
+      - name: Categoria_Evento
+        description: ""
+        data_type: string
+      - name: Qtd
+        description: ""
+        data_type: long

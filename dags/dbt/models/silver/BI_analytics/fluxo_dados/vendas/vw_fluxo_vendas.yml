@@ -1,0 +1,121 @@
+models:
+  - name: vw_fluxo_vendas
+    description: "Fluxo para analisar volumetria de vendas"
+    column:
+      - name: data_venda
+        description: "Data da venda do produto ou serviço"
+        datatype: date
+      - name: data_criacao
+        description: "Data de criação do registro de venda"
+        datatype: date
+      - name: hora_criacao
+        description: "Hora de criação do registro de venda"
+        datatype: time
+      - name: id_contrato
+        description: "Identificador único do contrato"
+        datatype: integer
+      - name: id_contrato_air
+        description: "Identificador do contrato na base AIR"
+        datatype: integer
+      - name: id_contrato_ixc
+        description: "Identificador do contrato na base IXC"
+        datatype: integer
+      - name: id_cliente
+        description: "Identificador do cliente"
+        datatype: integer
+      - name: segmento
+        description: "Segmento de mercado do cliente"
+        datatype: string
+      - name: equipe
+        description: "Equipe responsável pela venda"
+        datatype: string
+      - name: canal
+        description: "Canal de venda, ajustado conforme a equipe"
+        datatype: string
+      - name: canal_tratado
+        description: "Canal tratado de venda"
+        datatype: string
+      - name: tipo_canal
+        description: "Tipo do canal de venda"
+        datatype: string
+      - name: id_vendedor
+        description: "Identificador do vendedor"
+        datatype: integer
+      - name: nome_vendedor
+        description: "Nome do vendedor responsável"
+        datatype: string
+      - name: unidade_atendimento
+        description: "Unidade de atendimento do cliente"
+        datatype: string
+      - name: unidade
+        description: "Unidade responsável pela venda"
+        datatype: string
+      - name: fonte
+        description: "Fonte dos dados de venda"
+        datatype: string
+      - name: estado
+        description: "Estado onde a venda foi realizada"
+        datatype: string
+      - name: cidade
+        description: "Cidade onde a venda foi realizada"
+        datatype: string
+      - name: bairro
+        description: "Bairro onde a venda foi realizada"
+        datatype: string
+      - name: regional
+        description: "Regional da unidade de venda"
+        datatype: string
+      - name: marca
+        description: "Marca associada à venda"
+        datatype: string
+      - name: pacote_nome
+        description: "Nome do pacote de serviços vendido"
+        datatype: string
+      - name: velocidade
+        description: "Velocidade do serviço vendido"
+        datatype: string
+      - name: campanha_nome
+        description: "Nome da campanha associada à venda"
+        datatype: string
+      - name: produto
+        description: "Produto vendido"
+        datatype: string
+      - name: pacote_tv
+        description: "Pacote de TV associado à venda"
+        datatype: string
+      - name: cobranca
+        description: "Tipo de cobrança associada à venda"
+        datatype: string
+      - name: valor_total
+        description: "Valor total do contrato"
+        datatype: float
+      - name: pacote_valor_total
+        description: "Valor total do pacote vendido"
+        datatype: float
+      - name: desconto
+        description: "Desconto aplicado à venda"
+        datatype: float
+      - name: valor_final
+        description: "Valor final após desconto"
+        datatype: float
+      - name: afiliado_assine
+        description: "Afiliado que participou da venda"
+        datatype: string
+      - name: email_vendedor
+        description: "Email do vendedor"
+        datatype: string
+      - name: cupom
+        description: "Código do cupom aplicado"
+        datatype: string
+      - name: cupom_valido
+        description: "Indica se o cupom é válido"
+        datatype: boolean
+      - name: macro_regional
+        description: "Classificação macro-regional"
+        datatype: string
+      - name: duracao_desconto
+        description: "Duração do desconto em meses"
+        datatype: integer
+      - name: ticket_medio_ponderado
+        description: "Ticket médio ponderado do valor final"
+        datatype: float

@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: vw_assine_cupom
+    columns:
+      - name: cupom
+        data_type: string
+      - name: contrato_air
+        data_type: long

@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: fato_base_ativos_analitica
+    description: fato base ativos versao analitica
+    columns:
+      - name: data_referencia
+        data_type: date
+      - name: id_contrato
+        data_type: long
+      - name: cidade
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: canal
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: unidade
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: produto
+        data_type: string
+      - name: pacote_tv
+        data_type: string
+      - name: tipo_tv
+        data_type: string
+      - name: dia_vencimento
+        data_type: long
+      - name: dia_fechamento
+        data_type: long
+      - name: segmento
+        data_type: string
+      - name: aging_meses_cat
+        data_type: string
+      - name: equipe
+        data_type: string
+      - name: cluster
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: legado_sistema
+        data_type: string
+      - name: canal_tratado
+        data_type: string
+      - name: tipo_canal
+        data_type: string
+      - name: macro_regional
+        data_type: string
+      - name: nome_regional
+        data_type: string

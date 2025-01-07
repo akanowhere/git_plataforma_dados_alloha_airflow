@@ -1,0 +1,40 @@
+models:
+  - name: vw_fluxo_ecare_alarmes_unitarios
+    description: "Fluxo para obter informacoes de alarmes unitarios segundo ecare"
+    column:
+    - name: id
+      description: ""
+      data_type: long
+    - name: ONU
+      description: ""
+      data_type: string
+    - name: Unidade
+      description: ""
+      data_type: string
+    - name: Cidade
+      description: ""
+      data_type: string
+    - name: Estado
+      description: ""
+      data_type: string
+    - name: territorio
+      description: ""
+      data_type: string
+    - name: regional
+      description: ""
+      data_type: string
+    - name: DataRegistroEcare
+      description: ""
+      data_type: date
+    - name: status
+      description: ""
+      data_type: string
+    - name: olt
+      description: ""
+      data_type: string
+    - name: slot
+      description: ""
+      data_type: int
+    - name: pon
+      description: ""
+      data_type: int

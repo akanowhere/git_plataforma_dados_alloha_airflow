@@ -1,0 +1,354 @@
+models:
+  - name: vw_dim_venda
+    column:
+      - name: afiliado_assine
+        data_type: long 
+      - name: bairro
+        data_type: string 
+      - name: campanha_codigo
+        data_type: string 
+      - name: campanha_nome
+        data_type: string 
+      - name: canal
+        data_type: string 
+      - name: canal_tratado
+        data_type: string 
+      - name: cep
+        data_type: string 
+      - name: cidade
+        data_type: string 
+      - name: cobranca
+        data_type: string 
+      - name: cod_tipo_cobranca
+        data_type: string 
+      - name: concretizada
+        data_type: string 
+      - name: confirmada
+        data_type: string 
+      - name: consultor_autonomo
+        data_type: long 
+      - name: cpf_cnpj
+        data_type: string 
+      - name: cupom_valido
+        data_type: long 
+      - name: data_alteracao
+        data_type: timestamp 
+      - name: data_criacao
+        data_type: timestamp 
+      - name: data_extracao
+        data_type: timestamp 
+      - name: data_venda
+        data_type: date 
+      - name: desconto
+        data_type: string 
+      - name: duracao_desconto
+        data_type: long 
+      - name: endereco_cobranca
+        data_type: string 
+      - name: endereco_entrega
+        data_type: string 
+      - name: equipe
+        data_type: string 
+      - name: estado
+        data_type: string 
+      - name: excluido
+        data_type: string 
+      - name: fase_atual
+        data_type: string 
+      - name: fonte
+        data_type: string 
+      - name: id_campanha
+        data_type: string 
+      - name: id_cliente
+        data_type: string 
+      - name: id_contrato
+        data_type: string 
+      - name: id_contrato_air
+        data_type: long 
+      - name: id_contrato_ixc
+        data_type: long 
+      - name: id_endereco_cobranca
+        data_type: long 
+      - name: id_endereco_entrega
+        data_type: long 
+      - name: id_lead
+        data_type: string 
+      - name: id_processo_venda_sydle
+        data_type: string 
+      - name: id_regra_suspensao
+        data_type: string 
+      - name: id_vencimento
+        data_type: string 
+      - name: id_venda
+        data_type: string 
+      - name: id_vendedor
+        data_type: string 
+      - name: latitude_cobranca
+        data_type: string 
+      - name: latitude_entrega
+        data_type: string 
+      - name: legado_id
+        data_type: long 
+      - name: legado_sistema
+        data_type: string 
+      - name: longitude_cobranca
+        data_type: string 
+      - name: longitude_entrega
+        data_type: string 
+      - name: macro_regional
+        data_type: string 
+      - name: marca
+        data_type: string 
+      - name: natureza
+        data_type: string 
+      - name: nome_regional
+        data_type: string 
+      - name: numero_cobranca
+        data_type: string 
+      - name: numero_entrega
+        data_type: string 
+      - name: pacote_base_codigo
+        data_type: string 
+      - name: pacote_base_nome
+        data_type: string 
+      - name: pacote_tv
+        data_type: string 
+      - name: pacote_valor_total
+        data_type: string 
+      - name: possui_internet
+        data_type: string 
+      - name: possui_telefone
+        data_type: string 
+      - name: possui_tv
+        data_type: string 
+      - name: produto
+        data_type: string 
+      - name: recorrencia_meses_desconto
+        data_type: string 
+      - name: recorrencia_percentual_desconto
+        data_type: string 
+      - name: regional
+        data_type: string 
+      - name: segmento
+        data_type: string 
+      - name: sk_venda
+        data_type: long 
+      - name: tipo_canal
+        data_type: string 
+      - name: tipo_cliente
+        data_type: string 
+      - name: tipo_residencia
+        data_type: string 
+      - name: unidade
+        data_type: string 
+      - name: unidade_atendimento
+        data_type: string 
+      - name: usuario_alteracao
+        data_type: string 
+      - name: usuario_criacao
+        data_type: string 
+      - name: valor_final_com_desconto
+        data_type: string 
+      - name: valor_referencia_b2b
+        data_type: string 
+      - name: valor_total
+        data_type: string 
+      - name: velocidade
+        data_type: string 
+      - name: versao
+        data_type: long 
+      - name: _metadata
+        data_type: string 
+
+  - name: vw_fato_ativacao
+    column:
+      - name: id_contrato
+        data_type: long 
+      - name: data_ativacao
+        data_type: date 
+      - name: cidade
+        data_type: string 
+      - name: regiao
+        data_type: string 
+      - name: estado
+        data_type: string 
+      - name: canal
+        data_type: string 
+      - name: marca
+        data_type: string 
+      - name: data_extracao
+        data_type: timestamp 
+      - name: unidade
+        data_type: string 
+      - name: regional
+        data_type: string 
+      - name: produto
+        data_type: string 
+      - name: pacote_tv
+        data_type: string 
+      - name: tipo_tv
+        data_type: string 
+      - name: segmento
+        data_type: string 
+      - name: cluster
+        data_type: string 
+      - name: fonte
+        data_type: string 
+      - name: legado_id
+        data_type: long 
+      - name: legado_sistema
+        data_type: string 
+      - name: equipe
+        data_type: string 
+      - name: canal_tratado
+        data_type: string 
+      - name: tipo_canal
+        data_type: string 
+      - name: id_contrato_air
+        data_type: long 
+      - name: id_contrato_ixc
+        data_type: long 
+      - name: macro_regional
+        data_type: string 
+      - name: nome_regional
+        data_type: string 
+
+  - name: vw_fato_cancelamento
+    column:
+      - name: id_contrato
+        data_type: long 
+      - name: data_cancelamento
+        data_type: date 
+      - name: data_ativacao
+        data_type: date 
+      - name: motivo_cancelamento
+        data_type: string 
+      - name: cidade
+        data_type: string 
+      - name: regiao
+        data_type: string 
+      - name: estado
+        data_type: string 
+      - name: canal
+        data_type: string 
+      - name: marca
+        data_type: string 
+      - name: data_extracao
+        data_type: timestamp 
+      - name: unidade
+        data_type: string 
+      - name: regional
+        data_type: string 
+      - name: produto
+        data_type: string 
+      - name: pacote_tv
+        data_type: string 
+      - name: tipo_tv
+        data_type: string 
+      - name: dia_fechamento
+        data_type: long 
+      - name: dia_vencimento
+        data_type: long 
+      - name: aging
+        data_type: long 
+      - name: segmento
+        data_type: string 
+      - name: equipe
+        data_type: string 
+      - name: tipo_cancelamento
+        data_type: string 
+      - name: sub_motivo_cancelamento
+        data_type: string 
+      - name: cancelamento_invol
+        data_type: string 
+      - name: pacote_nome
+        data_type: string 
+      - name: valor_final
+        data_type: double 
+      - name: cluster
+        data_type: string 
+      - name: fonte
+        data_type: string 
+      - name: legado_id
+        data_type: long 
+      - name: legado_sistema
+        data_type: string 
+      - name: canal_tratado
+        data_type: string 
+      - name: tipo_canal
+        data_type: string 
+      - name: id_contrato_air
+        data_type: long 
+      - name: id_contrato_ixc
+        data_type: long 
+      - name: flg_fidelizado
+        data_type: string 
+      - name: macro_regional
+        data_type: string 
+      - name: nome_regional
+        data_type: string 
+
+  - name: vw_fato_primeira_ativacao
+    column:
+      - name: id_contrato
+        data_type: long 
+      - name: data_ativacao
+        data_type: date 
+      - name: cidade
+        data_type: string 
+      - name: regiao
+        data_type: string 
+      - name: estado
+        data_type: string 
+      - name: canal
+        data_type: string 
+      - name: marca
+        data_type: string 
+      - name: data_extracao
+        data_type: timestamp 
+      - name: unidade
+        data_type: string 
+      - name: regional
+        data_type: string 
+      - name: produto
+        data_type: string 
+      - name: pacote_tv
+        data_type: string 
+      - name: tipo_tv
+        data_type: string 
+      - name: segmento
+        data_type: string 
+      - name: ultima_alteracao
+        data_type: string 
+      - name: data_utilizada
+        data_type: string 
+      - name: motivo_inclusao
+        data_type: string 
+      - name: valor_contrato
+        data_type: string 
+      - name: plano
+        data_type: string 
+      - name: id_vendedor
+        data_type: long 
+      - name: cluster
+        data_type: string 
+      - name: fonte
+        data_type: string 
+      - name: legado_id
+        data_type: long 
+      - name: legado_sistema
+        data_type: string 
+      - name: equipe
+        data_type: string 
+      - name: canal_tratado
+        data_type: string 
+      - name: tipo_canal
+        data_type: string 
+      - name: id_contrato_air
+        data_type: long 
+      - name: id_contrato_ixc
+        data_type: long 
+      - name: macro_regional
+        data_type: string 
+      - name: nome_regional
+        data_type: string 

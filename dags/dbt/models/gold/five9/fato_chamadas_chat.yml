@@ -1,0 +1,64 @@
+version: 2
+
+models:
+  - name: fato_chamadas_chat
+    description: Tabela fato de chamadas de mídia chat
+    column:
+      - name: sk_chamada
+        data_type: string
+      - name: id_sessao_chamada
+        data_type: string
+      - name: id_chamada
+        data_type: string
+      - name: data_inicio_chamada
+        data_type: timestamp
+      - name: campanha
+        data_type: string
+      - name: agente
+        data_type: string
+      - name: competencia
+        data_type: string
+      - name: posicao
+        data_type: string
+      - name: tipo_midia
+        data_type: string
+      - name: subtipo_midia
+        data_type: string
+      - name: motivo_retencao_ura
+        data_type: string
+      - name: cliente
+        data_type: string
+      - name: contrato
+        data_type: integer
+      - name: cpf_cnpj
+        data_type: string
+      - name: cep
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: bairro
+        data_type: string
+      - name: origem
+        data_type: string
+      - name: destino
+        data_type: string
+      - name: tempo_interacao
+        data_type: string
+      - name: tempo_conversa
+        data_type: string
+      - name: tempo_espera_fila
+        data_type: string
+      - name: tempo_apos_horario_trabalho
+        data_type: string
+      - name: transferida_de
+        data_type: string
+      - name: transferida_para
+        data_type: string
+      - name: transferencias
+        data_type: integer
+      - name: marca
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp

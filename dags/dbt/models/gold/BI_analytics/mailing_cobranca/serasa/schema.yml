@@ -1,0 +1,19 @@
+models:
+  - name: tbl_analitico_serasa
+    description: "Tabela analítica do mailing de cobrança refente ao serasa"
+    columns:
+      - name: id_contrato
+        description: "ID de identificação do contrato"
+        data_type: long
+      - name: cpf_cnpj
+        description: "Número de documentação do cliente"
+        data_type: long 
+      - name: marca
+        description: "Marca do contrato"
+        data_type: string
+      - name: fatura
+        description: "Código da fatura em aberto"
+        data_type: long
+      - name: data_referencia
+        description: "Data de referência do mailing"
+        data_type: date

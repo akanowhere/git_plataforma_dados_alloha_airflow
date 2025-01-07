@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: five9_agent_reports
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: five9_agent_reports
+    tables:
+      - name: agent_disconnects_first
+      - name: agent_login_logout
+
+  - name: five9_call_log_reports
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: five9_call_log_reports
+    tables:
+      - name: inbound_call_log
+      - name: outgoing_call_log
+
+  - name: five9_call_segment_reports
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: five9_call_segment_reports
+    tables:
+      - name: inbound_call_segment
+
+  - name: five9_digital_channel_reports
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: five9_digital_channel_reports
+    tables:
+      - name: digital_interaction_log
+      - name: digital_interaction_variables

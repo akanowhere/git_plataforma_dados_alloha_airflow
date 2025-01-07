@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_os_notificacao_confirmacao
+    description: Tabela dimensão de disparos de números whatsapp para infobip através através do AIR via API
+    column:
+      - name: id
+        data_type: long
+      - name: id_cliente
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: id_os
+        data_type: long
+      - name: numero_disparo
+        data_type: string
+      - name: horario_disparo
+        data_type: timestamp
+      - name: status
+        data_type: string
+      - name: message_id
+        data_type: string

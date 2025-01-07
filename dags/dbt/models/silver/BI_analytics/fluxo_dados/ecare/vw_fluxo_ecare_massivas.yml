@@ -1,0 +1,25 @@
+models:
+  - name: vw_fluxo_ecare_massivas
+    description: "Fluxo para obter informacoes sobre eventos de massiva no ecare"
+    column:
+      - name: Data
+        description: ""
+        data_type: date
+      - name: created_at
+        description: ""
+        data_type: date
+      - name: Cidade
+        description: ""
+        data_type: string
+      - name: Unidade
+        description: ""
+        data_type: string
+      - name: incident_id
+        description: ""
+        data_type: long
+      - name: serial
+        description: ""
+        data_type: string
+      - name: StatusMassiva
+        description: ""
+        data_type: string

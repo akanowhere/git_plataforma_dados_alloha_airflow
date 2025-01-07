@@ -1,0 +1,158 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_os
+    description: Tabela stage vw_air_tbl_os
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_agenda
+        data_type: long
+      - name: id_chamado
+        data_type: long
+      - name: id_terceirizada
+        data_type: long
+      - name: agendamento_data
+        data_type: timestamp
+      - name: turno
+        data_type: string
+      - name: equipe
+        data_type: string
+      - name: classificacao
+        data_type: string
+      - name: servico
+        data_type: string
+      - name: id_tecnico
+        data_type: long
+      - name: solicitacao_atendida
+        data_type: boolean
+      - name: codigo_cliente
+        data_type: long
+      - name: cliente_nome
+        data_type: string
+      - name: cpfcnpj
+        data_type: string
+      - name: contrato_codigo
+        data_type: long
+      - name: pacote
+        data_type: string
+      - name: telefone
+        data_type: string
+      - name: email
+        data_type: string
+      - name: endereco
+        data_type: string
+      - name: bairro
+        data_type: string
+      - name: logradouro
+        data_type: string
+      - name: lat
+        data_type: double
+      - name: lng
+        data_type: double
+      - name: endereco_referencia
+        data_type: string
+      - name: unidade
+        data_type: string
+      - name: codigo_fila
+        data_type: string
+      - name: observacao
+        data_type: string
+      - name: status
+        data_type: string
+      - name: motivo_conclusao
+        data_type: string
+      - name: data_conclusao
+        data_type: timestamp
+      - name: integracao_status
+        data_type: string
+      - name: integracao_mensagem
+        data_type: string
+      - name: integracao_codigo
+        data_type: string
+      - name: origem_agendamento
+        data_type: string
+      - name: data_confirmacao_agendamento
+        data_type: timestamp
+      - name: origem_confirmacao_agendamento
+        data_type: string
+      - name: data_reagendamento
+        data_type: timestamp
+      - name: origem_reagendamento
+        data_type: string
+      - name: pme
+        data_type: boolean
+      - name: ftta
+        data_type: boolean
+      - name: id_reserva_officetrack
+        data_type: string
+      - name: telefone_adicional
+        data_type: string
+      - name: contatos
+        data_type: string
+      - name: cep
+        data_type: string
+      - name: endereco_complemento
+        data_type: string
+      - name: endereco_numero
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: area_distribuicao
+        data_type: string
+      - name: codigo_tipo_tarefa
+        data_type: string
+      - name: tipo_servico
+        data_type: string
+      - name: pontos_tv
+        data_type: long
+      - name: b2b
+        data_type: boolean
+      - name: status_interno
+        data_type: string
+      - name: existia_data_anterior
+        data_type: boolean
+      - name: motivo_revisao
+        data_type: string
+      - name: local_instalacao
+        data_type: string
+      - name: pesquisa_tecnologia_anterior
+        data_type: string
+      - name: whatsapp_capturado
+        data_type: string
+      - name: controle_envio_whatsapp
+        data_type: string
+      - name: protocolo_secundario
+        data_type: long
+      - name: chave_wk
+        data_type: string
+      - name: bucket
+        data_type: string
+      - name: primeira_data_ag
+        data_type: timestamp
+      - name: conveniencia_cliente
+        data_type: boolean
+      - name: link_wmt
+        data_type: string
+      - name: quant_visitas
+        data_type: long
+      - name: priorizar_roteirizacao
+        data_type: boolean
+      - name: id_hierarquia_fechamento
+        data_type: long
+      - name: confirma_endereco
+        data_type: boolean
+      - name: posicao_sap
+        data_type: string

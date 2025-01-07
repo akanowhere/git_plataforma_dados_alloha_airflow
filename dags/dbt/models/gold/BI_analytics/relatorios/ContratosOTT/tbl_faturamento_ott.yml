@@ -1,0 +1,71 @@
+models:
+  - name: tbl_faturamento_ott
+    description: "Dados faturamento dos OTTs "
+    columns:
+      - name: codigo_fatura_sydle
+        description: "Código da fatura no sistema Sydle"
+        data_type: "STRING"
+      - name: contrato_air
+        description: "Identificador do contrato no sistema AIR"
+        data_type: "STRING"
+      - name: data_criacao_fatura
+        description: "Data de criação da fatura"
+        data_type: "DATE"
+      - name: data_ativacao
+        description: "Data de ativação do produto"
+        data_type: "DATE"
+      - name: mes_referencia
+        description: "Mês de referência da fatura ou ativação"
+        data_type: "DATE"
+      - name: unidade_atendimento
+        description: "Unidade responsável pelo atendimento"
+        data_type: "STRING"
+      - name: marca
+        description: "Marca associada ao contrato"
+        data_type: "STRING"
+      - name: status_fatura
+        description: "Status da fatura, indicando situação atual"
+        data_type: "STRING"
+      - name: nome_item
+        description: "Nome do item faturado ou ativado"
+        data_type: "STRING"
+      - name: codigo_produto
+        description: "Código do produto no sistema"
+        data_type: "STRING"
+      - name: produto
+        description: "Nome ou descrição do produto"
+        data_type: "STRING"
+      - name: sku
+        description: "Código SKU do produto"
+        data_type: "STRING"
+      - name: valor_produto
+        description: "Valor do produto na fatura"
+        data_type: "DECIMAL(10, 2)"
+      - name: valor_final
+        description: "Valor final do item faturado"
+        data_type: "DECIMAL(10, 2)"
+      - name: dias_utilizados_componente
+        description: "Quantidade de dias utilizados para o componente"
+        data_type: "INTEGER"
+      - name: tipo
+        description: "Tipo de faturamento, como 'Fatura Cheia' ou 'Pró-Rata'"
+        data_type: "STRING"
+      - name: cidade
+        description: "Cidade associada ao contrato"
+        data_type: "STRING"
+      - name: estado
+        description: "Estado associado ao contrato"
+        data_type: "STRING"
+      - name: macro_regional
+        description: "Macro regional associado ao contrato"
+        data_type: "STRING"
+      - name: regional
+        description: "Regional associado ao contrato"
+        data_type: "STRING"
+      - name: subregional
+        description: "subregional associado ao contrato"
+        data_type: "STRING"      
+      - name: data_atualizacao
+        description: "Data da última atualização do registro"
+        data_type: "DATE"
+ 

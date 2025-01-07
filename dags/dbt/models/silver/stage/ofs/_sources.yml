@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: ofs_fieldintegration
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: ofs_fieldintegration
+    tables:
+      - name: alloha_ofs_bi_activity
+      - name: alloha_ofs_bi_inventory

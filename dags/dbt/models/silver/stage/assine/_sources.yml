@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: sumicity_db_assine
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: sumicity_db_assine
+    tables:
+      - name: checkout
+      - name: user_analysis
+      - name: user_contract
+
+  - name: sumicity_db_notification
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: sumicity_db_notification
+    tables:
+      - name: contact

@@ -1,0 +1,109 @@
+models:
+  - name: vw_fluxo_contratos_aguardando_ativacao
+    description: "Fluxo para analisar contratos aguardando ativacao"
+    column:
+      - name: CLIENTE CÓDIGO
+        type: long
+        description: ""
+      - name: CLIENTE STATUS
+        type: string
+        description: ""
+      - name: ESTADO
+        type: string
+        description: ""
+      - name: CIDADE
+        type: string
+        description: ""
+      - name: UNIDADE
+        type: string
+        description: ""
+      - name: BAIRRO
+        type: string
+        description: ""
+      - name: CONTRATO CÓDIGO
+        type: long
+        description: ""
+      - name: CONTRATO CÓDIGO SAP
+        type: string
+        description: ""
+      - name: PACOTE
+        type: string
+        description: ""
+      - name: PACOTE NOME
+        type: string
+        description: ""
+      - name: VALOR
+        type: float
+        description: ""
+      - name: VALOR_SEM_DESCONTO
+        type: float
+        description: ""
+      - name: CONTRATO STATUS
+        type: string
+        description: ""
+      - name: CONTRATO FASE
+        type: string
+        description: ""
+      - name: TIPO TECNOLOGIA
+        type: string
+        description: ""
+      - name: TIPO DE ENCERRAMENTO
+        type: string
+        description: ""
+      - name: DATA CRIAÇÃO
+        type: date
+        description: ""
+      - name: DATA ATIVAÇÃO CONTRATO
+        type: date
+        description: ""
+      - name: DATA CANCELAMENTO CONTRATO
+        type: date
+        description: ""
+      - name: DIA FECHAMENTO
+        type: int
+        description: ""
+      - name: DIA VENCIMENTO
+        type: int
+        description: ""
+      - name: EMAIL
+        type: string
+        description: ""
+      - name: CÓD CAMPANHA
+        type: string
+        description: ""
+      - name: CAMPANHA
+        type: string
+        description: ""
+      - name: DATA SUSPENSÃO
+        type: date
+        description: ""
+      - name: MARCADOR
+        type: string
+        description: ""
+      - name: MARCADOR CLIENTE
+        type: string
+        description: ""
+      - name: USUÁRIO CRIAÇÃO
+        type: string
+        description: ""
+      - name: marca
+        type: string
+        description: ""
+      - name: CLUSTER
+        type: string
+        description: ""
+      - name: CONTRATO_PROPRIO_SUMICITY
+        type: string
+        description: ""
+      - name: CUPOM
+        type: string
+        description: ""
+      - name: FIDELIZACAO
+        type: string
+        description: ""
+      - name: SEGMENTO
+        type: string
+        description: ""
+
+
+

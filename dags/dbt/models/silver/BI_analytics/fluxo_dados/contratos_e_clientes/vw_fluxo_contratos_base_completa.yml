@@ -1,0 +1,178 @@
+models:
+  - name: vw_fluxo_contratos_base_completa
+    description: "Fluxo para analisar volumetria de contratos com mais informações"
+    column:
+      - name: contrato_air
+        description: "Identificador único do contrato."
+        data_type: long
+      - name: codigo_cliente
+        description: "Código de identificação do cliente."
+        data_type: long
+      - name: expurgo_cnpj_proprio
+        description: "Indica se o CNPJ é próprio."
+        data_type: string
+      - name: nome_cliente
+        description: "Nome do cliente."
+        data_type: string
+      - name: cpf_cnpj
+        description: "Número do CPF ou CNPJ do cliente."
+        data_type: string
+      - name: tipo_pessoa
+        description: "Tipo de pessoa: física ou jurídica."
+        data_type: string
+      - name: segmento
+        description: "Segmento de mercado do cliente."
+        data_type: string
+      - name: data_ativacao
+        description: "Data de ativação do contrato."
+        data_type: date
+      - name: data_cancelamento
+        description: "Data de cancelamento do contrato, se aplicável."
+        data_type: date
+      - name: codigo_pacote
+        description: "Código do pacote contratado."
+        data_type: string
+      - name: nome_pacote
+        description: "Nome do pacote contratado."
+        data_type: string
+      - name: status_contrato
+        description: "Status atual do contrato."
+        data_type: string
+      - name: unidade_atendimento
+        description: "Unidade responsável pelo atendimento ao cliente."
+        data_type: string
+      - name: valor_final
+        description: "Valor total do contrato."
+        data_type: float
+      - name: valor_soma_itens
+        description: "Soma dos valores dos itens do contrato."
+        data_type: float
+      - name: valor_soma_itens_adicionais
+        description: "Soma dos valores dos itens adicionais."
+        data_type: float
+      - name: nome_adicionais
+        description: "Nome dos itens adicionais do contrato."
+        data_type: string
+      - name: desconto_total
+        description: "Total de desconto aplicado ao contrato."
+        data_type: float
+      - name: tempo_desconto
+        description: "Duração do desconto em meses."
+        data_type: long
+      - name: cupom
+        description: "Código do cupom de desconto, se houver."
+        data_type: string
+      - name: marcador_contrato
+        description: "Marcador de identificação do contrato."
+        data_type: string
+      - name: marcador_principal_cliente
+        description: "Marcador de identificação do cliente."
+        data_type: string
+      - name: marcador_secundario_cliente
+        description: "Marcador de identificação do cliente."
+        data_type: string
+      - name: marca
+        description: "Marca associada ao contrato."
+        data_type: string
+      - name: regional
+        description: "Regional à qual o contrato pertence."
+        data_type: string
+      - name: cluster
+        description: "Cluster de clientes do contrato."
+        data_type: string
+      - name: id_endereco
+        description: "Identificador do endereço do cliente."
+        data_type: long
+      - name: estado
+        description: "Estado do endereço do cliente."
+        data_type: string
+      - name: cidade
+        description: "Cidade do endereço do cliente."
+        data_type: string
+      - name: bairro
+        description: "Bairro do endereço do cliente."
+        data_type: string
+      - name: cep
+        description: "Código postal do endereço do cliente."
+        data_type: string
+      - name: logradouro
+        description: "Logradouro do endereço do cliente."
+        data_type: string
+      - name: referencia
+        description: "Referência do endereço do cliente."
+        data_type: string
+      - name: numero
+        description: "Número do endereço do cliente."
+        data_type: string
+      - name: complemento
+        description: "Complemento do endereço do cliente."
+        data_type: string
+      - name: longitude
+        description: "Coordenada geográfica de longitude do endereço."
+        data_type: float
+      - name: latitude
+        description: "Coordenada geográfica de latitude do endereço."
+        data_type: float
+      - name: onu_modelo
+        description: "Modelo do ONU (Optical Network Unit) utilizado."
+        data_type: string
+      - name: onu_serial
+        description: "Número de série do ONU utilizado."
+        data_type: string
+      - name: velocidade
+        description: "Velocidade do serviço contratado."
+        data_type: string
+      - name: mikrotik_banda
+        description: "Configuração de banda do Mikrotik."
+        data_type: string
+      - name: velocidade_down_mbps
+        description: "Velocidade de download em Mbps."
+        data_type: string
+      - name: velocidade_up_mbps
+        description: "Velocidade de upload em Mbps."
+        data_type: string
+      - name: tel_01
+        description: "Número de telefone principal do cliente."
+        data_type: string
+      - name: tel_02
+        description: "Número de telefone secundário do cliente."
+        data_type: string
+      - name: tel_03
+        description: "Número de telefone terciário do cliente."
+        data_type: string
+      - name: whatsapp
+        description: "Número de WhatsApp do cliente."
+        data_type: string
+      - name: sms
+        description: "Número para envio de SMS ao cliente."
+        data_type: string
+      - name: email
+        description: "Endereço de e-mail do cliente."
+        data_type: string
+      - name: todos_emails
+        description: "Todos os e-mails associados ao cliente."
+        data_type: string        
+      - name: id_contrato_reajuste
+        description: "Identificador do contrato de reajuste."
+        data_type: long
+      - name: data_ultimo_reajuste
+        description: "Data do último reajuste aplicado ao contrato."
+        data_type: date
+      - name: ticket_antes_reajuste
+        description: "Valor do ticket antes do reajuste."
+        data_type: float
+      - name: ticket_apos_reajuste
+        description: "Valor do ticket após o reajuste."
+        data_type: float
+      - name: aliquota_reajuste
+        description: "Alíquota de reajuste aplicada."
+        data_type: float
+      - name: data_vencimento_fidelidade
+        description: "Data de vencimento do contrato de fidelidade."
+        data_type: date
+      - name: ind_fidelizacao_atual
+        description: "Indicador de fidelização atual do cliente."
+        data_type: string
+      - name: data_atualizacao
+        description: "Data da última atualização dos dados."
+        data_type: date

@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_numero_proprio
+    description: Tabela dimensão dim_numero_proprio
+    columns:
+      - name: data_alteracao
+        data_type: string
+      - name: data_criacao
+        data_type: string
+      - name: disponivel
+        data_type: boolean
+      - name: excluido
+        data_type: boolean
+      - name: id
+        data_type: long
+      - name: id_faixa
+        data_type: long
+      - name: id_reserva
+        data_type: long
+      - name: numero
+        data_type: long
+      - name: portado
+        data_type: boolean
+      - name: quarentena
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: usuario_criacao
+        data_type: string

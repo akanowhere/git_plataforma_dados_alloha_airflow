@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_produtos_gigamaistv
+    description: Tabela stage vw_air_tbl_produtos_gigamaistv
+    columns:
+      - name: id
+        data_type: long
+      - name: marca
+        data_type: string
+      - name: produto
+        data_type: string
+      - name: codigo
+        data_type: string
+      - name: sku
+        data_type: string

@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_campanha
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: codigo
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: recorrencia_desconto
+        data_type: double
+      - name: recorrencia_vigencia
+        data_type: long
+      - name: up_operacional_vigencia
+        data_type: long
+      - name: numero_restricoes_spc
+        data_type: long
+      - name: valor_restricoes_spc
+        data_type: double
+      - name: fideliza
+        data_type: boolean
+      - name: termo_aceite
+        data_type: string
+      - name: instalacao_empresa_cnpj
+        data_type: string
+      - name: instalacao_empresa_nome
+        data_type: string
+      - name: instalacao_item_codigo
+        data_type: string
+      - name: instalacao_item_nome
+        data_type: string
+      - name: instalacao_valor
+        data_type: double
+      - name: instalacao_desconto_prazo
+        data_type: double
+      - name: instalacao_desconto_avista
+        data_type: double
+      - name: instalacao_limite_parcela
+        data_type: long
+      - name: disponivel_site
+        data_type: boolean
+      - name: ativo
+        data_type: boolean
+      - name: recorrencia_desconto_data_venda
+        data_type: boolean
+      - name: b2b
+        data_type: boolean
+      - name: data_inicio
+        data_type: date
+      - name: data_fim
+        data_type: date
+      - name: pme
+        data_type: boolean

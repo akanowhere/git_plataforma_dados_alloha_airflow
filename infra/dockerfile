@@ -1,0 +1,28 @@
+# Usa a imagem base do Apache Airflow versão 2.8.3 com Python 3.11
+FROM apache/airflow:2.8.3-python3.10
+
+# Define o usuário root como o usuário atual para poder realizar alterações no sistema
+USER root
+
+# Atualize o sistema e instale pacotes essenciais
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpq-dev && rm -rf /var/lib/apt/lists/*
+
+# Altera o usuário de volta para 'airflow' que é o padrão na imagem base do Apache Airflow
+USER airflow
+
+# Copia o arquivo de requisitos para o container para instalação posterior
+COPY requirements.txt /requirements.txt
+
+# Instala as dependências Python listadas no arquivo requirements.txt
+RUN pip install --no-cache-dir -r /requirements.txt
+
+# Define o usuário root como o usuário atual para poder realizar alterações no sistema
+USER root
+
+# Copiar o executável dbt do diretório local do usuário airflow para o diretório global
+RUN cp /home/airflow/.local/bin/dbt /usr/local/bin/dbt
+
+# Altera o usuário de volta para 'airflow'
+USER airflow

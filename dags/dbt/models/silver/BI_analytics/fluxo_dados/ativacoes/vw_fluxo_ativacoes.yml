@@ -1,0 +1,70 @@
+models:
+    - name: vw_fluxo_ativacoes
+      description: "Fluxo para analisar volumetria de ativações"
+      column:
+      - name: id_contrato
+        description: ""
+        data_type: long
+      - name: CODIGO_CONTRATO_AIR
+        description: ""
+        data_type: long
+      - name: CODIGO_CONTRATO_IXC
+        description: ""
+        data_type: long
+      - name: data_ativacao
+        description: ""
+        data_type: date
+      - name: hora_ativacao
+        description: ""
+        data_type: string
+      - name: cidade
+        description: ""
+        data_type: string
+      - name: estado
+        description: ""
+        data_type: string
+      - name: equipe
+        description: ""
+        data_type: string
+      - name: canal
+        description: ""
+        data_type: string
+      - name: nome_vendedor
+        description: ""
+        data_type: string
+      - name: marca
+        description: ""
+        data_type: string
+      - name: unidade
+        description: ""
+        data_type: string
+      - name: regional
+        description: ""
+        data_type: string
+      - name: cluster
+        description: ""
+        data_type: string
+      - name: produto
+        description: ""
+        data_type: string
+      - name: segmento
+        description: ""
+        data_type: string
+      - name: motivo_inclusao
+        description: ""
+        data_type: string
+      - name: valor_contrato
+        description: ""
+        data_type: float
+      - name: plano
+        description: ""
+        data_type: string
+      - name: legado_sistema
+        description: ""
+        data_type: string
+      - name: fonte
+        description: ""
+        data_type: string
+      - name: pacote_tv
+        description: ""
+        data_type: string

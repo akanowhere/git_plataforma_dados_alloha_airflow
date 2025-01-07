@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_chd_transferencia
+    description: Tabela stage vw_air_tbl_chd_transferencia
+    columns:
+      - name: id
+        data_type: long
+      - name: data_transferencia
+        data_type: timestamp
+      - name: id_chamado
+        data_type: long
+      - name: codigo_usuario
+        data_type: string
+      - name: id_fila_origem
+        data_type: long
+      - name: id_fila_destino
+        data_type: long

@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: dim_faturas_mailing
+    description: Tabela com informações da visão atual da fatura.
+    columns:
+      - name: id_fatura
+        data_type: string
+      - name: id_cliente_sydle
+        data_type: string
+      - name: codigo_fatura_sydle
+        data_type: string
+      - name: id_cliente_air
+        data_type: string
+      - name: cliente_data_criacao
+        data_type: string
+      - name: contrato_air
+        data_type: string
+      - name: cliente
+        data_type: string
+      - name: tipo_documento
+        data_type: string
+      - name: cpf_cnpj
+        data_type: string
+      - name: mes_referencia
+        data_type: string
+      - name: data_criacao
+        data_type: string
+      - name: data_vencimento
+        data_type: string
+      - name: data_pagamento
+        data_type: string
+      - name: data_atualizacao
+        data_type: string
+      - name: classificacao
+        data_type: string
+      - name: forma_pagamento
+        data_type: string
+      - name: beneficiario
+        data_type: string
+      - name: status_fatura
+        data_type: string
+      - name: valor_fatura
+        data_type: string
+      - name: valor_sem_multa_juros
+        data_type: string
+      - name: valor_pago
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp
+      - name: data_referencia
+        data_type: timestamp
+      - name: id_legado_fatura
+        data_type: string
+      - name: unidade_atendimento
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: data_extracao_db
+        data_type: string
+      - name: fat_cobranca
+        data_type: string
+      - name: responsavel_registro_pagamento_manual_nome
+        data_type: string
+      - name: responsavel_registro_pagamento_manual_login
+        data_type: string

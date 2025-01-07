@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dim_numero_portado
+    description: Tabela dimensão dim_numero_portado
+    columns:
+      - name: data_alteracao
+        data_type: string
+      - name: data_criacao
+        data_type: string
+      - name: data_portabilidade
+        data_type: string
+      - name: devolvido
+        data_type: boolean
+      - name: excluido
+        data_type: boolean
+      - name: id
+        data_type: long
+      - name: id_arealocal
+        data_type: long
+      - name: id_reserva
+        data_type: long
+      - name: motivo
+        data_type: string
+      - name: numero
+        data_type: long
+      - name: operadora
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: usuario_criacao
+        data_type: string

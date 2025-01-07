@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_aviso_unidade
+    description: Tabela stage vw_air_tbl_aviso_unidade
+    column:
+      - name: id_aviso
+        data_type: long
+      - name: unidades
+        data_type: string

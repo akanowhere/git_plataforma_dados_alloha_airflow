@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: air_internet
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: air_internet
+    tables:
+      - name: tbl_aviso_atividade
+      - name: tbl_aviso_unidade
+      - name: tbl_aviso
+      - name: tbl_banda
+      - name: tbl_login
+      - name: tbl_produto

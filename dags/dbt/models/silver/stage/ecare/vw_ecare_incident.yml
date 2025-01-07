@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: vw_ecare_incident
+    description: View na camada Silver, schema stage vw_stg_ecare_event
+    columns:
+      - name: id
+        data_type: long
+      - name: incident_level_id
+        data_type: long
+      - name: incident_type_id
+        data_type: long
+      - name: status
+        data_type: string
+      - name: responsible_team
+        data_type: string
+      # - name: protocol
+      #   data_type: long
+      - name: active_ura
+        data_type: boolean
+      - name: quantity_onu_affected
+        data_type: long
+      - name: pon
+        data_type: string
+      - name: slot
+        data_type: string
+      - name: olt
+        data_type: string
+      - name: description
+        data_type: string
+      - name: problem_identifier
+        data_type: string
+      - name: affected_tv
+        data_type: boolean
+      - name: affected_internet
+        data_type: boolean
+      - name: affected_phone
+        data_type: boolean
+      - name: finalized_reason
+        data_type: string
+      - name: incident_origin
+        data_type: string
+      # - name: integration_identifier
+      #   data_type: string
+      - name: estimated_resolution_at
+        data_type: timestamp
+      - name: next_interaction_at
+        data_type: timestamp
+      - name: finalized_at
+        data_type: timestamp
+      - name: updated_at
+        data_type: timestamp
+      - name: created_at
+        data_type: timestamp
+      - name: message
+        data_type: string

@@ -1,0 +1,627 @@
+models:
+  - name: dim_cliente
+    columns:
+      - name: id_cliente
+        data_type: string
+      - name: data_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: excluido
+        data_type: string
+      - name: tipo
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: grupo
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: legado_id
+        data_type: string
+      - name: legado_sistema
+        data_type: string
+      - name: integracao_status
+        data_type: string
+      - name: integracao_codigo
+        data_type: string
+      - name: marcador
+        data_type: string
+      - name: integracao_status_sydle
+        data_type: string
+      - name: cpf
+        data_type: string
+      - name: data_nascimento
+        data_type: string
+      - name: rg_numero
+        data_type: string
+      - name: rg_orgao
+        data_type: string
+      - name: estado_civil
+        data_type: string
+      - name: nome_pai
+        data_type: string
+      - name: nome_mae
+        data_type: string
+      - name: cnpj
+        data_type: string
+      - name: inscricao_estadual
+        data_type: string
+      - name: inscricao_municipal
+        data_type: string
+      - name: nome_fantasia
+        data_type: string
+      - name: atividade_principal
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz
+      - name: cupom
+        data_type: string
+      - name: fonte_air
+        data_type: string
+
+  - name: dim_endereco
+    columns:
+      - name: id_endereco
+        data_type: string
+      - name: data_criacao
+        data_type: string
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: id_cliente
+        data_type: string
+      - name: numero
+        data_type: string
+      - name: complemento
+        data_type: string
+      - name: referencia
+        data_type: string
+      - name: latitude
+        data_type: string
+      - name: longitude
+        data_type: string
+      - name: unidade
+        data_type: string
+      - name: logradouro_tipo
+        data_type: string
+      - name: logradouro
+        data_type: string
+      - name: bairro
+        data_type: string
+      - name: cep
+        data_type: string
+      - name: id_cidade
+        data_type: long
+      - name: ftta
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: codigo_ibge
+        data_type: string
+      - name: atendida
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz
+
+  - name: fato_ativacao
+    columns:
+      - name: id_contrato
+        data_type: long
+      - name: CODIGO_CONTRATO_AIR
+        data_type: long
+      - name: CODIGO_CONTRATO_IXC
+        data_type: long
+      - name: data_ativacao
+        data_type: date
+      - name: cidade
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: unidade
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: produto
+        data_type: string
+      - name: pacote_tv
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: cluster
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: legado_sistema
+        data_type: string
+      - name: legado_id
+        data_type: long
+      - name: macro_regional
+        data_type: string
+      - name: nome_regional
+        data_type: string
+      - name: data_criacao_contrato
+        data_type: timestamp
+      - name: tecnico
+        data_type: string
+      - name: terceirizada
+        data_type: string
+
+  - name: fato_base_ativos
+    columns:
+      - name: data_referencia
+        data_type: date
+      - name: qtd_ativos
+        data_type: long
+      - name: cidade
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: canal
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: unidade
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: produto
+        data_type: string
+      - name: pacote_tv
+        data_type: string
+      - name: tipo_tv
+        data_type: string
+      - name: dia_vencimento
+        data_type: long
+      - name: dia_fechamento
+        data_type: long
+      - name: segmento
+        data_type: string
+      - name: aging_meses_cat
+        data_type: string
+      - name: equipe
+        data_type: string
+      - name: cluster
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: legado_sistema
+        data_type: string
+      - name: canal_tratado
+        data_type: string
+      - name: tipo_canal
+        data_type: string
+      - name: macro_regional
+        data_type: string
+      - name: nome_regional
+        data_type: string
+
+  - name: fato_cancelamento
+    columns:
+      - name: id_contrato
+        data_type: long
+      - name: CODIGO_CONTRATO_AIR
+        data_type: long
+      - name: CODIGO_CONTRATO_IXC
+        data_type: long
+      - name: data_cancelamento
+        data_type: date
+      - name: data_ativacao
+        data_type: date
+      - name: motivo_cancelamento
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: canal
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: unidade
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: produto
+        data_type: string
+      - name: pacote_tv
+        data_type: string
+      - name: dia_fechamento
+        data_type: integer
+      - name: dia_vencimento
+        data_type: integer
+      - name: aging
+        data_type: integer
+      - name: segmento
+        data_type: string
+      - name: equipe
+        data_type: string
+      - name: tipo_cancelamento
+        data_type: string
+      - name: sub_motivo_cancelamento
+        data_type: string
+      - name: cancelamento_invol
+        data_type: string
+      - name: pacote_nome
+        data_type: string
+      - name: valor_final
+        data_type: double
+      - name: cluster
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: legado_sistema
+        data_type: string
+      - name: legado_id
+        data_type: long
+      - name: canal_tratado
+        data_type: string
+      - name: tipo_canal
+        data_type: string
+      - name: flg_fidelizado
+        data_type: string
+      - name: macro_regional
+        data_type: string
+      - name: nome_regional
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp
+      - name: aging_meses_cat
+        data_type: string
+
+  - name: fato_primeira_ativacao
+    columns:
+      - name: id_contrato
+        data_type: long
+      - name: CODIGO_CONTRATO_AIR
+        data_type: long
+      - name: CODIGO_CONTRATO_IXC
+        data_type: long
+      - name: marca
+        data_type: string
+      - name: data_ativacao
+        data_type: timestamp
+      - name: cidade
+        data_type: string
+      - name: regiao
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp
+      - name: unidade
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: produto
+        data_type: string
+      - name: pacote_tv
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: ultima_alteracao
+        data_type: timestamp
+      - name: data_utilizada
+        data_type: string
+      - name: motivo_inclusao
+        data_type: string
+      - name: valor_contrato
+        data_type: double
+      - name: plano
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: legado_sistema
+        data_type: string
+      - name: legado_id
+        data_type: long
+      - name: id_tempo
+        data_type: integer
+      - name: canal_tratado
+        data_type: string
+      - name: tipo_canal
+        data_type: string
+      - name: macro_regional
+        data_type: string
+      - name: nome_regional
+        data_type: string
+      - name: data_criacao_contrato
+        data_type: timestamp
+      - name: tecnico
+        data_type: string
+      - name: terceirizada
+        data_type: string
+
+  - name: dim_contrato
+    columns:
+      - name: id_contrato
+        data_type: long
+      - name: id_contrato_air
+        data_type: long
+      - name: id_contrato_legado
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: VERSAO_CONTRATO_AIR
+        data_type: long
+      - name: id_cliente
+        data_type: long
+      - name: pacote_codigo
+        data_type: string
+      - name: pacote_nome
+        data_type: string
+      - name: valor_base
+        data_type: double
+      - name: valor_final
+        data_type: double
+      - name: status
+        data_type: string
+      - name: id_vencimento
+        data_type: long
+      - name: dia_vencimento
+        data_type: long
+      - name: fechamento_vencimento
+        data_type: long
+      - name: id_regra_suspensao
+        data_type: long
+      - name: nome_suspensao
+        data_type: string
+      - name: grupo_cliente_suspensao
+        data_type: string
+      - name: dias_atraso_suspensao
+        data_type: long
+      - name: id_endereco_cobranca
+        data_type: long
+      - name: codigo_tipo_cobranca
+        data_type: string
+      - name: unidade_atendimento
+        data_type: string
+      - name: cancelamento_motivo
+        data_type: string
+      - name: legado_id
+        data_type: long
+      - name: legado_sistema
+        data_type: string
+      - name: marcador
+        data_type: string
+      - name: b2b
+        data_type: boolean
+      - name: pme
+        data_type: boolean
+      - name: telefone
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp
+      - name: data_alteracao_vencimento
+        data_type: timestamp
+      - name: usuario_alteracao_vencimento
+        data_type: string
+      - name: excluido_vencimento
+        data_type: boolean
+      - name: ativo_vencimento
+        data_type: boolean
+      - name: data_alteracao_suspensao
+        data_type: timestamp
+      - name: usuario_alteracao_suspensao
+        data_type: string
+      - name: excluido_suspensao
+        data_type: boolean
+      - name: ativo_suspensao
+        data_type: boolean
+      - name: data_primeira_ativacao
+        data_type: date
+      - name: data_cancelamento
+        data_type: date
+      - name: ADICIONAL_DESC
+        data_type: string
+      - name: VALOR_PADRAO_PLANO
+        data_type: double
+      - name: VALOR_ADICIONAIS
+        data_type: double
+      - name: id_campanha
+        data_type: long
+      - name: equipe
+        data_type: string
+      - name: canal
+        data_type: string
+      - name: data_venda
+        data_type: date
+      - name: flg_fidelizado
+        data_type: string
+
+  - name: dim_migracao
+    column:
+      - name: id
+        data_type: long
+      - name: data_venda
+        data_type: string
+      - name: id_venda
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: antigo_pacote_codigo
+        data_type: string
+      - name: antigo_pacote_nome
+        data_type: string
+      - name: antigo_valor
+        data_type: double
+      - name: antigo_versao
+        data_type: long
+      - name: novo_pacote_codigo
+        data_type: string
+      - name: novo_pacote_nome
+        data_type: string
+      - name: novo_valor
+        data_type: double
+      - name: novo_versao
+        data_type: long
+      - name: reprovada
+        data_type: boolean
+      - name: data_extracao
+        data_type: timestamp
+      - name: id_vendedor
+        data_type: string
+      - name: email
+        data_type: string
+
+  - name: dim_campanha
+    column:
+      - name: id_campanha
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: codigo
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: fideliza
+        data_type: boolean
+      - name: ativo
+        data_type: boolean
+      - name: b2b
+        data_type: boolean
+      - name: pme
+        data_type: boolean
+      - name: data_extracao
+        data_type: timestamp_ntz
+
+  - name: dim_cliente_evento
+    column:
+      - name: id_evento
+        data_type: long
+      - name: momento
+        data_type: timestamp
+      - name: usuario
+        data_type: string
+      - name: id_contrato
+        data_type: long
+      - name: id_cliente
+        data_type: long
+      - name: tipo
+        data_type: string
+      - name: observacao
+        data_type: string
+      - name: motivo_associado
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz
+
+  - name: dim_contrato_entrega
+    column:
+      - name: id_contrato
+        data_type: long
+      - name: id_endereco
+        data_type: long
+      - name: excluido
+        data_type: boolean
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_alteracao
+        data_type: timestamp
+      - name: data_extracao
+        data_type: timestamp_ntz
+      - name: codigo
+        data_type: string
+      - name: usuario_criacao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: instalado
+        data_type: boolean
+      - name: data_ativacao
+        data_type: timestamp
+
+  - name: dim_contrato_reajuste
+    column:
+      - name: id_contrato_reajuste
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: valor_anterior
+        data_type: decimal
+      - name: porcentagem_reajuste
+        data_type: double
+      - name: valor_final
+        data_type: decimal
+      - name: versao_contrato
+        data_type: long
+      - name: data_primeira_consulta
+        data_type: timestamp
+      - name: data_segunda_consulta
+        data_type: timestamp
+      - name: data_processamento
+        data_type: timestamp
+      - name: data_extracao
+        data_type: timestamp_ntz
+
+  - name: dim_catalogo
+    column:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: string
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: long
+      - name: codigo
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: descricao
+        data_type: string
+      - name: ordem
+        data_type: long
+      - name: cor
+        data_type: string
+      - name: icone
+        data_type: string
+      - name: ativo
+        data_type: boolean
+      - name: id_catalogo
+        data_type: long
+      - name: data_alteracao_catalogo
+        data_type: string
+      - name: usuario_alteracao_catalogo
+        data_type: string
+      - name: excluido_catalogo
+        data_type: long
+      - name: codigo_catalogo
+        data_type: string
+      - name: nome_catalogo
+        data_type: string
+      - name: descricao_catalogo
+        data_type: string
+      - name: ativo_catalogo
+        data_type: boolean
+      - name: data_extracao
+        data_type: timestamp_ntz

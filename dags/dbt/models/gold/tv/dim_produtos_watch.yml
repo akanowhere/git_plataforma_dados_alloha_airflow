@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_produtos_watch
+    description: Tabela dimensão dim_produtos_watch
+    columns:
+      - name: id
+        data_type: long
+      - name: codigo
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: produto
+        data_type: string
+      - name: sku
+        data_type: string

@@ -1,0 +1,70 @@
+models:
+  - name: vw_fluxo_contratos_sydle
+    description: "Fluxo para analisar contratos sydle"
+    column:
+      - name: codigo_contrato_sydle
+        type: string
+        description: ""
+      - name: codigo_contrato_air
+        type: string
+        description: ""
+      - name: nome_plano
+        type: string
+        description: "" 
+      - name: codigo_plano
+        type: string
+        description: "" 
+      - name: forma_pagamento
+        type: string
+        description: "" 
+      - name: cidade
+        type: string
+        description: ""
+      - name: estado
+        type: string
+        description: ""
+      - name: dia_faturamento
+        type: int
+        description: ""
+      - name: dia_vencimento
+        type: int
+        description: ""
+      - name: status_servico
+        type: string
+        description: ""
+      - name: status_faturamento
+        type: string
+        description: ""
+      - name: status_financeiro
+        type: string
+        description: ""
+      - name: data_venda
+        type: date
+        description: ""
+      - name: data_ativacao
+        type: date
+        description: ""
+      - name: tag
+        type: string
+        description: ""
+      - name: regra_suspensao
+        type: string
+        description: ""
+      - name: apto_suspensao
+        type: string
+        description: ""
+      - name: data_aptidao
+        type: string
+        description: ""
+      - name: inserido_blacklist
+        type: string
+        description: ""
+      - name: saldo_habilitacao_confianca
+        type: string
+        description: ""
+      - name: data_ultima_renovacao
+        type: date
+        description: ""
+      - name: data_ultima_habilitacao_confianca
+        type: date
+        description: ""

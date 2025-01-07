@@ -1,0 +1,91 @@
+models:
+  - name: vw_fluxo_contratos
+    description: "Fluxo para fornecer o analítico de contratos"
+    column:
+      - name: CODIGO_CLIENTE
+        description: ""
+        data_type: long
+      - name: NOME_CLIENTE
+        description: ""
+        data_type: string
+      - name: ESTADO
+        description: ""
+        data_type: string
+      - name: CIDADE
+        description: ""
+        data_type: string
+      - name: UNIDADE
+        description: ""
+        data_type: string
+      - name: BAIRRO
+        description: ""
+        data_type: string
+      - name: CODIGO_CONTRATO
+        description: ""
+        data_type: long
+      - name: PACOTE_CODIGO
+        description: ""
+        data_type: string
+      - name: PACOTE_NOME
+        description: ""
+        data_type: string
+      - name: DT_ATIVACAO_PACOTE_ATUAL
+        description: ""
+        data_type: date
+      - name: VALOR_SEM_DESCONTO
+        description: ""
+        data_type: float
+      - name: CONTRATO_STATUS
+        description: ""
+        data_type: string
+      - name: TIPO_ENCERRAMENTO
+        description: ""
+        data_type: string
+      - name: DATA_CRIACAO
+        description: ""
+        data_type: date
+      - name: DATA_ATIVACAO
+        description: ""
+        data_type: date
+      - name: DATA_CANCELAMENTO
+        description: ""
+        data_type: date
+      - name: DIA_FECHAMENTO
+        description: ""
+        data_type: int
+      - name: DIA_VENCIMENTO
+        description: ""
+        data_type: int
+      - name: MARCADOR_CONTRATO
+        description: ""
+        data_type: string
+      - name: MARCADOR_CLIENTE
+        description: ""
+        data_type: string
+      - name: USUARIO_CRIACAO
+        description: ""
+        data_type: string
+      - name: MARCA
+        description: ""
+        data_type: string
+      - name: CLUSTER
+        description: ""
+        data_type: string
+      - name: CUPOM
+        description: ""
+        data_type: string
+      - name: FIDELIZACAO
+        description: ""
+        data_type: string
+      - name: SEGMENTO
+        description: ""
+        data_type: string
+      - name: data_mudanca_status
+        description: ""
+        data_type: date
+      - name: status_anterior
+        description: ""
+        data_type: string
+      - name: codigo_tipo_cobranca
+        description: ""
+        data_type: string

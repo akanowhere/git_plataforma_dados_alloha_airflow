@@ -1,0 +1,113 @@
+models:
+  - name: base_faturas
+    column:
+      - name: id_cliente_AIR
+        data_type: long
+      - name: CODIGO_CONTRATO_AIR
+        data_type: long
+      - name: codigo_fatura_sydle
+        data_type: long
+      - name: emissao_fatura
+        data_type: timestamp
+      - name: vencimento_fatura
+        data_type: timestamp
+      - name: forma_pagamento_fatura
+        data_type: string
+      - name: data_pagamento_fatura
+        data_type: string
+      - name: mes_referencia_fatura
+        data_type: string
+      - name: mes_referencia_emissao
+        data_type: string
+      - name: dtCicloInicio
+        data_type: unknown
+      - name: dtCicloFim
+        data_type: unknown
+      - name: status_contrato
+        data_type: string
+      - name: nome_pacote
+        data_type: string
+      - name: codigo_pacote
+        data_type: string
+      - name: classificacao_fatura
+        data_type: string
+      - name: status_fatura
+        data_type: string
+      - name: data_ativacao_contrato
+        data_type: unknown
+      - name: data_cancelamento_contrato
+        data_type: string
+      - name: aging_contrato
+        data_type: long
+      - name: cidade
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: UF
+        data_type: string
+      - name: regiao
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: sub_regional
+        data_type: string
+      - name: valor_base
+        data_type: double
+      - name: valor_final
+        data_type: double
+      - name: valor_fatura
+        data_type: double
+      - name: segmento
+        data_type: string
+      - name: ciclo
+        data_type: long
+      - name: dia_vencimento
+        data_type: long
+      - name: migracao_plano
+        data_type: string
+      - name: data_migracao
+        data_type: string
+      - name: tipo_migracao
+        data_type: string
+      - name: natureza_migracao
+        data_type: string
+      - name: servicos_adicionais
+        data_type: long
+      - name: nome_servico_adicional
+        data_type: string
+      - name: valor_servico_adicional
+        data_type: string
+      - name: multa
+        data_type: long
+      - name: tipo_multa
+        data_type: string
+      - name: dias_base_calculo
+        data_type: long
+      - name: valor_dia_base_calculo
+        data_type: string
+      - name: porcentagem_desconto
+        data_type: string
+      - name: quantidade_desconto
+        data_type: string
+      - name: valor_desconto
+        data_type: string
+      - name: dias_suspensos
+        data_type: long
+      - name: valor_liquido_contrato
+        data_type: string
+      - name: id_nota_fatura
+        data_type: string
+      - name: id_nota_telecom
+        data_type: string
+      - name: id_nota_servico
+        data_type: string
+      - name: id_nota_comunicacao
+        data_type: string
+      - name: validacao_API
+        data_type: string
+      - name: valor_calculo_final_API
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp

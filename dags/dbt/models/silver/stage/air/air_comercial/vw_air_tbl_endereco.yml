@@ -1,0 +1,75 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_endereco
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_cliente
+        data_type: long
+      - name: id_logradouro
+        data_type: long
+      - name: codigo
+        data_type: string
+      - name: numero
+        data_type: string
+      - name: complemento
+        data_type: string
+      - name: referencia
+        data_type: string
+      - name: latitude
+        data_type: double
+      - name: longitude
+        data_type: double
+      - name: unidade
+        data_type: string
+      - name: ativo
+        data_type: boolean
+      - name: legado_id
+        data_type: long
+      - name: legado_sistema
+        data_type: string
+      - name: codigo_sap
+        data_type: string
+      - name: viabilidade_autorizada
+        data_type: boolean
+      - name: viabilidade_usuario
+        data_type: string
+      - name: viabilidade_data
+        data_type: timestamp
+      - name: viabilidade_justificativa
+        data_type: string
+      - name: logradouro_tipo
+        data_type: string
+      - name: logradouro
+        data_type: string
+      - name: bairro
+        data_type: string
+      - name: cep
+        data_type: string
+      - name: id_cidade
+        data_type: long
+      - name: integracao_status_estoque
+        data_type: string
+      - name: certificado
+        data_type: boolean
+      - name: verificado
+        data_type: boolean
+      - name: ftta
+        data_type: boolean
+      - name: id_condominio
+        data_type: long
+      - name: google_maps_resposta
+        data_type: string
+      - name: google_maps_status
+        data_type: string

@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: dim_client
+    description: Tabela dimensão dim_client
+    columns:
+      - name: id_cliente
+        data_type: string
+      - name: data_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: excluido
+        data_type: string
+      - name: tipo
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: grupo
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: legado_id
+        data_type: string
+      - name: legado_sistema
+        data_type: string
+      - name: integracao_status
+        data_type: string
+      - name: integracao_codigo
+        data_type: string
+      - name: marcador
+        data_type: string
+      - name: integracao_status_sydle
+        data_type: string
+      - name: cpf
+        data_type: string
+      - name: data_nascimento
+        data_type: string
+      - name: rg_numero
+        data_type: string
+      - name: rg_orgao
+        data_type: string
+      - name: estado_civil
+        data_type: string
+      - name: nome_pai
+        data_type: string
+      - name: nome_mae
+        data_type: string
+      - name: cnpj
+        data_type: string
+      - name: inscricao_estadual
+        data_type: string
+      - name: inscricao_municipal
+        data_type: string
+      - name: nome_fantasia
+        data_type: string
+      - name: atividade_principal
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz
+      - name: cupom
+        data_type: string
+      - name: fonte_air
+        data_type: string

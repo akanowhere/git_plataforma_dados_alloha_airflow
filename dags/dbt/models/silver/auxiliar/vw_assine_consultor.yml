@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: vw_assine_consultor
+    columns:
+      - name: contract_air_id
+        data_type: long
+      - name: hiring_date
+        data_type: date

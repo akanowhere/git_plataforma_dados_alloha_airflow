@@ -1,0 +1,34 @@
+{% set catalog_schema_table=source("sydle", "cliente") %}
+{% set partition_column="id_cliente" %}
+{% set order_column="data_integracao" %}
+
+WITH latest AS (
+  {{ dynamic_table_query(catalog_schema_table, partition_column, order_column) }}
+),
+
+parsed_data AS (
+  SELECT
+    id_cliente,
+    FROM_JSON(
+      redes_sociais,
+      "ARRAY<STRUCT<
+        nome: STRING,
+        url: STRING
+      >>"
+    ) AS redes_sociais
+
+  FROM latest
+),
+
+exploded_data AS (
+  SELECT
+    id_cliente,
+    item.nome,
+    item.url
+
+  FROM parsed_data
+    LATERAL VIEW EXPLODE(redes_sociais) as item
+)
+
+SELECT *
+FROM exploded_data

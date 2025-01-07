@@ -1,0 +1,79 @@
+models:
+  - name: faturas_fpd
+    column:
+      - name: contrato_air
+        data_type: string
+      - name: id_contrato_air
+        data_type: long
+      - name: fonte
+        data_type: string
+      - name: codigo_fatura_sydle
+        data_type: string
+      - name: data_criacao
+        data_type: string
+      - name: data_vencimento
+        data_type: string
+      - name: data_pagamento
+        data_type: string
+      - name: valor_sem_multa_juros
+        data_type: string
+      - name: valor_pago
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: classificacao
+        data_type: string
+      - name: status_fatura
+        data_type: string
+      - name: data_atualizacao
+        data_type: string
+      - name: dt_atualizacao_inadim
+        data_type: unknown
+      - name: dt_atualizacao_fb
+        data_type: unknown
+      - name: aging_inadim
+        data_type: long
+      - name: aging_fb
+        data_type: long
+      - name: canal_venda
+        data_type: string
+      - name: equipe_venda
+        data_type: string
+      - name: id_vendedor
+        data_type: long
+      - name: vendedor_nome
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: cluster
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: unidade
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: tipo_cliente
+        data_type: string
+      - name: data_ativacao_contrato
+        data_type: unknown
+      - name: cpf_cnpj
+        data_type: string
+      - name: FLG_FB
+        data_type: integer
+      - name: FLG_FPD1D
+        data_type: integer
+      - name: FLG_FPD5D
+        data_type: integer
+      - name: FLG_FPD10D
+        data_type: integer
+      - name: FLG_FPD15D
+        data_type: integer
+      - name: FLG_FPD20D
+        data_type: integer
+      - name: FLG_FPD30D
+        data_type: integer
+      - name: data_extracao
+        data_type: timestamp_ntz

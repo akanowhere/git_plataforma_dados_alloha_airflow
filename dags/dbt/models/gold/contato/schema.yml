@@ -1,0 +1,82 @@
+models:
+  - name: dim_contato_email
+    columns:
+      - name: id_cliente
+        data_type: string 
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_alteracao
+        data_type: timestamp
+      - name: excluido
+        data_type: string
+      - name: id_cliente
+        data_type: long
+      - name: tipo
+        data_type: string
+      - name: contato
+        data_type: string
+      - name: ativo
+        data_type: string
+      - name: confirmado
+        data_type: string
+      - name: status
+        data_type: string
+      - name: favorito
+        data_type: string
+      - name: canal_confirmacao
+        data_type: string
+      - name: data_alter_contato
+        data_type: timestamp
+      - name: data_confirmacao
+        data_type: timestamp
+      - name: origem
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp
+
+  - name: dim_contato_telefone
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_alteracao
+        data_type: timestamp
+      - name: excluido
+        data_type: string
+      - name: id_cliente
+        data_type: long
+      - name: tipo
+        data_type: string
+      - name: contato
+        data_type: string
+      - name: ativo
+        data_type: string
+      - name: confirmado
+        data_type: string
+      - name: status
+        data_type: string
+      - name: favorito
+        data_type: string
+      - name: canal_confirmacao
+        data_type: string
+      - name: data_alter_contato
+        data_type: timestamp
+      - name: data_confirmacao
+        data_type: timestamp
+      - name: origem
+        data_type: string
+      - name: fonte_contato
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp
+      - name: existe_air
+        data_type: string
+      - name: autorizado
+        data_type: string
+      - name: telefone_tratado
+        data_type: string
+      - name: classificacao_contato
+        data_type: string

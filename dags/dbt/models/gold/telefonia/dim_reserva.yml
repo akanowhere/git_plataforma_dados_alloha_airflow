@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: dim_reserva
+    description: Tabela dimensão dim_reserva
+    columns:
+      - name: chamada_cobrar
+        data_type: boolean
+      - name: cliente_nome
+        data_type: string
+      - name: contrato_codigo
+        data_type: long
+      - name: credito_dia
+        data_type: long
+      - name: credito_valor
+        data_type: long
+      - name: data_alteracao
+        data_type: string
+      - name: data_criacao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: habilitado
+        data_type: boolean
+      - name: id
+        data_type: long
+      - name: id_tarifacao
+        data_type: long
+      - name: inbound_calls_limit
+        data_type: long
+      - name: mensagem_integracao
+        data_type: string
+      - name: outbound_calls_limit
+        data_type: long
+      - name: status_integracao
+        data_type: string
+      - name: unidade_sigla
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: usuario_criacao
+        data_type: string
+      - name: vsc_ctrl_number
+        data_type: long
+      - name: vsc_senha
+        data_type: string
