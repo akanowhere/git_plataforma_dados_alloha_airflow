@@ -1,0 +1,39 @@
+models:
+  - name: tbl_venda_hora
+    columns:
+      - name: data_criacao
+        data_type: timestamp
+      - name: id_contrato_air
+        data_type: long
+      - name: equipe
+        data_type: string
+      - name: canal_tratado
+        data_type: string
+      - name: valor_final
+        data_type: double
+      - name: fonte
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: macro_regional
+        data_type: string
+      - name: nome_regional
+        data_type: string
+      - name: legado_id
+        data_type: long
+      - name: legado_sistema
+        data_type: string
+      - name: cupom
+        data_type: string
+      - name: cupom_valido
+        data_type: integer
+      - name: segmento
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz
+      - name: cidade
+        data_type: string
+      - name: estado
+        data_type: string

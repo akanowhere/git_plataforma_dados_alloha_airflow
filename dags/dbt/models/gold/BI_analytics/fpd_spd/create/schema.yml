@@ -1,0 +1,175 @@
+
+models:
+  - name: tbl_fpd_spd
+    columns:
+      - name: marca
+        type: string
+        description: ""
+      - name: fonte
+        type: string
+        description: ""
+      - name: contrato
+        type: long
+        description: ""
+      - name: codigo_contrato_air
+        type: long
+        description: ""
+      - name: cpf_cnpj
+        type: string
+        description: ""
+      - name: data_ativacao
+        type: date
+        description: ""
+      - name: codigo_vendedor
+        type: long
+        description: ""
+      - name: vendedor
+        type: string
+        description: ""
+      - name: equipe
+        type: string
+        description: ""
+      - name: canal_tratado
+        type: string
+        description: ""
+      - name: unidade
+        type: string
+        description: ""
+      - name: uf
+        type: string
+        description: ""
+      - name: cidade
+        type: string
+        description: ""
+      - name: bairro
+        type: string
+        description: ""
+      - name: cep
+        type: string
+        description: ""
+      - name: logradouro
+        type: string
+        description: ""
+      - name: numero
+        type: string
+        description: ""
+      - name: complemento
+        type: string
+        description: ""
+      - name: referencia
+        type: string
+        description: ""
+      - name: contrato_fonte
+        type: string
+        description: ""
+      - name: macro_regional
+        type: string
+        description: ""
+      - name: regional
+        type: string
+        description: ""
+      - name: sub_regional
+        type: string
+        description: ""
+      - name: codigo_fatura_sydle
+        type: long
+        description: ""
+      - name: codigo_fatura
+        type: long
+        description: ""
+      - name: data_vencimento
+        type: date
+        description: ""
+      - name: data_pagamento
+        type: date
+        description: ""
+      - name: data_primeiro_pagamento
+        type: date
+        description: ""
+      - name: status_fatura
+        type: string
+        description: ""
+      - name: valor_fatura
+        type: double
+        description: ""
+      - name: data_cancelamento_fatura
+        type: date
+        description: ""
+      - name: mes_vencimento
+        type: string
+        description: ""
+      - name: aging_inadim
+        type: int
+        description: ""
+      - name: aging
+        type: int
+        description: ""
+      - name: flag_fb
+        type: bool
+        description: ""
+      - name: flag_fpd
+        type: bool
+        description: ""
+      - name: flag_fpd30d
+        type: bool
+        description: ""
+      - name: flag_fb30d
+        type: bool
+        description: ""
+      - name: flag_fpd20d
+        type: bool
+        description: ""
+      - name: flag_fb20d
+        type: bool
+        description: ""
+      - name: flag_fpd10d
+        type: bool
+        description: ""
+      - name: flag_fb10d
+        type: bool
+        description: ""
+      - name: codigo_segunda_fatura
+        type: long
+        description: ""
+      - name: codigo_segunda_fatura_sydle
+        type: long
+        description: ""
+      - name: status_segunda_fatura
+        type: string
+        description: ""
+      - name: data_vencimento_segunda_fatura
+        type: date
+        description: ""
+      - name: data_pagamento_segunda_fatura
+        type: date
+        description: ""
+      - name: valor_fatura_segunda_fatura
+        type: double
+        description: ""
+      - name: data_cancelamento_segunda_fatura
+        type: date
+        description: ""
+      - name: flag_spd30d
+        type: bool
+        description: ""
+      - name: flag_sb30d
+        type: bool
+        description: ""
+      - name: aging_inadim_segunda_fatura
+        type: int
+        description: ""
+      - name: aging_segunda_fatura
+        type: int
+        description: ""
+      - name: flag_never_paid
+        type: bool
+        description: ""
+      - name: flg_over30m6
+        type: bool
+        description: ""     
+      - name: data_referencia
+        type: date
+        description: ""
+      - name: data_atualizacao
+        type: timestamp
+        description: ""

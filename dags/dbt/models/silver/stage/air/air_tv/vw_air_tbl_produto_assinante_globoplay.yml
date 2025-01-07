@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_produto_assinante_globoplay
+    description: Tabela stage vw_air_tbl_produto_assinante_globoplay
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: cliente_id
+        data_type: long
+      - name: contrato_id
+        data_type: long
+      - name: cpf_cnpj
+        data_type: string
+      - name: produto_id
+        data_type: string
+      - name: ativo
+        data_type: boolean
+      - name: integracao_hub_status
+        data_type: string
+      - name: integracao_transacao
+        data_type: string
+      - name: integracao_status
+        data_type: string
+      - name: integracao_mensagem
+        data_type: string

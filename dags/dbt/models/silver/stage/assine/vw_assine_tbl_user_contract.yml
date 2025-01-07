@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: vw_assine_tbl_user_contract
+    columns:
+      - name: id
+        data_type: long
+      - name: user_id
+        data_type: long
+      - name: checkout_id
+        data_type: long
+      - name: client_air_id
+        data_type: long
+      - name: hiring_date
+        data_type: date
+      - name: status
+        data_type: string
+      - name: partner_id
+        data_type: string
+      - name: contract_air_id
+        data_type: long
+      - name: lomadee_partner_id
+        data_type: string

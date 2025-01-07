@@ -1,0 +1,58 @@
+version: 2
+
+models:
+  - name: fato_chamadas_ativas_voz
+    description: Tabela fato de chamadas ativas de mídia voz
+    column:
+      - name: sk_chamada
+        data_type: string
+      - name: id_chamada
+        data_type: string
+      - name: data_inicio_chamada
+        data_type: timestamp
+      - name: campanha
+        data_type: string
+      - name: agente
+        data_type: string
+      - name: posicao
+        data_type: string
+      - name: classificacao_grupo_a
+        data_type: string
+      - name: classificacao_grupo_b
+        data_type: string
+      - name: classificacao_grupo_c
+        data_type: string
+      - name: cliente
+        data_type: string
+      - name: contrato
+        data_type: integer
+      - name: cpf_cnpj
+        data_type: string
+      - name: origem
+        data_type: string
+      - name: destino
+        data_type: string
+      - name: transferencias
+        data_type: integer
+      - name: abandonada
+        data_type: integer
+      - name: tipo_chamada
+        data_type: string
+      - name: tempo_chamada
+        data_type: string
+      - name: tempo_ivr
+        data_type: string
+      - name: tempo_conversa
+        data_type: string
+      - name: tempo_discagem
+        data_type: string
+      - name: id_fatura
+        data_type: integer
+      - name: marca
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: motivo_retencao_ura
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp

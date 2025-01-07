@@ -1,0 +1,30 @@
+models:
+  - name: seed_fator_vendas
+    column:
+      - name: data
+        data_type: date 
+      - name: fator
+        data_type: double 
+
+  - name: seed_metas
+    column:
+      - name: data_inicio
+        data_type: string 
+      - name: data_fim
+        data_type: string 
+      - name: regional
+        data_type: string 
+      - name: canal
+        data_type: string 
+      - name: equipe
+        data_type: string 
+      - name: meta
+        data_type: string 
+      - name: data_referencia
+        data_type: string 
+      - name: responsavel
+        data_type: string 
+      - name: cluster
+        data_type: string 
+      - name: Marca
+        data_type: string 

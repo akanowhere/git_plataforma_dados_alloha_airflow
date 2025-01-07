@@ -1,0 +1,103 @@
+models:
+  - name: vw_fluxo_desconexoes
+    description: "Fluxo de desconexões dos contratos do air"
+    column:
+      - name: id_contrato
+        description: ""
+        data_type: long
+      - name: CODIGO_CONTRATO_AIR
+        description: ""
+        data_type: long
+      - name: CODIGO_CONTRATO_IXC
+        description: ""
+        data_type: long
+      - name: data_cancelamento
+        description: ""
+        data_type: date
+      - name: data_ativacao
+        description: ""
+        data_type: date
+      - name: motivo_cancelamento
+        description: ""
+        data_type: string
+      - name: cidade
+        description: ""
+        data_type: string
+      - name: estado
+        description: ""
+        data_type: string
+      - name: canal
+        description: ""
+        data_type: string
+      - name: marca
+        description: ""
+        data_type: string
+      - name: unidade
+        description: ""
+        data_type: string
+      - name: regional
+        description: ""
+        data_type: string
+      - name: produto
+        description: ""
+        data_type: string
+      - name: pacote_tv
+        description: ""
+        data_type: string
+      - name: dia_fechamento
+        description: ""
+        data_type: int
+      - name: dia_vencimento
+        description: ""
+        data_type: int
+      - name: aging
+        description: ""
+        data_type: int
+      - name: segmento
+        description: ""
+        data_type: string
+      - name: equipe
+        description: ""
+        data_type: string
+      - name: tipo_cancelamento
+        description: ""
+        data_type: string
+      - name: sub_motivo_cancelamento
+        description: ""
+        data_type: string
+      - name: cancelamento_invol
+        description: ""
+        data_type: string
+      - name: pacote_nome
+        description: ""
+        data_type: string
+      - name: valor_final
+        description: ""
+        data_type: float
+      - name: cluster
+        description: ""
+        data_type: string
+      - name: fonte
+        description: ""
+        data_type: string
+      - name: legado_sistema
+        description: ""
+        data_type: string
+      - name: legado_id
+        description: ""
+        data_type: long
+      - name: canal_tratado
+        description: ""
+        data_type: string
+      - name: tipo_canal
+        description: ""
+        data_type: string
+      - name: aging_meses_cat
+        description: ""
+        data_type: string
+      - name: flg_fidelizado
+        description: ""
+        data_type: string
+      - name: codigo_cliente_air
+        description: ""
+        data_type: long

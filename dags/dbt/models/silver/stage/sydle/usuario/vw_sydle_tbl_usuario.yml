@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_usuario
+    columns:
+      - name: id_usuario
+        data_type: string
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_alteracao
+        data_type: timestamp
+      - name: ativo
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: login
+        data_type: string
+      - name: email
+        data_type: string
+      - name: data_integracao
+        data_type: timestamp

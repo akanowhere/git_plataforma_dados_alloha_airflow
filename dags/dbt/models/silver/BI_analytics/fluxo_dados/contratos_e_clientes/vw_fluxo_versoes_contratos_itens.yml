@@ -1,0 +1,28 @@
+models:
+  - name: vw_fluxo_versoes_contratos_itens
+    description: "View para análise de contratos e produtos com informações de SVA e valores associados."
+    column:
+      - name: contrato_air
+        type: int
+        description: "ID do contrato no sistema AIR."
+      - name: versao_contrato
+        type: int
+        description: "Versão do contrato."
+      - name: tipo_versao
+        type: string
+        description: "Indica se é um novo contrato ou uma migração."
+      - name: data_criacao
+        type: date
+        description: "Data de criação do contrato."
+      - name: item_nome
+        type: string
+        description: "Nome do item associado ao contrato."
+      - name: valor_item
+        type: decimal
+        description: "Valor final do item no contrato."
+      - name: sva
+        type: string
+        description: "Descrição do Serviço de Valor Agregado (SVA) associado ao item."
+      - name: sku
+        type: string
+        description: "Código SKU do produto relacionado ao item."

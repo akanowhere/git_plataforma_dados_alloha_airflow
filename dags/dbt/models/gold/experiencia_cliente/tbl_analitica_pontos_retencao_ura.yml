@@ -1,0 +1,62 @@
+version: 2
+
+models:
+  - name: tbl_analitica_pontos_retencao_ura
+    description: Tabela analítica de pontos de retenção de ura da área de experiência do cliente
+    column:
+      - name: id_chamada
+        data_type: string
+      - name: data_chamada
+        data_type: date
+      - name: campanha
+        data_type: string
+      - name: agente
+        data_type: string
+      - name: competencia
+        data_type: string
+      - name: posicao
+        data_type: string
+      - name: tipo_midia
+        data_type: string
+      - name: cpf_cnpj
+        data_type: string
+      - name: id_cliente
+        data_type: string
+      - name: id_contrato
+        data_type: integer
+      - name: cidade
+        data_type: string
+      - name: unidade_atendimento
+        data_type: string
+      - name: id_condicao_desligamento
+        data_type: integer
+      - name: condicao_desligamento
+        data_type: string
+      - name: motivo_retencao_ura
+        data_type: string
+      - name: flg_cham_recebidas
+        data_type: integer
+      - name: flg_cham_derivadas_humano
+        data_type: integer
+      - name: flg_cham_abandonadas
+        data_type: integer
+      - name: flg_cham_desistencia
+        data_type: integer
+      - name: flg_cham_fora_horario
+        data_type: integer
+      - name: flg_cham_retidas
+        data_type: integer
+      - name: flg_cham_retidas_autosservicos
+        data_type: integer
+      - name: flg_cham_retidas_engajamento_app_wpp
+        data_type: integer
+      - name: flg_cham_repetidas_24h
+        data_type: integer
+      - name: flg_cham_repetidas_dia_corrente
+        data_type: integer
+      - name: tempo_ivr_seg
+        data_type: integer
+      - name: marca
+        data_type: string
+      - name: fonte
+        data_type: string

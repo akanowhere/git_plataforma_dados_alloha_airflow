@@ -1,0 +1,38 @@
+models:
+  - name: tbl_contratos_ott_desativados
+    description: "Tabela contendo informações de assinantes não ativados ou cancelados para diferentes serviços OTT (Watch, YouCast, Globoplay, Skeelo, Giga+TV) com base na última versão da assinatura e status de integração."
+    columns:
+      - name: provedor
+        description: "Nome do provedor OTT (Watch, YouCast, Globoplay, Skeelo, Giga+TV)."
+        data_type: string
+      - name: data_criacao
+        description: "Data de criação da assinatura do serviço OTT."
+        data_type: timestamp
+      - name: data_alteracao
+        description: "Data da última alteração registrada na assinatura."
+        data_type: timestamp
+      - name: cliente_id
+        description: "Identificador único do cliente no serviço OTT."
+        data_type: long
+      - name: contrato_id
+        description: "Identificador único do contrato no serviço OTT."
+        data_type: long
+      - name: cpf_cnpj
+        description: "Número do CPF ou CNPJ do cliente."
+        data_type: long
+      - name: produto_id
+        description: "Identificador do produto OTT associado à assinatura."
+        data_type: string
+      - name: ativo
+        description: "Status de atividade da assinatura (0: inativo, 1: ativo)."
+        data_type: boolean
+      - name: integracao_hub_status
+        description: "Status da integração da assinatura com o hub ('activate', 'cancel')."
+        data_type: string
+      - name: integracao_transacao
+        description: "Informações sobre a transação de integração da assinatura."
+        data_type: string
+      - name: data_referencia
+        description: "Data de referência da consulta, que corresponde à data de execução menos um dia."
+        data_type: date
+

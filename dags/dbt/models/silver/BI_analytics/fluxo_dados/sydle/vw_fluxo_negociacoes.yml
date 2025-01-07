@@ -1,0 +1,46 @@
+models:
+  - name: vw_fluxo_negociacoes
+    description: "Fluxo que disponibiliza dados referentes ao processo de negociações de faturas"
+    column:
+      - name: codigo_negociacao 
+        description: "ID de identificação gerado na negociação"
+        data_type: string 
+      - name: codigo_contrato_air 
+        description: "Código do contrato no Air"
+        data_type: long 
+      - name: codigo_fatura
+        description:  "Código da fatura gerada na negociação"    
+        data_type: long
+      - name: valor_fatura
+        description: "Valor da fatura gerada na negociação descontado a multa de atraso ou juros caso tenha"    
+        data_type: double
+      - name: status_fatura
+        description: "Status da fatura gerada na negociação"  
+        data_type: string
+      - name: data_vencimento_fatura
+        description: "Data de vencimento da fatura gerada na negociação"  
+        data_type: date
+      - name: codigo_fatura_original 
+        description: "Código da fatura Pai que gerou a negociação"
+        data_type: long 
+      - name: valor_fatura_original 
+        description: "Valor da fatura Pai descontado a multa de atraso ou juros caso tenha"   
+        data_type: double
+      - name: data_vencimento_fatura_original 
+        description: "Data do vencimento da fatura Pai"
+        data_type: date
+      - name: classificacao_fatura_original 
+        description: "Flag para determinar o tipo de fatura Ex: Inicial, Final, Periódica..."
+        data_type: string
+      - name: codigo_negociador 
+        description: "ID de identificação do negociador na sydle"
+        data_type: string
+      - name: nome_negociador 
+        description: "Nome do negociador"
+        data_type: string
+      - name: data_negociacao 
+        description: "Data em que a fatura negociação foi gerada"
+        data_type: date
+      - name: data_referencia 
+        description: "Data de referencia"
+        data_type: date

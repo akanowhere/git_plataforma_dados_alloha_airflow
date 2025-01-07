@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: hub_sva_public
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: hub_sva_public
+    tables:
+      - name: orders
+      - name: customers
+      - name: products
+      - name: providers
+      - name: brands
+      - name: partners

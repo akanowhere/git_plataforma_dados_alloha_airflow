@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_contrato_retencao
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_contrato
+        data_type: long
+      - name: quantidade_contato
+        data_type: long
+      - name: status
+        data_type: string
+      - name: usuario_atribuido
+        data_type: string
+      - name: motivo_solicitacao
+        data_type: string
+      - name: oferta_incentivo
+        data_type: boolean
+      - name: setor_origem
+        data_type: string
+      - name: observacao
+        data_type: string
+      - name: motivo_investigado
+        data_type: string
+      - name: data_reversao_cancelamento
+        data_type: timestamp
+      - name: desconto_aplicado
+        data_type: double
+      - name: sub_motivo_cancelamento
+        data_type: string
+      - name: origem_contato
+        data_type: string

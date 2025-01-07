@@ -1,0 +1,88 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_venda
+    description: Tabela stage vw_air_tbl_venda
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: natureza
+        data_type: string
+      - name: fase_atual
+        data_type: string
+      - name: id_vendedor
+        data_type: long
+      - name: id_lead
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: id_regra_suspensao
+        data_type: long
+      - name: id_vencimento
+        data_type: long
+      - name: id_endereco
+        data_type: long
+      - name: id_analise_credito
+        data_type: long
+      - name: unidade_atendimento
+        data_type: string
+      - name: cod_tipo_cobranca
+        data_type: string
+      - name: data_venda
+        data_type: date
+      - name: observacao
+        data_type: string
+      - name: portabilidade_numero
+        data_type: string
+      - name: pacote_base_nome
+        data_type: string
+      - name: pacote_base_codigo
+        data_type: string
+      - name: pacote_valor_total
+        data_type: double
+      - name: valor_comissao
+        data_type: double
+      - name: concretizada
+        data_type: boolean
+      - name: confirmada
+        data_type: boolean
+      - name: valor_total
+        data_type: double
+      - name: possui_internet
+        data_type: boolean
+      - name: possui_tv
+        data_type: boolean
+      - name: possui_telefone
+        data_type: boolean
+      - name: quantidade_parcela_instalacao
+        data_type: long
+      - name: cancelada
+        data_type: boolean
+      - name: recorrencia_percentual_desconto
+        data_type: double
+      - name: recorrencia_meses_desconto
+        data_type: long
+      - name: equipe
+        data_type: string
+      - name: upgrade_logico
+        data_type: boolean
+      - name: possui_taxa_instalacao_antecipada
+        data_type: boolean
+      - name: agencia
+        data_type: string
+      - name: conta_corrente
+        data_type: string
+      - name: id_processo_venda_sydle
+        data_type: string
+      - name: valor_referencia_b2b
+        data_type: double

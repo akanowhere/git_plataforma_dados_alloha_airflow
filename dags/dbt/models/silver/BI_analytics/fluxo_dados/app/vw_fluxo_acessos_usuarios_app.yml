@@ -1,0 +1,25 @@
+models:
+  - name: vw_fluxo_acessos_usuarios_app
+    description: "Fluxo para analisar Acessos no APP"
+    column:
+      - name: Datahora
+        description: ""
+        data_type: string
+      - name: sessions_id
+        description: ""
+        data_type: string
+      - name: Documento
+        description: ""
+        data_type: string
+      - name: Marca
+        description: ""
+        data_type: string
+      - name: Plataforma
+        description: ""
+        data_type: string
+      - name: Origem
+        description: ""
+        data_type: string
+      - name: IdContrato
+        description: ""
+        data_type: string

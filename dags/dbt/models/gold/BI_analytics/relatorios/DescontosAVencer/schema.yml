@@ -1,0 +1,88 @@
+models:
+  - name: tbl_descontos_consolidados
+    columns:
+      - name: codigo_contrato_air
+        description: "Identificador do contrato no sistema AIR."
+        data_type: long
+      - name: status_contrato
+        description: "Status atual do contrato (ex: Ativo, Cancelado, Suspenso)."
+        data_type: string
+      - name: marca
+        description: "Marca associada ao contrato."
+        data_type: string
+      - name: codigo_pacote
+        description: "Código do pacote associado ao contrato."
+        data_type: string
+      - name: nome_pacote
+        description: "Nome do pacote associado ao contrato."
+        data_type: string
+      - name: valor_final
+        description: "Valor final do contrato, considerando todos os descontos aplicados."
+        data_type: double
+      - name: flag_desconto_campanha
+        description: "Indica se o contrato possui desconto de campanha (1 = Sim, 0 = Não)."
+        data_type: bool
+      - name: desconto_campanha_vencido
+        description: "Valor total vencido relacionado a campanhas."
+        data_type: double
+      - name: desconto_campanha_a_vencer
+        description: "Valor total a vencer relacionado a campanhas."
+        data_type: double
+      - name: data_vencimento_desconto_campanha
+        description: "Data de vencimento do desconto de campanha."
+        data_type: date
+      - name: mes_vencimento_desconto_campanha
+        description: "Mês e ano de vencimento da campanha no formato MM/yyyy."
+        data_type: string
+      - name: data_vencimento_desconto_campanha_6m
+        description: "Data de vencimento do desconto de campanha adicionando 6 meses."
+        data_type: date
+      - name: flag_outros_descontos
+        description: "Indica se o contrato possui outros tipos de desconto (1 = Sim, 0 = Não)."
+        data_type: bool
+      - name: desconto_outros_vencido
+        description: "Valor total vencido de outros tipos de desconto."
+        data_type: double
+      - name: desconto_outros_a_vencer
+        description: "Valor total a vencer de outros tipos de desconto."
+        data_type: double
+      - name: data_vencimento_desconto_outros
+        description: "Data de vencimento de outros descontos."
+        data_type: date
+      - name: mes_vencimento_desconto_outros
+        description: "Mês e ano de vencimento de outros descontos no formato MM/yyyy."
+        data_type: string
+      - name: data_vencimento_desconto_outros_6m
+        description: "Data de vencimento de outros descontos adicionando 6 meses."
+        data_type: date
+      - name: ultimo_mes_desconto
+        description: "Último mês considerado entre os vencimentos de campanhas e outros descontos, com 6 meses adicionados."
+        data_type: string
+      - name: data_vencimento_desconto_ajuste_comercial
+        description: "Data de vencimento do ajuste comercial."
+        data_type: date
+      - name: mes_vencimento_desconto_ajuste_comercial
+        description: "Mês e ano de vencimento do ajuste comercial, no formato MM/yyyy."
+        data_type: string
+      - name: data_vencimento_desconto_retencao
+        description: "Data de vencimento do desconto de retenção."
+        data_type: date
+      - name: mes_vencimento_desconto_retencao
+        description: "Mês e ano de vencimento do desconto de retenção, no formato MM/yyyy."
+        data_type: string
+      - name: data_vencimento_desconto_cortesia
+        description: "Data de vencimento do desconto de cortesia."
+        data_type: date
+      - name: mes_vencimento_desconto_cortesia
+        description: "Mês e ano de vencimento do desconto de cortesia, no formato MM/yyyy."
+        data_type: string
+      - name: data_vencimento_desconto_ajuste_financeiro
+        description: "Data de vencimento do ajuste financeiro."
+        data_type: date
+      - name: mes_vencimento_desconto_ajuste_financeiro
+        description: "Mês e ano de vencimento do ajuste financeiro, no formato MM/yyyy."
+        data_type: string
+      - name: data_referencia
+        description: "Data de referência, sendo o dia anterior à data atual."
+        data_type: date
+

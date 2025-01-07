@@ -1,0 +1,49 @@
+models:
+  - name: vw_fluxo_faturas_abertas_b2b
+    description: "Fluxo para analisar criterios de faturas abertas B2B"
+    column:
+      - name: fonte
+        description: ""
+        data_type: string
+      - name: segmento
+        description: ""
+        data_type: string
+      - name: contrato_air
+        description: ""
+        data_type: long
+      - name: id_cliente_air
+        description: ""
+        data_type: long
+      - name: codigo_fatura_sydle
+        description: ""
+        data_type: long
+      - name: status_fatura
+        description: ""
+        data_type: string
+      - name: classificacao
+        description: ""
+        data_type: string
+      - name: data_criacao
+        description: ""
+        data_type: date
+      - name: data_vencimento
+        description: ""
+        data_type: date
+      - name: data_pagamento
+        description: ""
+        data_type: date
+      - name: valor_sem_multa_juros
+        description: ""
+        data_type: float
+      - name: valor_pago
+        description: ""
+        data_type: float
+      - name: beneficiario
+        description: ""
+        data_type: string
+      - name: mes_referencia
+        description: ""
+        data_type: string
+      - name: data_atualizacao_fluxo
+        description: ""
+        data_type: date

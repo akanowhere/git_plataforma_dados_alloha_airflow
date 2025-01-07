@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_outros_marcadores
+    description: Tabela dimensão com informações sobre marcadores de clientes no air.
+    column:
+      - name: id
+        data_type: long
+      - name: id_cliente
+        data_type: long
+      - name: marcador
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz

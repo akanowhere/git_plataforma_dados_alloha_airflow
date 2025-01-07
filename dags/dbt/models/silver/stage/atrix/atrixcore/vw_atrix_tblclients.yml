@@ -1,0 +1,302 @@
+version: 2
+
+models:
+  - name: vw_atrix_tblclients
+    columns:
+      - name: _cost_center
+        data_type: string
+      - name: _data_source
+        data_type: string
+      - name: _qtd_rows
+        data_type: long
+      - name: _source_type
+        data_type: string
+      - name: _system_owner
+        data_type: string
+      - name: accountmainid
+        data_type: long
+      - name: accountmodelid
+        data_type: long
+      - name: acquisition
+        data_type: long
+      - name: address1
+        data_type: string
+      - name: address2
+        data_type: string
+      - name: allow_sso
+        data_type: boolean
+      - name: authdata
+        data_type: string
+      - name: authmodule
+        data_type: string
+      - name: bankacct
+        data_type: string
+      - name: bankcode
+        data_type: string
+      - name: bankname
+        data_type: string
+      - name: banktype
+        data_type: string
+      - name: billingaddress
+        data_type: string
+      - name: billingautomatic
+        data_type: long
+      - name: billingcid
+        data_type: long
+      - name: billingcity
+        data_type: string
+      - name: billingcomplement
+        data_type: string
+      - name: billingneighbor
+        data_type: string
+      - name: billingnumber
+        data_type: long
+      - name: billingpostcode
+        data_type: string
+      - name: billingstate
+        data_type: string
+      - name: cardlastfour
+        data_type: string
+      - name: cardnum
+        data_type: string
+      - name: cardtype
+        data_type: string
+      - name: carnetgeneration
+        data_type: boolean
+      - name: carnetgenerationbkp
+        data_type: long
+      - name: city
+        data_type: string
+      - name: cityid
+        data_type: long
+      - name: classification
+        data_type: string
+      - name: collectionpartnerid
+        data_type: long
+      - name: companyname
+        data_type: string
+      - name: complement
+        data_type: string
+      - name: contractaccept
+        data_type: boolean
+      - name: contractid
+        data_type: long
+      - name: contractstage
+        data_type: boolean
+      - name: country
+        data_type: string
+      - name: created_at
+        data_type: string
+      - name: credit
+        data_type: double
+      - name: currency
+        data_type: long
+      - name: dateborn
+        data_type: string
+      - name: datecreated
+        data_type: string
+      - name: defaultgateway
+        data_type: string
+      - name: disableautocc
+        data_type: boolean
+      - name: dlin
+        data_type: long
+      - name: document
+        data_type: string
+      - name: email
+        data_type: string
+      - name: email2
+        data_type: string
+      - name: email_verified
+        data_type: boolean
+      - name: emailcount
+        data_type: long
+      - name: emailoptout
+        data_type: long
+      - name: erpid
+        data_type: long
+      - name: expdate
+        data_type: string
+      - name: filepath
+        data_type: string
+      - name: firstname
+        data_type: string
+      - name: fiscaladdress
+        data_type: string
+      - name: fiscalcity
+        data_type: string
+      - name: fiscalcomplement
+        data_type: string
+      - name: fiscalneighbor
+        data_type: string
+      - name: fiscalnumber
+        data_type: long
+      - name: fiscalpostcode
+        data_type: string
+      - name: fiscalstate
+        data_type: string
+      - name: gatewayid
+        data_type: string
+      - name: groupid
+        data_type: long
+      - name: has_privacy_policy
+        data_type: long
+      - name: hascredit
+        data_type: long
+      - name: host
+        data_type: string
+      - name: howourmeetid
+        data_type: long
+      - name: id
+        data_type: long
+      - name: id_integrator
+        data_type: long
+      - name: idcondominium
+        data_type: long
+      - name: imgprofile
+        data_type: string
+      - name: integrated
+        data_type: boolean
+      - name: integratedlivefc
+        data_type: boolean
+      - name: ip
+        data_type: string
+      - name: ismatriz
+        data_type: boolean
+      - name: isprovider
+        data_type: long
+      - name: issuenumber
+        data_type: string
+      - name: language
+        data_type: string
+      - name: lastlogin
+        data_type: string
+      - name: lastname
+        data_type: string
+      - name: lastupdateerp
+        data_type: string
+      - name: latefeeoveride
+        data_type: boolean
+      - name: legacyid
+        data_type: string
+      - name: legacysystem
+        data_type: string
+      - name: livefcmailsent
+        data_type: boolean
+      - name: mailinvalid
+        data_type: long
+      - name: manageraccount
+        data_type: long
+      - name: namefather
+        data_type: string
+      - name: namemother
+        data_type: string
+      - name: nameprovider
+        data_type: string
+      - name: noteinsidemonth
+        data_type: long
+      - name: notes
+        data_type: string
+      - name: number
+        data_type: string
+      - name: opening_hours
+        data_type: string
+      - name: overideduenotices
+        data_type: boolean
+      - name: overrideautoclose
+        data_type: long
+      - name: password
+        data_type: string
+      - name: phonenumber
+        data_type: string
+      - name: phonenumber2
+        data_type: string
+      - name: postcode
+        data_type: string
+      - name: postponedInvoiceMonth
+        data_type: long
+      - name: premium
+        data_type: boolean
+      - name: previousdaybilling
+        data_type: long
+      - name: print_invoice
+        data_type: string
+      - name: priority
+        data_type: boolean
+      - name: prospect
+        data_type: long
+      - name: pwresetexpiry
+        data_type: string
+      - name: pwresetkey
+        data_type: string
+      - name: receivemethodid
+        data_type: long
+      - name: recovery_token
+        data_type: string
+      - name: reference
+        data_type: string
+      - name: registration_county
+        data_type: string
+      - name: registration_state
+        data_type: string
+      - name: remessa_migracao
+        data_type: string
+      - name: rg
+        data_type: string
+      - name: room
+        data_type: string
+      - name: rownum1
+        data_type: long
+      - name: rownum2
+        data_type: long
+      - name: sapid
+        data_type: string
+      - name: securityqans
+        data_type: string
+      - name: securityqid
+        data_type: long
+      - name: segmentid
+        data_type: long
+      - name: sendemailcrm
+        data_type: boolean
+      - name: separateinvoices
+        data_type: boolean
+      - name: spc_serasa
+        data_type: string
+      - name: startdate
+        data_type: string
+      - name: state
+        data_type: string
+      - name: status
+        data_type: string
+      - name: supportexclusive
+        data_type: string
+      - name: taxexempt
+        data_type: boolean
+      - name: typeaddress
+        data_type: string
+      - name: typeclient
+        data_type: string
+      - name: updated_at
+        data_type: string
+      - name: uuid
+        data_type: string
+      - name: waysign
+        data_type: string
+      - name: whatsapp_phone
+        data_type: string
+      - name: _metadata
+        data_type: struct
+        column:
+          - name: file_path
+            data_type: string
+          - name: file_name
+            data_type: string
+          - name: file_size
+            data_type: long
+          - name: file_block_start
+            data_type: long
+          - name: file_block_length
+            data_type: long
+          - name: file_modification_time
+            data_type: timestamp

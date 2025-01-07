@@ -1,0 +1,243 @@
+models:
+  - name: base_cadastro
+    column:
+      - name: id_cliente_air
+        data_type: long
+      - name: contrato_air
+        data_type: long
+      - name: status_contrato
+        data_type: string
+      - name: data_abertura_cadastro
+        data_type: timestamp
+      - name: ativacao_contrato
+        data_type: unknown
+      - name: data_cancelamento_contrato
+        data_type: unknown
+      - name: dia_vencimento
+        data_type: long
+      - name: fechamento_vencimento
+        data_type: long
+      - name: login_contrato
+        data_type: string
+      - name: num_cpf_cnpj
+        data_type: string
+      - name: nome_cliente
+        data_type: string
+      - name: data_nascimento
+        data_type: string
+      - name: tipo_pessoa
+        data_type: string
+      - name: tipo_negocio
+        data_type: string
+      - name: canal_venda
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: Regiao
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: sub_regional
+        data_type: string
+      - name: cep
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: latitude
+        data_type: string
+      - name: longitude
+        data_type: string
+      - name: email_air_1
+        data_type: string
+      - name: email_air_2
+        data_type: string
+      - name: tel_1_air
+        data_type: string
+      - name: tel_2_air
+        data_type: string
+      - name: tel_3_air
+        data_type: string
+      - name: email_1_sydle
+        data_type: string
+      - name: email_2_sydle
+        data_type: string
+      - name: tel_1_sydle
+        data_type: string
+      - name: tel_2_sydle
+        data_type: string
+      - name: tel_3_sydle
+        data_type: string
+      - name: dt_atualizacao
+        data_type: timestamp_ntz
+
+  - name: cobranca_negociacoes
+    column:
+      - name: contrato_air
+        data_type: string
+      - name: dt_ult_pagamento
+        data_type: unknown
+      - name: dt_pri_pagamento
+        data_type: unknown
+      - name: qtd_ult_pagamento
+        data_type: long
+      - name: valor_fatura_ult_pagamento
+        data_type: double
+      - name: valor_pago_ult_pagamento
+        data_type: double
+      - name: qtd_pri_pagamento
+        data_type: long
+      - name: valor_fatura_pri_pagamento
+        data_type: double
+      - name: valor_pago_pri_pagamento
+        data_type: double
+      - name: tempo_desde_ult_pagamento
+        data_type: long
+      - name: tempo_desde_pri_pagamento
+        data_type: long
+      - name: qtd_tot_pagtos
+        data_type: long
+      - name: vlr_tot_pagtos
+        data_type: double
+      - name: dt_atualizacao
+        data_type: timestamp_ntz
+
+  - name: status_air_dia
+    column:
+      - name: id_cliente_air
+        data_type: long
+      - name: id_contrato_air
+        data_type: long
+      - name: status_air
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: dt_atualizacao
+        data_type: timestamp_ntz
+
+  - name: sydle_cliente_unico
+    column:
+      - name: id_negociacao
+        data_type: string
+      - name: contrato_air
+        data_type: string
+      - name: id_cliente_air
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: uf
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: fatura_gerada
+        data_type: integer
+      - name: valor_fatura_gerada
+        data_type: string
+      - name: status_fatura_gerada
+        data_type: string
+      - name: data_vencimento_fatura_gerada
+        data_type: string
+      - name: data_pgt_fatura_gerada
+        data_type: string
+      - name: vlr_pgt_fatura_gerada
+        data_type: string
+      - name: fatura_original
+        data_type: integer
+      - name: valor_fatura_original
+        data_type: string
+      - name: data_vencimento_fatura_original
+        data_type: string
+      - name: classificacao_fatura_original
+        data_type: string
+      - name: data_pgt_fatura_original
+        data_type: string
+      - name: vlr_pgt_fatura_original
+        data_type: string
+      - name: id_negociador
+        data_type: string
+      - name: nome_negociador
+        data_type: string
+      - name: data_negociacao
+        data_type: unknown
+      - name: dt_atualizacao
+        data_type: timestamp_ntz
+
+  - name: desconexoes
+    column:
+      - name: id_contrato
+        data_type: long
+      - name: CODIGO_CONTRATO_AIR
+        data_type: long
+      - name: CODIGO_CONTRATO_IXC
+        data_type: long
+      - name: data_cancelamento
+        data_type: unknown
+      - name: data_ativacao
+        data_type: unknown
+      - name: motivo_cancelamento
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: canal
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: unidade
+        data_type: string
+      - name: produto
+        data_type: string
+      - name: pacote_tv
+        data_type: string
+      - name: dia_fechamento
+        data_type: integer
+      - name: dia_vencimento
+        data_type: integer
+      - name: aging
+        data_type: integer
+      - name: segmento
+        data_type: string
+      - name: equipe
+        data_type: string
+      - name: tipo_cancelamento
+        data_type: string
+      - name: sub_motivo_cancelamento
+        data_type: string
+      - name: cancelamento_invol
+        data_type: string
+      - name: pacote_nome
+        data_type: string
+      - name: valor_final
+        data_type: double
+      - name: cluster
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: legado_sistema
+        data_type: string
+      - name: legado_id
+        data_type: long
+      - name: canal_tratado
+        data_type: string
+      - name: tipo_canal
+        data_type: string
+      - name: aging_meses_cat
+        data_type: string
+      - name: flg_fidelizado
+        data_type: string
+      - name: codigo_cliente_air
+        data_type: long
+      - name: data_atualizacao
+        data_type: timestamp_ntz

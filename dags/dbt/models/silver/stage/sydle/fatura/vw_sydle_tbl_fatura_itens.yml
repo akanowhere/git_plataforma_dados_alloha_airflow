@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_fatura_itens
+    columns:
+      - name: id_fatura
+        data_type: string
+      - name: codigo_fatura_sydle
+        data_type: string
+      - name: nome_item
+        data_type: string
+      - name: valor_item
+        data_type: double
+      - name: tipo_item
+        data_type: string
+      - name: data_inicio_item
+        data_type: timestamp
+      - name: data_fim_item
+        data_type: timestamp

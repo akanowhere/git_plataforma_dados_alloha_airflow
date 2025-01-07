@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: air_base
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: air_base
+    tables:
+      - name: tbl_catalogo_item
+      - name: tbl_catalogo
+      - name: tbl_unidade
+      - name: tbl_usuario

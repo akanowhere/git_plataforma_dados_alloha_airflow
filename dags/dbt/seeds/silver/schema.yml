@@ -1,0 +1,21 @@
+models:
+  - name: subregionais
+    column:
+      - name: cidade
+        data_type: string 
+      - name: cidade_sem_acento
+        data_type: string 
+      - name: uf
+        data_type: string 
+      - name: marca
+        data_type: string 
+      - name: macro_regional
+        data_type: string 
+      - name: sigla_regional
+        data_type: string 
+      - name: regional1
+        data_type: string 
+      - name: subregional
+        data_type: string 
+      - name: chave
+        data_type: string 

@@ -1,0 +1,27 @@
+models:
+- name: dim_contrato_entreg
+  columns:
+      - name: id_contrato_entrega
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: codigo
+        data_type: string
+      - name: id_contrato
+        data_type: long
+      - name: id_endereco
+        data_type: long
+      - name: instalado
+        data_type: boolean
+      - name: data_ativacao
+        data_type: timestamp
+      - name: data_extracao
+        data_type: timestamp_ntz

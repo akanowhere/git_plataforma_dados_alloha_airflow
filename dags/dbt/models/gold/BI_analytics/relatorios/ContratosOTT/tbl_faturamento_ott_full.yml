@@ -1,0 +1,86 @@
+models:
+  - name: tbl_faturamento_ott_full
+    description: "Dados faturamento dos OTTs "
+    columns:
+      - name: parceiro
+        description: "Nome do parceiro envolvido na venda."
+        datatype: string
+      - name: codigo_fatura_sydle
+        description: "Código único da fatura no sistema Sydle."
+        datatype: integer
+      - name: contrato_air
+        description: "Número do contrato associado ao cliente."
+        datatype: string
+      - name: codigo_cliente
+        description: "Código do cliente associado ao contrato."
+        datatype: integer
+      - name: data_criacao_fatura
+        description: "Data de criação da fatura."
+        datatype: date
+      - name: status_fatura
+        description: "Status da fatura no momento de sua criação."
+        datatype: string
+      - name: status_fatura_atual
+        description: "Status atual da fatura conforme o sistema de monitoramento."
+        datatype: string
+      - name: data_vencimento_fatura
+        description: "Data de vencimento da fatura."
+        datatype: date
+      - name: data_pagamento_fatura
+        description: "Data de pagamento da fatura, se aplicável."
+        datatype: date
+      - name: data_ativacao
+        description: "Data de ativação do contrato."
+        datatype: date
+      - name: mes_referencia
+        description: "Mês de referência ao qual a fatura está associada."
+        datatype: string
+      - name: unidade_atendimento
+        description: "Unidade de atendimento responsável pelo cliente ou produto."
+        datatype: string
+      - name: marca
+        description: "Marca associada ao produto na fatura."
+        datatype: string
+      - name: nome_item
+        description: "Nome do item faturado."
+        datatype: string
+      - name: codigo_produto
+        description: "Código único do produto faturado."
+        datatype: string
+      - name: produto
+        description: "Descrição do produto faturado."
+        datatype: string
+      - name: sku
+        description: "SKU (Stock Keeping Unit) do produto."
+        datatype: string
+      - name: valor_produto
+        description: "Valor unitário do produto faturado."
+        datatype: decimal
+      - name: valor_final
+        description: "Valor final a ser pago, considerando descontos e taxas."
+        datatype: decimal
+      - name: dias_utilizados_componente
+        description: "Quantidade de dias de uso do componente faturado."
+        datatype: integer
+      - name: tipo
+        description: "Tipo do produto ou serviço faturado."
+        datatype: string
+      - name: cidade
+        description: "Cidade associada ao cliente."
+        datatype: string
+      - name: estado
+        description: "Estado associado ao cliente."
+        datatype: string
+      - name: macro_regional
+        description: "Classificação macro-regional do cliente."
+        datatype: string
+      - name: regional
+        description: "Classificação regional do cliente."
+        datatype: string
+      - name: subregional
+        description: "Classificação sub-regional do cliente."
+        datatype: string
+      - name: data_atualizacao
+        description: "Data em que as informações da consulta foram atualizadas."
+        datatype: date
+ 

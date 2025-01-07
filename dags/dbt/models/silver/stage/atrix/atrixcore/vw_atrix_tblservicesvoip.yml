@@ -1,0 +1,54 @@
+  version: 2
+
+models:
+  - name: vw_atrix_tblservicesvoip
+    columns:
+      - name: _cost_center
+        data_type: string
+      - name: _data_source
+        data_type: string
+      - name: _qtd_rows
+        data_type: long
+      - name: _source_type
+        data_type: string
+      - name: _system_owner
+        data_type: string
+      - name: batchid
+        data_type: long
+      - name: callsimultaneous
+        data_type: long
+      - name: ddd
+        data_type: long
+      - name: email
+        data_type: string
+      - name: id
+        data_type: long
+      - name: login
+        data_type: string
+      - name: password
+        data_type: string
+      - name: privacy
+        data_type: long
+      - name: receivecalldue
+        data_type: long
+      - name: serviceid
+        data_type: long
+      - name: terminalid
+        data_type: string
+      - name: userid
+        data_type: long
+      - name: _metadata
+        data_type: struct
+        column:
+          - name: file_path
+            data_type: string
+          - name: file_name
+            data_type: string
+          - name: file_size
+            data_type: long
+          - name: file_block_start
+            data_type: long
+          - name: file_block_length
+            data_type: long
+          - name: file_modification_time
+            data_type: timestamp

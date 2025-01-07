@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: fato_mudanca_plano_cliente
+    description: Tabela fato de mudança de plano do cliente com origem na Fintalk
+    columns:
+      - name: cpf_cnpj
+        data_type: string
+      - name: contrato
+        data_type: integer
+      - name: novo_plano
+        data_type: string
+      - name: preco
+        data_type: string
+      - name: codigo
+        data_type: string
+      - name: campanha
+        data_type: string
+      - name: data_hora
+        data_type: timestamp
+      - name: vencimento
+        data_type: integer
+      - name: forma_pagamento
+        data_type: string
+      - name: plano
+        data_type: integer
+      - name: recusa
+        data_type: boolean

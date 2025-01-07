@@ -1,0 +1,69 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_cliente
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: tipo
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: tratamento
+        data_type: string
+      - name: grupo
+        data_type: string
+      - name: codigo
+        data_type: string
+      - name: senha_sac
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: legado_id
+        data_type: long
+      - name: legado_sistema
+        data_type: string
+      - name: integracao_status
+        data_type: string
+      - name: integracao_mensagem
+        data_type: string
+      - name: integracao_codigo
+        data_type: string
+      - name: integracao_transacao
+        data_type: string
+      - name: marcador
+        data_type: string
+      - name: cliente_b2b
+        data_type: boolean
+      - name: integracao_status_sydle
+        data_type: string
+      - name: integracao_mensagem_sydle
+        data_type: string
+      - name: integracao_transacao_sydle
+        data_type: string
+      - name: id_suporte_sumicity_virtual_um
+        data_type: string
+      - name: id_suporte_sumicity_virtual_dois
+        data_type: string
+      - name: id_oauth
+        data_type: string
+      - name: id_oauth_giga_mais
+        data_type: string
+      - name: id_oauth_click
+        data_type: string
+      - name: cupom
+        data_type: string
+      - name: id_oauth_univox
+        data_type: string
+      - name: id_oauth_ligue
+        data_type: string

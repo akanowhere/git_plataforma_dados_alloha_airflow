@@ -1,0 +1,49 @@
+models:
+  - name: vw_fluxo_descontos
+    description: "Fluxo para enviar analítico de descontos"
+    column:
+      - name: id_contrato
+        description: ""
+        data_type: long
+      - name: id_desconto
+        description: ""
+        data_type: long
+      - name: data_criacao
+        description: ""
+        data_type: date
+      - name: data_alteracao
+        description: ""
+        data_type: date
+      - name: usuario_criacao
+        description: ""
+        data_type: string
+      - name: usuario_alteracao
+        description: ""
+        data_type: string
+      - name: desconto
+        description: ""
+        data_type: float
+      - name: data_validade
+        description: ""
+        data_type: date
+      - name: dia_aplicar
+        description: ""
+        data_type: int
+      - name: item_codigo
+        description: ""
+        data_type: string
+      - name: item_nome
+        description: ""
+        data_type: string
+      - name: tipo
+        description: ""
+        data_type: string
+      - name: categoria
+        description: ""
+        data_type: string
+      - name: observacao
+        description: ""
+        data_type: string
+      - name: data_extracao
+        description: ""
+        data_type: string

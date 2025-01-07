@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_nota_fiscal_impostos
+    columns:
+      - name: id_nota_fiscal
+        data_type: string
+      - name: descricao_produto
+        data_type: string
+      - name: valor_total_dos_impostos_do_produto
+        data_type: double
+      - name: imposto
+        data_type: string
+      - name: base_de_calculo
+        data_type: string
+      - name: aliquota
+        data_type: string
+      - name: valor
+        data_type: double
+      - name: retido
+        data_type: boolean
+      - name: impostos_retidos
+        data_type: integer
+      - name: exigibilidade
+        data_type: string

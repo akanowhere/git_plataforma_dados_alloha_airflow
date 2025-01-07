@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_event_type
+    description: Tabela de dimensão de tipos de eventos
+    columns:
+      - name: id
+        data_type: long
+      - name: key
+        data_type: string
+      - name: description
+        data_type: string
+      - name: created_at
+        data_type: timestamp
+      - name: has_incident
+        data_type: boolean
+      - name: data_extracao
+        data_type: timestamp_ntz

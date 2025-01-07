@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: app
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: app
+    tables:
+      - name: sessions
+      - name: events

@@ -1,0 +1,9 @@
+models:
+- name: vw_db_financeiro_tbl_aplicacao_status_validacao
+  columns:
+  - name: ID_FATURA_NUMERO
+    data_type: string
+  - name: ststatusvalidacaociclo
+    data_type: string
+  - name: flvalorcalculofinal
+    data_type: float

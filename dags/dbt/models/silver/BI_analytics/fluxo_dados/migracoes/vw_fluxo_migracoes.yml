@@ -1,0 +1,55 @@
+models:
+  - name: vw_fluxo_migracoes
+    description: "Fluxo para analisar volumetria de migracoes"
+    column:
+      - name: ID MIGRACAO
+        description: ""
+        data_type: long
+      - name: DATA VENDA
+        description: ""
+        data_type: date
+      - name: ID VENDA
+        description: ""
+        data_type: long
+      - name: ID CONTRATO
+        description: ""
+        data_type: long
+      - name: CODIGO ANTIGO PACOTE
+        description: ""
+        data_type: string
+      - name: ANTIGO PACOTE NOME
+        description: ""
+        data_type: string
+      - name: ANTIGO VALOR
+        description: ""
+        data_type: float
+      - name: ANTIGO VERSAO
+        description: ""
+        data_type: string
+      - name: NOVO PACOTE CODIGO
+        description: ""
+        data_type: string
+      - name: NOVO PACOTE NOME
+        description: ""
+        data_type: string
+      - name: NOVO VALOR
+        description: ""
+        data_type: float
+      - name: NOVO VERSAO
+        description: ""
+        data_type: string
+      - name: REPROVADA
+        description: ""
+        data_type: string
+      - name: DATA EXTRACAO
+        description: ""
+        data_type: date
+      - name: EMAIL_VENDEDOR
+        description: ""
+        data_type: string
+      - name: MARCA
+        description: ""
+        data_type: string
+      - name: NOME VENDEDOR
+        description: ""
+        data_type: string

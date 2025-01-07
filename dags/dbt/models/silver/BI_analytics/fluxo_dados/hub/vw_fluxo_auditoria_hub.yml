@@ -1,0 +1,55 @@
+models:
+  - name: vw_fluxo_auditoria_hub
+    description: "Consulta final que combina dados de contratos, CRM e HUB para auditoria de assinantes OTT."
+    columns:
+      - name: CONTRATO_CODIGO_AIR
+        type: bigint
+        description: "Código do contrato no sistema AIR."
+      - name: DT_ATIVACAO_CONTRATO
+        type: date
+        description: "Data de ativação inicial do contrato."
+      - name: DT_CANCELAMENTO_CONTRATO
+        type: date
+        description: "Data de cancelamento do contrato, se houver."
+      - name: DT_ATIVACAO_PACOTE_ATUAL
+        type: date
+        description: "Data de ativação do pacote atual do assinante."
+      - name: CONTRATO_STATUS
+        type: string
+        description: "Status atual do contrato (ativo, cancelado, etc.)."
+      - name: SEGMENTO
+        type: string
+        description: "Segmento de cliente (B2B, B2C, PME)."
+      - name: NOME_PACOTE
+        type: string
+        description: "Nome do pacote de serviços contratado."
+      - name: MARCA
+        type: string
+        description: "Marca associada ao contrato."
+      - name: PROVEDOR
+        type: string
+        description: "Provedor OTT associado ao produto (watch, globoplay, etc.)."
+      - name: PRODUTO
+        type: string
+        description: "Nome do produto OTT."
+      - name: ATIVO_CRM
+        type: boolean
+        description: "Status de ativo no CRM."
+      - name: DATA_CRIACAO_PRODUTO
+        type: timestamp
+        description: "Data de criacao do produto na tabela de integração."
+      - name: DATA_ALTERACAO_PRODUTO
+        type: timestamp
+        description: "Data da ultima alteração do produto na tabela de integração."
+      - name: INTEGRACAO_STATUS_HUB
+        type: string
+        description: "Status da integração no sistema AIR."
+      - name: INTEGRACAO_TRANSACAO
+        type: string
+        description: "Status do retorno do HUB."
+      - name: COMPARATIVO_STATUS
+        type: integer
+        description: "Indica se o status do CRM e do HUB estão sincronizados (1 para sim, 0 para não)."
+      - name: DATA_REFERENCIA
+        type: date
+        description: "Data de referência da consulta."

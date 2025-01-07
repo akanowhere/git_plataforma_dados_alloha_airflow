@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_numero_proprio
+    description: Tabela stage com informações de numeros proprios
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_faixa
+        data_type: long
+      - name: numero
+        data_type: long
+      - name: disponivel
+        data_type: boolean
+      - name: portado
+        data_type: boolean
+      - name: quarentena
+        data_type: date
+      - name: id_reserva
+        data_type: long

@@ -1,0 +1,34 @@
+models:
+  - name: vw_fluxo_notas_ofs
+    description: ""
+    columns: 
+      - name: Data
+        type: date
+        description: ""
+      - name: codigo_os
+        type: string
+        description: ""
+      - name: Fila
+        type: string
+        description: ""
+      - name: Regional
+        type: string
+        description: ""
+      - name: Unidade
+        type: string
+        description: ""
+      - name: Cidade
+        type: string
+        description: ""
+      - name: Marca
+        type: string
+        description: ""
+      - name: Cluster
+        type: string
+        description: ""
+      - name: Nota
+        type: string
+        description: ""
+      - name: avaliacao
+        type: string
+        description: ""

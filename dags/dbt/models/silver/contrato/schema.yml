@@ -1,0 +1,178 @@
+models:
+  - name: vw_situacao_contrato
+    column:
+      - name: id_contrato
+        data_type: long 
+      - name: status
+        data_type: string 
+      - name: data_ativacao
+        data_type: date 
+      - name: data_cancelamento
+        data_type: date 
+      - name: motivo_cancelamento
+        data_type: string 
+      - name: TIPO_CANCELAMENTO
+        data_type: string 
+      - name: CANCELAMENTO_INVOL
+        data_type: string 
+      - name: data_cadastro_sistema
+        data_type: date 
+      - name: cidade
+        data_type: string 
+      - name: regiao
+        data_type: void 
+      - name: estado
+        data_type: string 
+      - name: canal
+        data_type: string 
+      - name: equipe
+        data_type: string 
+      - name: marca
+        data_type: string 
+      - name: unidade_atendimento
+        data_type: string 
+      - name: regional
+        data_type: string 
+      - name: PRODUTO
+        data_type: string 
+      - name: PACOTE_TV
+        data_type: string 
+      - name: TIPO_TV
+        data_type: string 
+      - name: data_extracao
+        data_type: timestamp_ntz 
+      - name: dia_fechamento
+        data_type: long 
+      - name: dia_vencimento
+        data_type: long 
+      - name: segmento
+        data_type: string 
+      - name: sub_motivo_cancelamento
+        data_type: string 
+      - name: ultima_alteracao
+        data_type: string 
+      - name: valor_contrato
+        data_type: double 
+      - name: plano
+        data_type: string 
+      - name: data_utilizada
+        data_type: string 
+      - name: motivo_inclusao
+        data_type: void 
+      - name: id_vendedor
+        data_type: long 
+      - name: cluster
+        data_type: string 
+      - name: legado_id
+        data_type: long 
+      - name: legado_sistema
+        data_type: string 
+      - name: fonte
+        data_type: string 
+      - name: tipo_canal
+        data_type: string 
+      - name: flg_fidelizado
+        data_type: string 
+
+  - name: vw_contrato
+    column:
+      - name: id_contrato
+        data_type: long 
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: string
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: versao
+        data_type: long
+      - name: id_cliente
+        data_type: long
+      - name: pacote_codigo
+        data_type: string
+      - name: pacote_nome
+        data_type: string
+      - name: valor_base
+        data_type: double
+      - name: valor_final
+        data_type: double
+      - name: status
+        data_type: string
+      - name: id_vencimento
+        data_type: long
+      - name: data_alteracao_vencimento
+        data_type: string
+      - name: usuario_alteracao_vencimento
+        data_type: string
+      - name: excluido_vencimento
+        data_type: boolean
+      - name: dia_vencimento
+        data_type: long
+      - name: fechamento_vencimento
+        data_type: long
+      - name: ativo_vencimento
+        data_type: boolean
+      - name: id_regra_suspensao
+        data_type: long
+      - name: nome_suspensao
+        data_type: string
+      - name: data_alteracao_suspensao
+        data_type: string
+      - name: usuario_alteracao_suspensao
+        data_type: string
+      - name: excluido_suspensao
+        data_type: boolean
+      - name: grupo_cliente_suspensao
+        data_type: string
+      - name: dias_atraso_suspensao
+        data_type: long
+      - name: ativo_suspensao
+        data_type: boolean
+      - name: id_endereco_cobranca
+        data_type: long
+      - name: codigo_tipo_cobranca
+        data_type: string
+      - name: unidade_atendimento
+        data_type: string
+      - name: cancelamento_motivo
+        data_type: string
+      - name: legado_id
+        data_type: long
+      - name: legado_sistema
+        data_type: string
+      - name: marcador
+        data_type: string
+      - name: b2b
+        data_type: boolean
+      - name: pme
+        data_type: boolean
+      - name: telefone
+        data_type: string
+      - name: data_primeira_ativacao
+        data_type: string
+      - name: data_cancelamento
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp
+      - name: ADICIONAL_DESC
+        data_type: string
+      - name: VALOR_PADRAO_PLANO
+        data_type: double
+      - name: VALOR_ADICIONAIS
+        data_type: double
+      - name: id_campanha
+        data_type: long
+      - name: equipe
+        data_type: string
+      - name: canal
+        data_type: string
+      - name: data_venda
+        data_type: string
+      - name: flg_fidelizado
+        data_type: string

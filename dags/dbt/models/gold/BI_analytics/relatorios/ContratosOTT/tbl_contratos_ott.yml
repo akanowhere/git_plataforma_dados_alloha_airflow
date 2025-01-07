@@ -1,0 +1,56 @@
+models:
+  - name: tbl_contratos_ott
+    description: "Dados de contratos com OTT para o mês atual e passado, incluindo pacotes, OTTs associados e status de suspensão."
+    columns:
+      - name: id_contrato
+        description: "Identificador único do contrato."
+        data_type: string
+      - name: data_criacao
+        description: "Data criação do contrato."
+        data_type: date
+      - name: data_primeira_ativacao
+        description: "Data da primeira ativação do contrato."
+        data_type: date
+      - name: data_cancelamento
+        description: "Data de cancelamento do contrato."
+        data_type: date
+      - name: intervalo
+        description: "Primeiro dia do mês atual."
+        data_type: date
+      - name: unidade_atendimento
+        description: "Unidade de atendimento responsável pelo contrato."
+        data_type: string
+      - name: tombamento
+        description: "Indica se o contrato está vinculado a um sistema legado (1: Sim, 0: Não)."
+        data_type: int
+      - name: pacote_nome
+        description: "Nome do pacote atual do contrato."
+        data_type: string
+      - name: pacote_nome_MP
+        description: "Nome do pacote do contrato no mês passado."
+        data_type: string
+      - name: nome_ott
+        description: "Nome do serviço OTT associado ao contrato."
+        data_type: string
+      - name: possui_ott_FM
+        description: "Indica se o contrato possui o OTT no mês atual (1: Sim, 0: Não)."
+        data_type: int
+      - name: possui_ott_MP
+        description: "Indica se o contrato possuía o OTT no mês passado (1: Sim, 0: Não)."
+        data_type: int
+      - name: status_FM
+        description: "Status do contrato no mês atual."
+        data_type: string
+      - name: status_MP
+        description: "Status do contrato no mês passado."
+        data_type: string
+      - name: flg_suspenso_FM
+        description: "Indica se o contrato está suspenso no mês atual (1: Sim, 0: Não)."
+        data_type: int
+      - name: flg_suspenso_MP
+        description: "Indica se o contrato estava suspenso no mês passado (1: Sim, 0: Não)."
+        data_type: int
+      - name: data_referencia
+        description: "Data de referência da consulta."
+        data_type: date
+ 

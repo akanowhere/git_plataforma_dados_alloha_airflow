@@ -1,0 +1,88 @@
+{% set catalog_schema_table=source("sydle", "contrato") %}
+{% set partition_column="id_contrato" %}
+{% set order_column="data_integracao" %}
+
+WITH latest AS (
+  {{ dynamic_table_query(catalog_schema_table, partition_column, order_column) }}
+),
+
+transformed AS (
+  SELECT
+    id_contrato,
+    plano_nome,
+    plano_identificador,
+    plano_ativo,
+    comprador_nome,
+    comprador_documento,
+    comprador_id_sydle,
+    vendedor_nome,
+    vendedor_documento,
+    vendedor_id_sydle,
+    codigo_sydle,
+    responsavel_venda_nome,
+    responsavel_venda_login,
+    forma_pagamento_nome,
+    forma_pagamento_identificador,
+    forma_pagamento_ativo,
+    forma_pagamento_grupo_forma_pagamento,
+    componentes,
+    endereco_entrega_cep,
+    endereco_entrega_logradouro,
+    endereco_entrega_numero,
+    endereco_entrega_complemento,
+    endereco_entrega_referencia,
+    endereco_entrega_bairro,
+    endereco_entrega_cidade_nome,
+    endereco_entrega_cidade_codigo_ibge,
+    endereco_entrega_estado_nome,
+    endereco_entrega_estado_sigla,
+    endereco_entrega_pais,
+    endereco_cobranca_cep,
+    endereco_cobranca_logradouro,
+    endereco_cobranca_numero,
+    endereco_cobranca_complemento,
+    endereco_cobranca_referencia,
+    endereco_cobranca_bairro,
+    endereco_cobranca_cidade_nome,
+    endereco_cobranca_cidade_codigo_ibge,
+    endereco_cobranca_estado_nome,
+    endereco_cobranca_estado_sigla,
+    endereco_cobranca_pais,
+    dados_cobranca_dia_faturamento,
+    dados_cobranca_dia_referencia_cobranca,
+    dados_cobranca_dia_vencimento,
+    dados_cobranca_desvio_vencimento,
+    status_status_servico,
+    TRY_CAST(status_data_status_servico AS TIMESTAMP) AS status_data_status_servico,
+    status_status_faturamento,
+    TRY_CAST(status_data_status_faturamento AS TIMESTAMP) AS status_data_status_faturamento,
+    status_status_financeiro,
+    TRY_CAST(status_data_status_financeiro AS TIMESTAMP) AS status_data_status_financeiro,
+    TRY_CAST(data_venda AS TIMESTAMP) AS data_venda,
+    TRY_CAST(data_ativacao AS TIMESTAMP) AS data_ativacao,
+    tag,
+    dados_suspensao_regra_suspensao,
+    dados_suspensao_apto_suspensao,
+    TRY_CAST(dados_suspensao_data_aptidao AS TIMESTAMP) AS dados_suspensao_data_aptidao,
+    dados_suspensao_inserido_blacklist,
+    saldo_habilitacao_confianca_valor_saldo_atual,
+    TRY_CAST(saldo_habilitacao_confianca_data_ultima_renovacao AS TIMESTAMP) AS saldo_habilitacao_confianca_data_ultima_renovacao,
+    TRY_CAST(saldo_habilitacao_confianca_data_ultima_habilitacao_confianca AS TIMESTAMP) AS saldo_habilitacao_confianca_data_ultima_habilitacao_confianca,
+    unidade_atendimento_nome,
+    unidade_atendimento_sigla,
+    unidade_atendimento_cidades_atendimento,
+    unidade_atendimento_marca_associada,
+    codigo_externo,
+    multa_fidelidade_periodo,
+    multa_fidelidade_valor_cheio_multa,
+    TRY_CAST(multa_fidelidade_data_inicio AS TIMESTAMP) AS multa_fidelidade_data_inicio,
+    TRY_CAST(multa_fidelidade_data_fim AS TIMESTAMP) AS multa_fidelidade_data_fim,
+    TRY_CAST(data_ultima_alteracao AS TIMESTAMP) AS data_ultima_alteracao,
+    TRY_CAST(data_integracao AS TIMESTAMP) AS data_integracao,
+    DATEADD(HOUR, -3, CURRENT_TIMESTAMP()) AS data_extracao
+
+  FROM latest
+)
+
+SELECT *
+FROM transformed

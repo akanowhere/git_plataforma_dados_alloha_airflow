@@ -1,0 +1,56 @@
+repos:
+- repo: https://github.com/PyCQA/flake8
+  rev: 3.9.2
+  hooks:
+  - id: flake8
+    name: flake8
+    types: [python]
+    args:
+      - --max-line-length=88
+      - --ignore=E203,E501,W503
+    description: "Flake8 is a tool for enforcing coding style (PEP 8) and linting in Python code."
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+    - id: trailing-whitespace
+      description: "Removes trailing whitespace in files."
+    - id: end-of-file-fixer
+      description: "Ensures files end with a newline."
+    - id: check-yaml
+      description: "Checks YAML files for syntax errors."
+    - id: check-added-large-files
+      description: "Prevents adding large files to the repo."
+
+- repo: https://github.com/econchick/interrogate
+  rev: 1.4.0
+  hooks:
+    - id: interrogate
+      args: [-i, --fail-under=50]
+      description: "Interrogate checks for missing docstrings in Python code."
+
+- repo: https://github.com/sqlfluff/sqlfluff
+  rev: 3.1.0
+  hooks:
+    - id: sqlfluff-lint
+      args: ["--config", ".sqlfluff"]
+      description: "SQLFluff is a SQL linter for enforcing style rules in SQL code."
+    - id: sqlfluff-fix
+      args: ["--config", ".sqlfluff"]
+      description: "SQLFluff can also fix linting issues in SQL code automatically."
+
+- repo: https://github.com/pycqa/isort
+  rev: 5.12.0
+  hooks:
+    - id: isort
+      description: "Isort is a tool to sort imports in Python files according to PEP 8."
+
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.3.4
+  hooks:
+    - id: ruff
+      types_or: [python]
+      description: "Ruff is a fast Python linter and code formatter."
+    - id: ruff-format
+      types_or: [python]
+      description: "Ruff's formatting tool for Python code."

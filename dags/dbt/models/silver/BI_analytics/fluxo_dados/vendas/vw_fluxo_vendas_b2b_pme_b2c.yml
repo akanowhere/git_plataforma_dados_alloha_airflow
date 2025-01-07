@@ -1,0 +1,115 @@
+models:
+  - name: vw_fluxo_vendas_b2b_pme_b2c
+    description: "Fluxo para analisar vendas"
+    column:
+      - name: data_venda
+        type: date
+        description: ""
+      - name: data_criacao
+        type: date
+        description: ""
+      - name: hora_criacao
+        type: string
+        description: ""
+      - name: data_ativacao
+        type: date
+        description: ""
+      - name: data_cancelamento
+        type: date
+        description: ""
+      - name: id_contrato
+        type: long
+        description: ""
+      - name: status_contrato
+        type: string
+        description: ""
+      - name: id_contrato_ixc
+        type: long
+        description: ""
+      - name: id_contrato_air
+        type: long
+        description: ""
+      - name: valor_referencia_b2b
+        type: float
+        description: ""
+      - name: id_cliente
+        type: long
+        description: ""
+      - name: nome
+        type: string
+        description: ""
+      - name: segmento
+        type: string
+        description: ""
+      - name: nome_suspensao
+        type: string
+        description: ""
+      - name: equipe
+        type: string
+        description: ""
+      - name: cpf_cnpj
+        type: string
+        description: ""
+      - name: canal
+        type: string
+        description: ""
+      - name: canal_tratado
+        type: string
+        description: ""
+      - name: tipo_canal
+        type: string
+        description: ""
+      - name: id_vendedor
+        type: long
+        description: ""
+      - name: nome_vendedor
+        type: string
+        description: ""
+      - name: email_vendedor
+        type: string
+        description: ""
+      - name: marca
+        type: string
+        description: ""
+      - name: estado
+        type: string
+        description: ""
+      - name: cidade
+        type: string
+        description: ""
+      - name: bairro
+        type: string
+        description: ""
+      - name: cep
+        type: string
+        description: ""
+      - name: logradouro
+        type: string
+        description: ""
+      - name: numero
+        type: string
+        description: ""
+      - name: latitude
+        type: double
+        description: ""
+      - name: longitude
+        type: double
+        description: ""
+      - name: regional
+        type: string
+        description: ""
+      - name: cluster
+        type: string
+        description: ""
+      - name: pacote_nome
+        type: string
+        description: ""
+      - name: campanha_nome
+        type: string
+        description: ""
+      - name: valor_final
+        type: long
+        description: ""
+      - name: velocidade
+        type: string
+        description: ""

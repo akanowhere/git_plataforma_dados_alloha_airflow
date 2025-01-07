@@ -1,0 +1,125 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_lead
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: tipo
+        data_type: string
+      - name: id_cliente
+        data_type: long
+      - name: nome
+        data_type: string
+      - name: telefone
+        data_type: string
+      - name: email
+        data_type: string
+      - name: email_status
+        data_type: string
+      - name: end_id_cidade
+        data_type: long
+      - name: end_cidade_nome
+        data_type: string
+      - name: end_unidade
+        data_type: string
+      - name: end_cod_ibge
+        data_type: long
+      - name: end_bairro_nome
+        data_type: string
+      - name: end_tipo_logradouro
+        data_type: string
+      - name: end_logradouro_nome
+        data_type: string
+      - name: end_cep
+        data_type: string
+      - name: end_referencia
+        data_type: string
+      - name: end_complemento
+        data_type: string
+      - name: end_numero
+        data_type: string
+      - name: end_latitude
+        data_type: double
+      - name: end_longitude
+        data_type: double
+      - name: cpf_cnpj
+        data_type: string
+      - name: pf_data_nascimento
+        data_type: string
+      - name: pf_tratamento
+        data_type: string
+      - name: pf_estado_civil
+        data_type: string
+      - name: pf_rg_numero
+        data_type: string
+      - name: pf_rg_orgao
+        data_type: string
+      - name: pj_nome_fantasia
+        data_type: string
+      - name: pj_inscricao_estadual
+        data_type: string
+      - name: pj_inscricao_municipal
+        data_type: string
+      - name: pj_atividade_principal
+        data_type: string
+      - name: legado_id
+        data_type: long
+      - name: legado_sistema
+        data_type: string
+      - name: fonte
+        data_type: string
+      - name: grupo
+        data_type: string
+      - name: telefone_adicional
+        data_type: string
+      - name: email_adicional
+        data_type: string
+      - name: email_adicional_status
+        data_type: string
+      - name: senha_sac
+        data_type: string
+      - name: qualificacao
+        data_type: string
+      - name: pf_nome_pai
+        data_type: string
+      - name: pf_nome_mae
+        data_type: string
+      - name: pf_sexo
+        data_type: string
+      - name: credito_autorizado
+        data_type: boolean
+      - name: viabilidade_autorizada
+        data_type: boolean
+      - name: viabilidade_usuario
+        data_type: string
+      - name: viabilidade_data
+        data_type: timestamp
+      - name: viabilidade_justificativa
+        data_type: string
+      - name: tipo_residencia
+        data_type: string
+      - name: id_condominio
+        data_type: long
+      - name: bloco
+        data_type: string
+      - name: apartamento
+        data_type: string
+      - name: end_certificado
+        data_type: boolean
+      - name: end_verificado
+        data_type: boolean
+      - name: end_completo
+        data_type: string
+      - name: uuid_lead_rd_station
+        data_type: string

@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fato_csat
+    description: Tabela fato de csat com origem na Fintalk
+    columns:
+      - name: user_id
+        data_type: string
+      - name: data_hora
+        data_type: timestamp
+      - name: cpf_cnpj
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: resolvido
+        data_type: string
+      - name: facilidade
+        data_type: string
+      - name: nota
+        data_type: integer
+      - name: origem
+        data_type: string

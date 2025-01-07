@@ -1,0 +1,19 @@
+models:
+  - name: vw_fluxo_ecare_unitarios
+    description: "Fluxo para obter informacoes sobre eventos unitarios no ecare"
+    column:
+      - name: Data
+        description: ""
+        data_type: date
+      - name: created_at
+        description: ""
+        data_type: date
+      - name: Cidade
+        description: ""
+        data_type: string
+      - name: Unidade
+        description: ""
+        data_type: string
+      - name: serial
+        description: ""
+        data_type: string

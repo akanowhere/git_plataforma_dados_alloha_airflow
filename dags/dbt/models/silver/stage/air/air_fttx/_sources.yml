@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: air_fttx
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: air_fttx
+    tables:
+      - name: tbl_onu_configuracao
+      - name: tbl_onu_modelo

@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fato_tempos_operacionais_agentes
+    description: Tabela fato de tempos operacionais dos agentes
+    column:
+      - name: sk_chamada
+        data_type: string
+      - name: agente
+        data_type: string
+      - name: data_status
+        data_type: timestamp
+      - name: status
+        data_type: string
+      - name: codigo_motivo
+        data_type: string
+      - name: tempo_condicao_agente
+        data_type: string
+      - name: tempo_condicao_agente_em_seg
+        data_type: long
+      - name: data_extracao
+        data_type: timestamp

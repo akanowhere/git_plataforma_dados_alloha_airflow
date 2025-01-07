@@ -1,0 +1,82 @@
+models:
+  - name: vw_fluxo_chamados_os_fechada
+    description: "Fluxo para analisar volumetria de os fechadas"
+    column:
+      - name: id_os
+        description: ""
+        data_type: long
+      - name: id_cliente
+        description: ""
+        data_type: long
+      - name: id_contrato
+        description: ""
+        data_type: long
+      - name: data_criacao
+        description: ""
+        data_type: date
+      - name: usuario_criacao
+        description: ""
+        data_type: string
+      - name: data_alteracao
+        description: ""
+        data_type: date
+      - name: data_conclusao
+        description: ""
+        data_type: date
+      - name: usuario_alteracao
+        description: ""
+        data_type: string
+      - name: excluido
+        description: ""
+        data_type: string
+      - name: id_agenda
+        description: ""
+        data_type: string
+      - name: id_chamado
+        description: ""
+        data_type: long
+      - name: id_terceirizada
+        description: ""
+        data_type: long
+      - name: nome_terceirizada
+        description: ""
+        data_type: string
+      - name: agendamento_data
+        description: ""
+        data_type: date
+      - name: turno
+        description: ""
+        data_type: string
+      - name: equipe
+        description: ""
+        data_type: string
+      - name: classificacao
+        description: ""
+        data_type: string
+      - name: servico
+        description: ""
+        data_type: string
+      - name: id_tecnico
+        description: ""
+        data_type: long
+      - name: nome_tecnico
+        description: ""
+        data_type: string
+      - name: pacote
+        description: ""
+        data_type: string
+      - name: unidade
+        description: ""
+        data_type: string
+      - name: codigo_fila
+        description: ""
+        data_type: string
+      - name: status
+        description: ""
+        data_type: string
+      - name: motivo_conclusao
+        description: ""
+        data_type: string
+      - name: nome_fila
+        description: ""
+        data_type: string

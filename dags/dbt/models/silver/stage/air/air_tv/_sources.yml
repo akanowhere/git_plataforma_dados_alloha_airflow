@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: air_tv
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: air_tv
+    tables:
+      - name: tbl_assinante_watch
+      - name: tbl_assinante_youcast
+      - name: tbl_assinante_gigamais_tv
+      - name: tbl_assinante_skeelo
+      - name: tbl_produto_assinante_globoplay
+      - name: tbl_produtos_gigamaistv
+      - name: tbl_produtos_watch
+      - name: tbl_sva
+      - name: tbl_sva_urn
+      - name: tbl_sva_produto_urn

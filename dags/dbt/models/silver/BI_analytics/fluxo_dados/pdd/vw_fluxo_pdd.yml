@@ -1,0 +1,100 @@
+models:
+  - name: vw_fluxo_pdd
+    description: "Fluxo para analisar pdd"
+    column:
+      - name: contrato_air
+        description: ""
+        data_type: long
+      - name: mes_referencia
+        description: ""
+        data_type: string
+      - name: status_contrato
+        description: ""
+        data_type: string
+      - name: segmento
+        description: ""
+        data_type: string
+      - name: id_cliente_air
+        description: ""
+        data_type: long
+      - name: tipo_pessoa
+        description: ""
+        data_type: string
+      - name: polo
+        description: ""
+        data_type: string
+      - name: marca
+        description: ""
+        data_type: string
+      - name: cidade
+        description: ""
+        data_type: string
+      - name: UF
+        description: ""
+        data_type: string
+      - name: Regiao
+        description: ""
+        data_type: string
+      - name: regional
+        description: ""
+        data_type: string
+      - name: sub_regional
+        description: ""
+        data_type: string
+      - name: codigo_fatura_sydle
+        description: ""
+        data_type: string
+      - name: data_vencimento
+        description: ""
+        data_type: date
+      - name: status_fatura
+        description: ""
+        data_type: string
+      - name: classificacao_fatura
+        description: ""
+        data_type: string
+      - name: valor_fatura
+        description: ""
+        data_type: float
+      - name: aging
+        description: ""
+        data_type: string
+      - name: classificacao_pdd
+        description: ""
+        data_type: string
+      - name: classificacao_car
+        description: ""
+        data_type: string
+      - name: forma_pagamento
+        description: ""
+        data_type: string
+      - name: data_extracao
+        description: ""
+        data_type: date
+      - name: MARCA1
+        description: ""
+        data_type: string
+      - name: SEGMENTO1
+        description: ""
+        data_type: string
+      - name: REGIAO1
+        description: ""
+        data_type: string
+      - name: REGIONAL1
+        description: ""
+        data_type: string
+      - name: SUB_REGIONAL1
+        description: ""
+        data_type: string
+      - name: ENTRA_CALCULO_PDD
+        description: ""
+        data_type: string
+      - name: indice_CAR
+        description: ""
+        data_type: int
+      - name: Indice_pdd
+        description: ""
+        data_type: string
+      - name: CHAVE
+        description: ""
+        data_type: string

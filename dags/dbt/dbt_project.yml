@@ -1,0 +1,122 @@
+name: "dbt_project"
+
+version: "1.0.0"
+config-version: 2
+
+profile: "dbt_project"
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+seeds:
+  subregionais:
+    +root_path: "seeds"
+
+models:
+  dbt_project:
+    silver:
+      +catalog: |
+        {%- if  target.name == "dev" -%} silver_dev
+        {%- elif target.name == "prd" -%} silver
+        {%- else -%} invalid_catalog
+        {%- endif -%}
+      +materialized: view
+      stage:
+        +schema: stage
+      auxiliar:
+        +schema: stage_auxiliar
+      contato:
+        +schema: stage_contato
+      venda:
+        +schema: stage_venda
+      legado:
+        +schema: stage_legado
+      venda_hora:
+        +schema: stage_venda_hora
+      contrato:
+        +schema: stage_contrato
+      atrix:
+        +schema: atrixcore
+
+      BI_analytics:
+        fluxo_dados:
+          +schema: stage_fluxo_dados
+
+
+    gold:
+      +catalog: |
+        {%- if  target.name == "dev" -%} gold_dev
+        {%- elif target.name == "prd" -%} gold
+        {%- else -%} invalid_catalog
+        {%- endif -%}
+      +materialized: table
+      fpd:
+        +schema: fpd
+        intermediate:
+          +materialized: ephemeral
+      base:
+        +schema: base
+      auxiliar:
+        +schema: auxiliar
+      chamados:
+        +schema: chamados
+      cobranca:
+        +schema: cobranca
+      arrecadacao:
+        +schema: arrecadacao
+      contato:
+        +schema: contato
+      venda:
+        +schema: venda
+      faturamento:
+        +schema: faturamento
+      tv:
+        +schema: tv
+      telefonia:
+        +schema: telefonia
+      sydle:
+        +schema: sydle
+      five9:
+        +schema: five9
+        intermediate:
+          +materialized: ephemeral
+      experiencia_cliente:
+        +schema: experiencia_cliente
+      app:
+        +schema: app
+      operacao:
+        +schema: operacao
+      fintalk:
+        +schema: fintalk
+      ecare:
+        +schema: ecare
+      hub_sva:
+        +schema: hub_sva
+      loja_app:
+        +schema: loja_app
+      ofs:
+        +schema: ofs
+      infobip:
+        +schema: infobip
+      central_assinante:
+        +schema: central_assinante
+
+      BI_analytics:
+        mailing_cobranca:
+          +schema: mailing
+        relatorios:
+          +schema: relatorios
+        fpd_spd:
+          +schema: fpd
+        EPS:
+          +schema: operacao
+        # churn_vol:
+        #   +schema: churn_voluntario

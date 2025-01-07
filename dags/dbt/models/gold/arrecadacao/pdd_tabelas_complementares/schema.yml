@@ -1,0 +1,147 @@
+models:
+  - name: arrecadados
+    column:
+      - name: contrato_air
+        data_type: long
+      - name: mes_referencia
+        data_type: string
+      - name: status_contrato
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: id_cliente_air
+        data_type: long
+      - name: tipo_pessoa
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: UF
+        data_type: string
+      - name: Regiao
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: sub_regional
+        data_type: string
+      - name: codigo_fatura_sydle
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_vencimento
+        data_type: timestamp
+      - name: data_pagamento_fatura
+        data_type: timestamp
+      - name: status_fatura
+        data_type: string
+      - name: classificacao_fatura
+        data_type: string
+      - name: valor_fatura
+        data_type: double
+      - name: valor_pago
+        data_type: double
+      - name: valor_juros
+        data_type: decimal
+      - name: data_extracao
+        data_type: timestamp_ntz
+      - name: sistema
+        data_type: string
+      - name: contrato_legado
+        data_type: integer
+
+  - name: base_contestacao
+    column:
+      - name: mes_referencia
+        data_type: string
+      - name: contrato_air
+        data_type: long
+      - name: segmento
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: UF
+        data_type: string
+      - name: Regiao
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: sub_regional
+        data_type: string
+      - name: codigo_fatura_sydle_refaturada
+        data_type: long
+      - name: classificacao_fatura_refaturada
+        data_type: string
+      - name: data_vencimento_fatura_refaturada
+        data_type: unknown
+      - name: status_fatura_refaturada
+        data_type: string
+      - name: valor_fatura_refaturada
+        data_type: double
+      - name: data_pagamento_fatura_refaturada
+        data_type: timestamp
+      - name: valor_pago_fatura_refaturada
+        data_type: double
+      - name: codigo_fatura_sydle_cancelada
+        data_type: long
+      - name: classificacao_fatura_cancelada
+        data_type: string
+      - name: data_vencimento_fatura_cancelada
+        data_type: unknown
+      - name: status_fatura_cancelada
+        data_type: string
+      - name: valor_fatura_cancelada
+        data_type: double
+      - name: data_extracao
+        data_type: timestamp_ntz
+
+  - name: faturas_canceladas
+    column:
+      - name: contrato_air
+        data_type: long
+      - name: mes_referencia
+        data_type: string
+      - name: status_contrato
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: id_cliente_air
+        data_type: long
+      - name: tipo_pessoa
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: UF
+        data_type: string
+      - name: Regiao
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: sub_regional
+        data_type: string
+      - name: codigo_fatura_sydle
+        data_type: long
+      - name: data_atualizacao
+        data_type: timestamp
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_vencimento
+        data_type: timestamp
+      - name: status_fatura
+        data_type: string
+      - name: classificacao_fatura
+        data_type: string
+      - name: valor_fatura
+        data_type: double
+      - name: data_extracao
+        data_type: timestamp_ntz

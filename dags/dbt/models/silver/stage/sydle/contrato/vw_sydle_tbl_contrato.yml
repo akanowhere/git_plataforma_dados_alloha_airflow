@@ -1,0 +1,149 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_contrato
+    columns:
+      - name: id_contrato
+        data_type: string
+      - name: plano_nome
+        data_type: string
+      - name: plano_identificador
+        data_type: string
+      - name: plano_ativo
+        data_type: string
+      - name: comprador_nome
+        data_type: string
+      - name: comprador_documento
+        data_type: string
+      - name: comprador_id_sydle
+        data_type: string
+      - name: vendedor_nome
+        data_type: string
+      - name: vendedor_documento
+        data_type: string
+      - name: vendedor_id_sydle
+        data_type: string
+      - name: codigo_sydle
+        data_type: string
+      - name: responsavel_venda_nome
+        data_type: string
+      - name: responsavel_venda_login
+        data_type: string
+      - name: forma_pagamento_nome
+        data_type: string
+      - name: forma_pagamento_identificador
+        data_type: string
+      - name: forma_pagamento_ativo
+        data_type: string
+      - name: forma_pagamento_grupo_forma_pagamento
+        data_type: string
+      - name: componentes
+        data_type: string
+      - name: endereco_entrega_cep
+        data_type: string
+      - name: endereco_entrega_logradouro
+        data_type: string
+      - name: endereco_entrega_numero
+        data_type: string
+      - name: endereco_entrega_complemento
+        data_type: string
+      - name: endereco_entrega_referencia
+        data_type: string
+      - name: endereco_entrega_bairro
+        data_type: string
+      - name: endereco_entrega_cidade_nome
+        data_type: string
+      - name: endereco_entrega_cidade_codigo_ibge
+        data_type: string
+      - name: endereco_entrega_estado_nome
+        data_type: string
+      - name: endereco_entrega_estado_sigla
+        data_type: string
+      - name: endereco_entrega_pais
+        data_type: string
+      - name: endereco_cobranca_cep
+        data_type: string
+      - name: endereco_cobranca_logradouro
+        data_type: string
+      - name: endereco_cobranca_numero
+        data_type: string
+      - name: endereco_cobranca_complemento
+        data_type: string
+      - name: endereco_cobranca_referencia
+        data_type: string
+      - name: endereco_cobranca_bairro
+        data_type: string
+      - name: endereco_cobranca_cidade_nome
+        data_type: string
+      - name: endereco_cobranca_cidade_codigo_ibge
+        data_type: string
+      - name: endereco_cobranca_estado_nome
+        data_type: string
+      - name: endereco_cobranca_estado_sigla
+        data_type: string
+      - name: endereco_cobranca_pais
+        data_type: string
+      - name: dados_cobranca_dia_faturamento
+        data_type: string
+      - name: dados_cobranca_dia_referencia_cobranca
+        data_type: string
+      - name: dados_cobranca_dia_vencimento
+        data_type: string
+      - name: dados_cobranca_desvio_vencimento
+        data_type: string
+      - name: status_status_servico
+        data_type: string
+      - name: status_data_status_servico
+        data_type: timestamp
+      - name: status_status_faturamento
+        data_type: string
+      - name: status_data_status_faturamento
+        data_type: timestamp
+      - name: status_status_financeiro
+        data_type: string
+      - name: status_data_status_financeiro
+        data_type: timestamp
+      - name: data_venda
+        data_type: timestamp
+      - name: data_ativacao
+        data_type: timestamp
+      - name: tag
+        data_type: string
+      - name: dados_suspensao_regra_suspensao
+        data_type: string
+      - name: dados_suspensao_apto_suspensao
+        data_type: string
+      - name: dados_suspensao_data_aptidao
+        data_type: timestamp
+      - name: dados_suspensao_inserido_blacklist
+        data_type: string
+      - name: saldo_habilitacao_confianca_valor_saldo_atual
+        data_type: string
+      - name: saldo_habilitacao_confianca_data_ultima_renovacao
+        data_type: timestamp
+      - name: saldo_habilitacao_confianca_data_ultima_habilitacao_confianca
+        data_type: timestamp
+      - name: unidade_atendimento_nome
+        data_type: string
+      - name: unidade_atendimento_sigla
+        data_type: string
+      - name: unidade_atendimento_cidades_atendimento
+        data_type: string
+      - name: unidade_atendimento_marca_associada
+        data_type: string
+      - name: codigo_externo
+        data_type: string
+      - name: multa_fidelidade_periodo
+        data_type: string
+      - name: multa_fidelidade_valor_cheio_multa
+        data_type: string
+      - name: multa_fidelidade_data_inicio
+        data_type: timestamp
+      - name: multa_fidelidade_data_fim
+        data_type: timestamp
+      - name: data_ultima_alteracao
+        data_type: timestamp
+      - name: data_integracao
+        data_type: timestamp
+      - name: data_extracao
+        data_type: timestamp

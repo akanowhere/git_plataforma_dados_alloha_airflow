@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: dim_assinante_youcast
+    description: Tabela dimensão dim_assinante_youcast
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: cliente_id
+        data_type: long
+      - name: contrato_id
+        data_type: long
+      - name: cpf_cnpj
+        data_type: string
+      - name: produto_id
+        data_type: string
+      - name: ativo
+        data_type: boolean
+      - name: email
+        data_type: string
+      - name: telefone
+        data_type: string
+      - name: integracao_hub_status
+        data_type: string
+      - name: integracao_transacao
+        data_type: string
+      - name: integracao_status
+        data_type: string
+      - name: integracao_mensagem
+        data_type: string

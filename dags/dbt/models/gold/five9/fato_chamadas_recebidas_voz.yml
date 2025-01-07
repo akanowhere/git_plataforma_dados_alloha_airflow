@@ -1,0 +1,100 @@
+version: 2
+
+models:
+  - name: fato_chamadas_recebidas_voz
+    description: Tabela fato de chamadas recebidas de mídia voz com segmentações da ligação
+    column:
+      - name: sk_chamada
+        data_type: string
+      - name: id_chamada
+        data_type: string
+      - name: id_segmento_chamada
+        data_type: string
+      - name: data_inicio_chamada
+        data_type: timestamp
+      - name: data_inicio_atendimento
+        data_type: timestamp
+      - name: campanha
+        data_type: string
+      - name: campanha_segmento_chamada
+        data_type: string
+      - name: agente
+        data_type: string
+      - name: competencia
+        data_type: string
+      - name: tipo_segmento
+        data_type: string
+      - name: destino_transferencia
+        data_type: string
+      - name: competencia_final
+        data_type: string
+      - name: posicao
+        data_type: string
+      - name: classificacao_grupo_a
+        data_type: string
+      - name: classificacao_grupo_b
+        data_type: string
+      - name: classificacao_grupo_c
+        data_type: string
+      - name: motivo_retencao_ura
+        data_type: string
+      - name: tipo_chamada
+        data_type: string
+      - name: cpf_cnpj
+        data_type: string
+      - name: contrato
+        data_type: integer
+      - name: origem
+        data_type: string
+      - name: destino
+        data_type: string
+      - name: transferencias
+        data_type: integer
+      - name: abandonada
+        data_type: integer
+      - name: massiva
+        data_type: string
+      - name: caminho
+        data_type: string
+      - name: regiao
+        data_type: string
+      - name: cluster
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: bairro
+        data_type: string
+      - name: endereco
+        data_type: string
+      - name: tempo_chamada
+        data_type: string
+      - name: tempo_ivr
+        data_type: string
+      - name: tempo_conversa
+        data_type: string
+      - name: tempo_espera_fila
+        data_type: string
+      - name: tempo_toque
+        data_type: string
+      - name: tempo_pos_atendimento
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: polo
+        data_type: string
+      - name: csat_auto_pergunta_1
+        data_type: integer
+      - name: csat_auto_pergunta_2
+        data_type: integer
+      - name: csat_ath_pergunta_1
+        data_type: integer
+      - name: csat_ath_pergunta_2
+        data_type: integer
+      - name: pergunta_satisfacao_1
+        data_type: integer
+      - name: pergunta_satisfacao_2
+        data_type: integer
+      - name: pergunta_satisfacao_3
+        data_type: integer
+      - name: data_extracao
+        data_type: timestamp

@@ -1,0 +1,8 @@
+models:
+  - name: seed_emails
+    column:
+      - name: email
+        data_type: string 
+      - name: produto
+        data_type: string 
+    

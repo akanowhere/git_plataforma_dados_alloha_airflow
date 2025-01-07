@@ -1,0 +1,28 @@
+models:
+  - name: vw_fluxo_ecare_onu
+    description: "Fluxo para obter informacoes sobre as ONUs presentes no ecare"
+    column:
+      - name: serial
+        description: ""
+        data_type: string
+      - name: olt
+        description: ""
+        data_type: string
+      - name: status
+        description: ""
+        data_type: string
+      - name: unity
+        description: ""
+        data_type: string
+      - name: manufacture
+        description: ""
+        data_type: string
+      - name: status_contrato
+        description: ""
+        data_type: string
+      - name: created_at
+        description: ""
+        data_type: date
+      - name: updated_at
+        description: ""
+        data_type: date

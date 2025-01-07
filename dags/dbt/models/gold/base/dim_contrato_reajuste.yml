@@ -1,0 +1,23 @@
+models:
+- name: dim_contrato_reajust
+  columns:
+      - name: id_contrato_reajuste
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: valor_anterior
+        data_type: decimal
+      - name: porcentagem_reajuste
+        data_type: double
+      - name: valor_final
+        data_type: decimal
+      - name: versao_contrato
+        data_type: long
+      - name: data_primeira_consulta
+        data_type: timestamp
+      - name: data_segunda_consulta
+        data_type: timestamp
+      - name: data_processamento
+        data_type: timestamp
+      - name: data_extracao
+        data_type: timestamp_ntz

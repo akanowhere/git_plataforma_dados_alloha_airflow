@@ -1,0 +1,91 @@
+models:
+  - name: vw_fluxo_ecare_massivas_air
+    description: "Fluxo para obter informacoes de alarmes massivos segundo air"
+    column:
+    - name: id
+      description: ""
+      data_type: long
+    - name: protocolo
+      description: ""
+      data_type: string
+    - name: unidade
+      description: ""
+      data_type: string
+    - name: cidade
+      description: ""
+      data_type: string
+    - name: estado
+      description: ""
+      data_type: string
+    - name: territorio
+      description: ""
+      data_type: string
+    - name: regional
+      description: ""
+      data_type: string
+    - name: data_criacao
+      description: ""
+      data_type: date
+    - name: data_inicio
+      description: ""
+      data_type: date
+    - name: data_fim
+      description: ""
+      data_type: date
+    - name: usuario_criacao
+      description: ""
+      data_type: string
+    - name: ura_ativa
+      description: ""
+      data_type: string
+    - name: vigente
+      description: ""
+      data_type: string
+    - name: equipe_responsavel
+      description: ""
+      data_type: string
+    - name: id_problema
+      description: ""
+      data_type: string
+    - name: clientes_afetados
+      description: ""
+      data_type: int
+    - name: nivel_criticidade
+      description: ""
+      data_type: string
+    - name: afeta_internet
+      description: ""
+      data_type: string
+    - name: afeta_telefonia
+      description: ""
+      data_type: string
+    - name: afeta_tv
+      description: ""
+      data_type: string
+    - name: falha_energia
+      description: ""
+      data_type: string
+    - name: ocorrencia
+      description: ""
+      data_type: string
+    - name: id_os_rede_externa
+      description: ""
+      data_type: string
+    - name: tempo_solucao
+      description: ""
+      data_type: string
+    - name: proxima_atualizacao
+      description: ""
+      data_type: date
+    - name: impacto
+      description: ""
+      data_type: string
+    - name: usuario_alteracao
+      description: ""
+      data_type: string
+    - name: data_alteracao
+      description: ""
+      data_type: date
+    - name: atividades
+      description: ""
+      data_type: string

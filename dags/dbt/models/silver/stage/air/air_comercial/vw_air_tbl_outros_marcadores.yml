@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_outros_marcadores
+    description: Tabela stage vw_air_tbl_outros_marcadores
+    columns:
+      - name: id
+        data_type: long
+      - name: id_cliente
+        data_type: long
+      - name: marcador
+        data_type: string

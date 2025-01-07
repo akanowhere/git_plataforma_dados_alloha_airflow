@@ -1,0 +1,7 @@
+# version: 2
+
+# models:
+#   - name: dim_faturas_mailing_completa
+#     description: Tabela com informações de faturas.
+#     columns:
+#       - name:

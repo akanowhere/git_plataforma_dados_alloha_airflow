@@ -1,0 +1,7 @@
+models:
+- name: vw_db_financeiro_tbl_aplicacao_cobranca_consolidada
+  columns:
+  - name: ID_CONTRATO_AIR_FILHO
+    data_type: string
+  - name: ID_CONTRATO_AIR_PAGADOR
+    data_type: string

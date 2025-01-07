@@ -1,0 +1,64 @@
+models:
+  - name: vw_fluxo_chamados_fechados
+    description: "Fluxo para analisar volumetria de chamados fechados"
+    column:
+      - name: id_chamado
+        description: ""
+        data_type: long
+      - name: data_abertura
+        description: ""
+        data_type: date
+      - name: data_transferencia
+        description: ""
+        data_type: date
+      - name: usuario_abertura
+        description: ""
+        data_type: string
+      - name: data_conclusao
+        description: ""
+        data_type: date
+      - name: usuario_atribuido
+        description: ""
+        data_type: string
+      - name: id_contrato
+        description: ""
+        data_type: long
+      - name: motivo_conclusao
+        description: ""
+        data_type: string
+      - name: id_cliente
+        description: ""
+        data_type: long
+      - name: endereco_unidade
+        description: ""
+        data_type: string
+      - name: contrato_b2b
+        description: ""
+        data_type: string
+      - name: prioridade
+        description: ""
+        data_type: string
+      - name: data_prioridade
+        description: ""
+        data_type: date
+      - name: id_classificacao
+        description: ""
+        data_type: long
+      - name: codigo_classificacao
+        description: ""
+        data_type: string
+      - name: nome_classificacao
+        description: ""
+        data_type: string
+      - name: id_fila
+        description: ""
+        data_type: long
+      - name: codigo_fila
+        description: ""
+        data_type: string
+      - name: nome_fila
+        description: ""
+        data_type: string
+      - name: nome_fila_origem
+        description: ""
+        data_type: string

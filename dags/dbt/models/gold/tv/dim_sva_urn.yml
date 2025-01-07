@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_sva_urn
+    description: Tabela dimensão dim_sva_urn
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_sva
+        data_type: long
+      - name: urn
+        data_type: string
+      - name: descricao
+        data_type: string

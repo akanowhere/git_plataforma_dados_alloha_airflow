@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: dim_contrato_item
+    description: Tabela dimensão para os itens do contrato do cliente
+    columns:
+      - name: id_contrato_item
+        data_type: long
+      - name: id_contrato_produto
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: data_alteracao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: valor_unitario
+        data_type: double
+      - name: valor_base
+        data_type: double
+      - name: quantidade
+        data_type: long
+      - name: valor_final
+        data_type: double
+      - name: item_codigo
+        data_type: string
+      - name: item_nome
+        data_type: string
+      - name: data_alteracao_produto
+        data_type: string
+      - name: usuario_alteracao_produto
+        data_type: string
+      - name: excluido_produto
+        data_type: boolean
+      - name: versao_contrato_produto
+        data_type: long
+      - name: item_codigo_produto
+        data_type: string
+      - name: item_nome_produto
+        data_type: string
+      - name: item_grupo_produto
+        data_type: string
+      - name: adicional_produto
+        data_type: boolean
+      - name: data_extracao
+        data_type: timestamp_ntz

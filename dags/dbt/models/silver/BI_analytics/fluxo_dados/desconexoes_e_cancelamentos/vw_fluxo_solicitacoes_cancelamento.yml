@@ -1,0 +1,40 @@
+models:
+  - name: vw_fluxo_solicitacoes_cancelamento
+    description: "Fluxo para analisar solicitacoes de cancelamento"
+    column:
+      - name: id
+        description: ""
+        data_type: long
+      - name: data
+        description: ""
+        data_type: date
+      - name: usuario
+        description: ""
+        data_type: string
+      - name: contrato
+        description: ""
+        data_type: long
+      - name: tipo_solicitacao
+        description: ""
+        data_type: string
+      - name: ferramenta_retencao
+        description: ""
+        data_type: string
+      - name: motivo
+        description: ""
+        data_type: string
+      - name: submotivo
+        description: ""
+        data_type: string
+      - name: cidade
+        description: ""
+        data_type: string
+      - name: estado
+        description: ""
+        data_type: string
+      - name: marca
+        description: ""
+        data_type: string      
+      - name: tipo_cliente
+        description: ""
+        data_type: string

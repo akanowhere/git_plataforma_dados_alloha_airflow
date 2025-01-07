@@ -1,0 +1,85 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_remessa
+    columns:
+      - name: id_remessa
+        data_type: string
+      - name: pagador_nome
+        data_type: string
+      - name: pagador_documento
+        data_type: string
+      - name: pagador_id_sydle
+        data_type: string
+      - name: beneficiario_nome
+        data_type: string
+      - name: beneficiario_documento
+        data_type: string
+      - name: beneficiario_id_sydle
+        data_type: string
+      - name: status_remessa
+        data_type: string
+      - name: codigo_remessa
+        data_type: string
+      - name: valor_remessa
+        data_type: string
+      - name: valor_pago
+        data_type: string
+      - name: valor_estornado
+        data_type: string
+      - name: convenio_nome
+        data_type: string
+      - name: convenio_identificador
+        data_type: string
+      - name: convenio_ativo
+        data_type: string
+      - name: convenio_emissor_nome
+        data_type: string
+      - name: convenio_emissor_documento
+        data_type: string
+      - name: convenio_emissor_id_sydle
+        data_type: string
+      - name: cliente_nome
+        data_type: string
+      - name: cliente_documento
+        data_type: string
+      - name: cliente_id_sydle
+        data_type: string
+      - name: grupo_de_forma_de_pagamento
+        data_type: string
+      - name: condicao_de_pagamento_nome
+        data_type: string
+      - name: condicao_de_pagamento_identificador
+        data_type: string
+      - name: condicao_de_pagamento_parcela
+        data_type: string
+      - name: data_vencimento
+        data_type: timestamp
+      - name: multa
+        data_type: string
+      - name: juros
+        data_type: string
+      - name: data_status
+        data_type: timestamp
+      - name: data_previsao_repasse
+        data_type: timestamp
+      - name: data_repasse
+        data_type: timestamp
+      - name: data_contestacao
+        data_type: timestamp
+      - name: valor_taxas
+        data_type: string
+      - name: valor_liquido_repasse
+        data_type: string
+      - name: retorno
+        data_type: string
+      - name: detalhes_retorno
+        data_type: string
+      - name: faturas
+        data_type: string
+      - name: parcelas
+        data_type: string
+      - name: data_integracao
+        data_type: timestamp
+      - name: data_extracao
+        data_type: timestamp
