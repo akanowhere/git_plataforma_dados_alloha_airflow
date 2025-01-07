@@ -1,0 +1,178 @@
+models:
+  - name: vw_fluxo_processos_venda_sydle
+    description: "Fluxo que disponibiliza dados referentes as vendas/tentativas realizadas na sydle"
+    column:
+      - name: codigo_sydle_one
+        description: " "
+        data_type: string
+      - name: nome_aprovacao
+        description: " "
+        data_type: string
+      - name: status_aprovacao
+        description: " "
+        data_type: string
+      - name: nome_aprovador_final_da_venda
+        description: " "
+        data_type: string
+      - name: executor_aprovacao
+        description: " "
+        data_type: string
+      - name: data_atendimento
+        description: " "
+        data_type: timestamp
+      - name: data_conclusao
+        description: " "
+        data_type: timestamp
+      - name: duracao_total
+        description: " "
+        data_type: int
+      - name: duracao_atendimento
+        description: " "
+        data_type: int
+      - name: canal_venda
+        description: " "
+        data_type: string
+      - name: data_criacao
+        description: " "
+        data_type: timestamp
+      - name: data_venda
+        description: " "
+        data_type: timestamp
+      - name: flag_aprovado_auditoria
+        description: " "
+        data_type: bool
+      - name: flag_venda_refeita
+        description: " "
+        data_type: bool
+      - name: justificativa_aprovacao
+        description: " "
+        data_type: string
+      - name: justificativa_aprovacao_id_sydle_one
+        description: " "
+        data_type: string
+      - name: status_processo
+        description: " "
+        data_type: string
+      - name: analise_financeira
+        description: " "
+        data_type: string
+      - name: codigo_prospecto
+        description: " "
+        data_type: string
+      - name: prospecto
+        description: " "
+        data_type: string
+      - name: endereco_instalacao_estado
+        description: " "
+        data_type: string
+      - name: endereco_instalacao_cidade
+        description: " "
+        data_type: string
+      - name: endereco_instalacao_bairro
+        description: " "
+        data_type: string
+      - name: endereco_instalacao_logradouro
+        description: " "
+        data_type: string
+      - name: endereco_instalacao_numero
+        description: " "
+        data_type: string
+      - name: oferta_selecionada
+        description: " "
+        data_type: string
+      - name: parceiro
+        description: " "
+        data_type: string
+      - name: codigo_sydle_responsavel_venda
+        description: " "
+        data_type: string
+      - name: nome_reponsavel_venda
+        description: " "
+        data_type: string
+      - name: nome_condominio
+        description: " "
+        data_type: string
+      - name: codigo_sydle_condominio
+        description: " "
+        data_type: string
+      - name: cpf
+        description: " "
+        data_type: string
+      - name: cnpj
+        description: " "
+        data_type: string
+      - name: codigo_contrato
+        description: " "
+        data_type: long
+      - name: status_venda
+        description: " "
+        data_type: string
+      - name: resultado_analise_financeira_valor_maximo_restricoes_spc_soma
+        description: " "
+        data_type: int
+      - name: resultado_analise_financeira_quantidade_maxima_restricoes_spc
+        description: " "
+        data_type: int
+      - name: resultado_analise_financeira_aprovado_serasa
+        description: " "
+        data_type: bool
+      - name: resultado_analise_financeira_classificacao_minima_serasa
+        description: " "
+        data_type: int
+      - name: nome_regional
+        description: " "
+        data_type: string
+      - name: codigo_sydle_regional
+        description: " "
+        data_type: string
+      - name: telefone_utilizado_na_venda
+        description: " "
+        data_type: int
+      - name: codigo_contrato_air
+        description: " "
+        data_type: long
+      - name: nome_responsavel_analise_financeira_interna
+        description: " "
+        data_type: string
+      - name: codigo_sydle_responsavel_analise_financeira_interna
+        description: " "
+        data_type: string
+      - name: nome_responsavel_analise_financeira_externa
+        description: " "
+        data_type: string
+      - name: codigo_sydle_responsavel_analise_financeira_externa
+        description: " "
+        data_type: string
+      - name: nome_responsavel_analise_tecnica
+        description: " "
+        data_type: string
+      - name: codigo_sydle_responsavel_analise_tecnica
+        description: " "
+        data_type: string
+      - name: marca_associada
+        description: " "
+        data_type: string
+      - name: nome_unidade
+        description: " "
+        data_type: string
+      - name: sigla_unidade
+        description: " "
+        data_type: string
+      - name: motivo_auditoria_qualify
+        description: " "
+        data_type: string
+      - name: valor_total_mensalidade_com_desconto
+        description: " "
+        data_type: double
+      - name: data_ativacao
+        description: " "
+        data_type: timestamp
+      - name: data_integracao
+        description: " "
+        data_type: timestamp
+      - name: data_extracao
+        description: " "
+        data_type: timestamp
+      - name: data_referencia
+        description: " "
+        data_type: date

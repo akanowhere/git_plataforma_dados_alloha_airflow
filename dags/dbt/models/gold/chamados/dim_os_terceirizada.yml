@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_os_terceirizada
+    description: Tabela que trás as ordens de serviço de terceirizadas do wfm.
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: codigo_usuario
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: posicao_deposito_sap
+        data_type: string
+      - name: ativo
+        data_type: boolean
+      - name: razao_social
+        data_type: string
+      - name: cnpj
+        data_type: string

@@ -1,0 +1,121 @@
+models:
+  - name: tbl_analiticos_operacao
+    description: " "
+    columns:
+      - name: posicao_sap
+        description: ''
+        data_type: string
+      - name: terceirizada
+        description: ''
+        data_type: string
+      - name: bairro
+        description: ''
+        data_type: string
+      - name: marca
+        description: ''
+        data_type: string
+      - name: cidade
+        description: ''
+        data_type: string
+      - name: regional
+        description: ''
+        data_type: string
+      - name: cluster
+        description: ''
+        data_type: string
+      - name: unidade
+        description: ''
+        data_type: string
+      - name: codigo_contrato
+        description: ''
+        data_type: long
+      - name: codigo_chamado
+        description: ''
+        data_type: long
+      - name: codigo_os
+        description: ''
+        data_type: long
+      - name: numero_tarefa
+        description: ''
+        data_type: long
+      - name: fila
+        description: ''
+        data_type: string
+      - name: tecnico
+        description: ''
+        data_type: string
+      - name: id_tecnico
+        description: ''
+        data_type: long
+      - name: usuario_conclusao
+        description: ''
+        data_type: string
+      - name: motivo_conclusao
+        description: ''
+        data_type: string
+      - name: conclusao
+        description: ''
+        data_type: string
+      - name: sistema_origem
+        description: ''
+        data_type: string
+      - name: os_anterior
+        description: ''
+        data_type: long
+      - name: motivo_conclusao_anterior
+        description: ''
+        data_type: string
+      - name: data_conclusao_anterior
+        description: ''
+        data_type: string
+      - name: id_tecnico_anterior
+        description: ''
+        data_type: long
+      - name: tecnico_anterior
+        description: ''
+        data_type: string
+      - name: turno
+        description: ''
+        data_type: string
+      - name: data_abertura_chamado
+        description: ''
+        data_type: string
+      - name: data_abertura_os
+        description: ''
+        data_type: string
+      - name: data_inicio_servico
+        description: ''
+        data_type: string
+      - name: data_ativacao
+        description: ''
+        data_type: date
+      - name: data_criacao_contrato
+        description: ''
+        data_type: date
+      - name: data_evento
+        description: ''
+        data_type: string
+      - name: data_conclusao
+        description: ''
+        data_type: string
+      - name: descricao
+        description: ''
+        data_type: string
+      - name: protocolo
+        description: ''
+        data_type: long
+      - name: aging
+        description: ''
+        data_type: decimal(23,1)
+      - name: aging_categoria
+        description: ''
+        data_type: string
+      - name: indicador
+        description: ''
+        data_type: string
+      - name: mes_referencia
+        description: ''
+        data_type: date
+      - name: data_referencia
+        description: ''
+        data_type: date

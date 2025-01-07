@@ -1,0 +1,79 @@
+models:
+  - name: faturamento_componentes_fiscais
+    column:
+      - name: Polo
+        data_type: string
+      - name: Marca
+        data_type: string
+      - name: unidade
+        data_type: string
+      - name: Regional
+        data_type: string
+      - name: Regiao
+        data_type: string
+      - name: sub_regional
+        data_type: string
+      - name: numero
+        data_type: string
+      - name: nome_produto
+        data_type: string
+      - name: servico_tributavel_nome
+        data_type: string
+      - name: segmento
+        data_type: string
+      - name: mes_referencia
+        data_type: string
+      - name: data_vencimento
+        data_type: timestamp
+      - name: data_pagamento
+        data_type: timestamp
+      - name: valor_pago
+        data_type: double
+      - name: Ciclo
+        data_type: long
+      - name: Cidade
+        data_type: string
+      - name: Estado
+        data_type: string
+      - name: cliente_nome
+        data_type: string
+      - name: cliente_documento
+        data_type: string
+      - name: ICMS
+        data_type: decimal
+      - name: P_ICMS
+        data_type: decimal
+      - name: PIS
+        data_type: decimal
+      - name: P_PIS
+        data_type: decimal
+      - name: COFINS
+        data_type: decimal
+      - name: P_COFINS
+        data_type: decimal
+      - name: tipo
+        data_type: string
+      - name: descricao_produto
+        data_type: string
+      - name: id_fatura
+        data_type: string
+      - name: id_nota_fiscal
+        data_type: string
+      - name: contrato_air
+        data_type: long
+      - name: data_emissao_nota_fiscal
+        data_type: string
+      - name: valor_total_nf
+        data_type: decimal
+      - name: status
+        data_type: string
+      - name: Classificacao_Fatura
+        data_type: string
+      - name: valor_total_dos_impostos_do_produto
+        data_type: decimal
+      - name: valor_base_produto
+        data_type: decimal
+      - name: dia_vencimento
+        data_type: long
+      - name: data_extracao
+        data_type: timestamp_ntz

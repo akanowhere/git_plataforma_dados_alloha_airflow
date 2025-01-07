@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: dim_chamado
+    description: Tabela dimensão com informações dos chamados abertos pelos clientes
+    columns:
+      - name: id
+        data_type: long
+      - name: data_abertura
+        data_type: timestamp
+      - name: data_transferencia
+        data_type: timestamp
+      - name: data_conclusao
+        data_type: timestamp
+      - name: usuario_abertura
+        data_type: string
+      - name: usuario_atribuido
+        data_type: string
+      - name: motivo_conclusao
+        data_type: string
+      - name: codigo_contrato
+        data_type: long
+      - name: codigo_cliente
+        data_type: long
+      - name: endereco_unidade
+        data_type: string
+      - name: endereco_bairro
+        data_type: string
+      - name: endereco_logradouro
+        data_type: string
+      - name: prioridade
+        data_type: string
+      - name: data_prioridade
+        data_type: timestamp
+      - name: contrato_b2b
+        data_type: boolean
+      - name: id_classificacao
+        data_type: long
+      - name: data_alteracao_classificacao
+        data_type: timestamp
+      - name: excluido_classificacao
+        data_type: boolean
+      - name: codigo_classificacao
+        data_type: string
+      - name: nome_classificacao
+        data_type: string
+      - name: tipo_classificacao
+        data_type: string
+      - name: ativo_classificacao
+        data_type: boolean
+      - name: id_fila
+        data_type: long
+      - name: data_alteracao_fila
+        data_type: timestamp
+      - name: excluido_fila
+        data_type: boolean
+      - name: codigo_fila
+        data_type: string
+      - name: nome_fila
+        data_type: string
+      - name: ativo_fila
+        data_type: boolean
+      - name: nome_fila_origem
+        data_type: string
+      - name: equipe_origem
+        data_type: string

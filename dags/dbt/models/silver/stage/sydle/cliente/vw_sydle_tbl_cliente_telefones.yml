@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_cliente_telefones
+    columns:
+      - name: id_cliente
+        data_type: string
+      - name: tipo
+        data_type: string
+      - name: numero
+        data_type: string

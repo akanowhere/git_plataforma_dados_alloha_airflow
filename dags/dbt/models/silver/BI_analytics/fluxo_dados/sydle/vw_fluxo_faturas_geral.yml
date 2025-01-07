@@ -1,0 +1,52 @@
+models:
+  - name: vw_fluxo_faturas_geral
+    description: "Fluxo que disponibiliza dados das faturas desde 2023-01-01"
+    column:
+      - name: fonte
+        description: "Origem das faturas"
+        data_type: long
+      - name: contrato_air
+        description: "Código do contrato no Air"
+        data_type: long
+      - name: codigo_cliente_air
+        description: "Código do cliente no Air"
+        data_type: long
+      - name: codigo_fatura_sydle
+        description: "Código da fatura na sydle"  
+        data_type: long
+      - name: codigo_legado_fatura
+        description: "Código da fatura no sistema anterior caso tenha sido migrada"
+        data_type: string
+      - name: status_fatura
+        description: "Status atual da fatura na sydle"
+        data_type: string
+      - name: classificacao
+        description: "Flag para determinar o tipo de fatura Ex: Inicial, Final, Periódica..."
+        data_type: string
+      - name: data_criacao
+        description: "Data de criação da fatura"
+        data_type: timestamp
+      - name: data_vencimento
+        description: "Data de vencimento da fatura"
+        data_type: date
+      - name: data_pagamento
+        description: "Data em que a fatura foi paga"
+        data_type: date
+      - name: valor_sem_multa_juros
+        description: "Valor da fatura descontado a multa de atraso ou juros caso tenha"   
+        data_type: doble
+      - name: valor_pago
+        description: "Valor pago pelo cliente" 
+        data_type: doble
+      - name: beneficiario
+        description: Beneficiário do pagamento realizado"
+        data_type: string
+      - name: mes_referencia
+        description: "Mês ao qual a fatura pertence"
+        data_type: string
+      - name: marca
+        description: "Marca do cliente"
+        data_type: string
+      - name: data_atualizacao_fluxo
+        description: "Data em que o fluxo foi atualizado"
+        data_type: date

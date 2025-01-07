@@ -1,0 +1,70 @@
+models:
+  - name: tbl_reversao_negociacao
+    description: ""
+    columns:
+      - name: marca
+        description: ""
+        data_type: string
+      - name: data_negociacao
+        description: ""
+        data_type: date
+      - name: mes_negociacao
+        description: ""
+        data_type: string
+      - name: mes_vencimento
+        description: ""
+        data_type: string
+      - name: data_vencimento
+        description: ""
+        data_type: date
+      - name: contrato
+        description: ""
+        data_type: bigint
+      - name: id_negociador
+        description: ""
+        data_type: string
+      - name: negociador
+        description: ""
+        data_type: string
+      - name: codigo_fatura_gerada
+        description: ""
+        data_type: bigint
+      - name: valor_fatura
+        description: ""
+        data_type: double
+      - name: valor_fatura_pago
+        description: ""
+        data_type: double
+      - name: data_pagamento
+        description: ""
+        data_type: date
+      - name: status_fatura_atual
+        description: ""
+        data_type: string
+      - name: aging_atual
+        description: ""
+        data_type: int
+      - name: regional
+        description: ""
+        data_type: string
+      - name: valor_total_divida_origem
+        description: ""
+        data_type: double
+      - name: valor_total_divida_nova
+        description: ""
+        data_type: double
+      - name: DESCONTO_OU_ACRESCIMO_NEGOCIACAO
+        description: ""
+        data_type: string
+      - name: mailing_inicial
+        description: ""
+        data_type: string
+      - name: id_negociacao
+        description: ""
+        data_type: string
+      - name: email
+        description: ""
+        data_type: string
+      - name: cpf_cnpj
+        description: ""
+        data_type: string

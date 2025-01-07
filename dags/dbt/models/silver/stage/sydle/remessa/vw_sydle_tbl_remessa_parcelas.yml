@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_remessa_parcelas
+    columns:
+      - name: id_remessa
+        data_type: string
+      - name: parcela_numero
+        data_type: integer
+      - name: parcela_data_alteracao_status
+        data_type: timestamp
+      - name: parcela_valor
+        data_type: double
+      - name: parcela_status
+        data_type: string

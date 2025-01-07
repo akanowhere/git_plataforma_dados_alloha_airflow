@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: legado
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: legado
+    tables:
+      - name: faturas_mailing_deletadas
+      - name: dim_faturas_mailing
+      - name: fatura
+

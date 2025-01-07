@@ -1,0 +1,10 @@
+models:
+  - name: vw_fluxo_tbl_confirmados_agendamento
+    description: ""
+    columns: 
+      - name: id
+        type: string
+        description: ""
+      - name: data_confirmacao_agendamento
+        type: date
+        description: ""

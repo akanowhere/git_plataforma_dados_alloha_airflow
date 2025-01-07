@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: legado
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: legado
+    tables:
+      - name: five9_fato_chamadas_recebidas_voz
+      - name: five9_fato_chamadas_ativas_voz
+      - name: five9_fato_chamadas_chat
+      - name: five9_fato_tempos_operacionais_agentes

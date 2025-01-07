@@ -1,0 +1,196 @@
+models:
+  - name: tbl_basao
+    description: " "
+    columns:
+      - name: codigo_contrato_air
+        description: " "
+        data_type: long
+      - name: codigo_cliente
+        description: " "
+        data_type: long
+      - name: flag_cnpj_sumicity
+        description: " "
+        data_type: bool
+      - name: data_ativacao_contrato
+        description: " "
+        data_type: date
+      - name: data_ativacao_pacote_atual
+        description: " "
+        data_type: date
+      - name: data_venda
+        description: " "
+        data_type: date
+      - name: status_contrato
+        description: " "
+        data_type: string
+      - name: tipo_pessoa
+        description: " "
+        data_type: string
+      - name: segmento
+        description: " "
+        data_type: string
+      - name: flag_bl
+        description: " "
+        data_type: bool
+      - name: flag_fx
+        description: " "
+        data_type: bool
+      - name: flag_tv
+        description: " "
+        data_type: bool
+      - name: velocidade_internet
+        description: " "
+        data_type: string
+      - name: nome_campanha
+        description: " "
+        data_type: string
+      - name: codigo_campanha
+        description: " "
+        data_type: string
+      - name: data_vencimento_fidelidade
+        description: " "
+        data_type: date
+      - name: flag_fidelizacao_atual
+        description: " "
+        data_type: bool
+      - name: nome_pacote
+        description: " "
+        data_type: string
+      - name: codigo_pacote
+        description: " "
+        data_type: string
+      - name: valor_total
+        description: " "
+        data_type: double
+      - name: valor_soma_itens
+        description: " "
+        data_type: double
+      - name: valor_soma_adicionais
+        description: " "
+        data_type: double
+      - name: descricao_adicionais
+        description: " "
+        data_type: string
+      - name: desconto_campanha
+        description: " "
+        data_type: double
+      - name: data_ultimo_desconto_campanha
+        description: " "
+        data_type: date
+      - name: desconto_retencao
+        description: " "
+        data_type: double
+      - name: data_ultimo_desconto_retencao
+        description: " "
+        data_type: date
+      - name: desconto_ajuste_comercial
+        description: " "
+        data_type: double
+      - name: data_ultimo_desconto_ajuste_comercial
+        description: " "
+        data_type: date
+      - name: desconto_ajuste_financeiro
+        description: " "
+        data_type: double
+      - name: data_ultimo_desconto_ajuste_financeiro
+        description: " "
+        data_type: date
+      - name: desconto_cortesia
+        description: " "
+        data_type: double
+      - name: data_ultimo_desconto_cortesia
+        description: " "
+        data_type: date        
+      - name: desconto_total
+        description: " "
+        data_type: double
+      - name: ticket_final
+        description: " "
+        data_type: double
+      - name: data_ultimo_desconto
+        description: " "
+        data_type: date
+      - name: fabricante
+        description: " "
+        data_type: string
+      - name: quantidade_portas_lan
+        description: " "
+        data_type: int
+      - name: quantidade_portas_telefonia
+        description: " "
+        data_type: int
+      - name: flag_wifi
+        description: " "
+        data_type: bool
+      - name: flag_giga
+        description: " "
+        data_type: bool
+      - name: tipo_wifi
+        description: " "
+        data_type: string
+      - name: serial_onu
+        description: " "
+        data_type: string
+      - name: modelo_onu
+        description: " "
+        data_type: string
+      - name: marcador_contrato
+        description: " "
+        data_type: string
+      - name: marcador_cliente
+        description: " "
+        data_type: string
+      - name: data_ultimo_reajuste
+        description: " "
+        data_type: date
+      - name: ticket_antes_reajuste
+        description: " "
+        data_type: double
+      - name: ticket_apos_reajuste
+        description: " "
+        data_type: double
+      - name: aliquota_reajuste
+        description: " "
+        data_type: double
+      - name: marca
+        description: " "
+        data_type: string
+      - name: cluster
+        description: " "
+        data_type: string
+      - name: regional
+        description: " "
+        data_type: string
+      - name: uf
+        description: " "
+        data_type: string
+      - name: unidade
+        description: " "
+        data_type: string
+      - name: cidade
+        description: " "
+        data_type: string
+      - name: cep
+        description: " "
+        data_type: string
+      - name: logradouro
+        description: " "
+        data_type: string
+      - name: bairro
+        description: " "
+        data_type: string
+      - name: complemento
+        description: " "
+        data_type: string
+      - name: numero
+        description: " "
+        data_type: string
+      - name: data_referencia
+        description: " "
+        data_type: date
+      - name: mes_referencia
+        description: " "
+        data_type: string
+      - name: data_atualizacao
+        description: " "
+        data_type: timestamp

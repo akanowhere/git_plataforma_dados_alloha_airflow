@@ -1,0 +1,60 @@
+models:
+  - name: tbl_contratos_suspensao
+    columns:
+      - name: marca
+        description: " "
+        data_type: string
+      - name: codigo_contrato_air
+        description: " "
+        data_type: long
+      - name: codigo_cliente
+        description: " "
+        data_type: long
+      - name: status_contrato
+        description: " "
+        data_type: string
+      - name: cpf_cnpj
+        description: " "
+        data_type: string
+      - name: tipo_pessoa
+        description: " "
+        data_type: string
+      - name: codigo_fatura_sydle
+        description: " "
+        data_type: long
+      - name: status_fatura
+        description: " "
+        data_type: string
+      - name: classificacao
+        description: " "
+        data_type: string
+      - name: data_criacao
+        description: " "
+        data_type: date
+      - name: data_vencimento
+        description: " "
+        data_type: date
+      - name: mes_referencia
+        description: " "
+        data_type: string
+      - name: aging
+        description: " "
+        data_type: int
+      - name: valor_original
+        description: " "
+        data_type: double
+      - name: cidade
+        description: " "
+        data_type: string
+      - name: estado
+        description: " "
+        data_type: string
+      - name: regra_suspensao
+        description: " "
+        data_type: string
+      - name: atraso_para_suspensao
+        description: " "
+        data_type: int
+      - name: data_referencia
+        description: " "
+        data_type: date

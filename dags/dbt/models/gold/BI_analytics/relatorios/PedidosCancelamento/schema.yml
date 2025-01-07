@@ -1,0 +1,87 @@
+models:
+  - name: tbl_pedidos_cancelamentos_voluntarios
+    columns:
+      - name: id
+        description: Identificador único do pedido.
+        datatype: integer
+      - name: data
+        description: Data da criação do pedido, no formato timestamp.
+        datatype: timestamp
+      - name: data_ativacao
+        description: Data da primeira ativação do contrato.
+        datatype: date
+      - name: codigo_contrato
+        description: Código de identificação do contrato associado ao pedido.
+        datatype: string
+      - name: motivo
+        description: Motivo do pedido ou cancelamento, com base no catálogo ou motivo original.
+        datatype: string
+      - name: submotivo
+        description: Submotivo detalhado do pedido ou cancelamento.
+        datatype: string
+      - name: primeiro_nivel
+        description: Primeiro nível de categorização do pedido.
+        datatype: string
+      - name: segundo_nivel
+        description: Segundo nível de categorização do pedido, incluindo detalhes como descontos ou tipo de cancelamento.
+        datatype: string
+      - name: usuario
+        description: Usuário responsável pela criação do pedido.
+        datatype: string
+      - name: unidade
+        description: Unidade de atendimento associada ao contrato.
+        datatype: string
+      - name: origem_contato
+        description: Origem do contato que gerou o pedido.
+        datatype: string
+      - name: nome_unidade
+        description: Nome da unidade de atendimento.
+        datatype: string
+      - name: marca
+        description: Marca associada à unidade de atendimento.
+        datatype: string
+      - name: cidade
+        description: Cidade de atendimento do contrato, com caracteres especiais removidos.
+        datatype: string
+      - name: estado
+        description: Estado (UF) de atendimento do contrato.
+        datatype: string
+      - name: tipo
+        description: Tipo de ação associada ao registro (e.g., 'SOLICITACAO', 'CANCELAMENTO', 'SEM_PERFILACAO').
+        datatype: string
+      - name: email
+        description: Email do usuário que realizou a ação.
+        datatype: string
+      - name: macro_regional
+        description: Macro-região associada à cidade do contrato.
+        datatype: string
+      - name: regional
+        description: Regional associada à cidade do contrato.
+        datatype: string
+      - name: subregional
+        description: Subregional associada à cidade do contrato.
+        datatype: string
+      - name: qtd_pedidos_90d
+        description: Quantidade de pedidos realizados nos últimos 90 dias para o mesmo contrato.
+        datatype: integer
+      - name: ultimo_id_90d
+        description: Identificador do último pedido feito nos últimos 90 dias.
+        datatype: integer
+      - name: data_ultima_ret
+        description: Data do último pedido de retenção nos últimos 90 dias.
+        datatype: timestamp
+      - name: ferramenta_ultima_ret
+        description: Ferramenta ou método utilizado na última retenção nos últimos 90 dias.
+        datatype: string
+      - name: motivo_ultima_ret
+        description: Motivo da última retenção nos últimos 90 dias.
+        datatype: string
+      - name: motivo_grupo
+        description: Agrupamento do motivo em categorias principais.
+        datatype: string
+      - name: segundo_nivel_grupo
+        description: Agrupamento do segundo nível em categorias principais.
+        datatype: string
+      - name: data_referencia
+        description: Data de referência, sendo o dia anterior ao atual.
+        datatype: date

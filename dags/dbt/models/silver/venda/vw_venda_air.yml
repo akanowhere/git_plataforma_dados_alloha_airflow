@@ -1,0 +1,139 @@
+models:
+  - name: vw_venda_air
+    column:
+      - name: data_criacao
+        data_type: string
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: natureza
+        data_type: string
+      - name: fase_atual
+        data_type: string
+      - name: id_vendedor
+        data_type: long
+      - name: id_campanha
+        data_type: long
+      - name: id_lead
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: legado_id
+        data_type: long
+      - name: legado_sistema
+        data_type: string
+      - name: id_regra_suspensao
+        data_type: long
+      - name: id_vencimento
+        data_type: long
+      - name: id_endereco_entrega
+        data_type: long
+      - name: id_endereco_cobranca
+        data_type: long
+      - name: unidade_atendimento
+        data_type: string
+      - name: cod_tipo_cobranca
+        data_type: string
+      - name: data_venda
+        data_type: string
+      - name: pacote_base_nome
+        data_type: string
+      - name: pacote_base_codigo
+        data_type: string
+      - name: pacote_valor_total
+        data_type: double
+      - name: concretizada
+        data_type: boolean
+      - name: confirmada
+        data_type: boolean
+      - name: valor_total
+        data_type: double
+      - name: possui_internet
+        data_type: boolean
+      - name: possui_tv
+        data_type: boolean
+      - name: possui_telefone
+        data_type: boolean
+      - name: recorrencia_percentual_desconto
+        data_type: double
+      - name: recorrencia_meses_desconto
+        data_type: long
+      - name: equipe
+        data_type: string
+      - name: id_processo_venda_sydle
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz
+      - name: campanha_codigo
+        data_type: string
+      - name: campanha_nome
+        data_type: string
+      - name: id_venda
+        data_type: long
+      - name: id_cliente
+        data_type: long
+      - name: segmento
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: tipo_cliente
+        data_type: string
+      - name: valor_final_com_desconto
+        data_type: double
+      - name: desconto
+        data_type: double
+      - name: fonte
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: endereco_cobranca
+        data_type: string
+      - name: numero_cobranca
+        data_type: string
+      - name: latitude_cobranca
+        data_type: string
+      - name: longitude_cobranca
+        data_type: string
+      - name: endereco_entrega
+        data_type: string
+      - name: numero_entrega
+        data_type: string
+      - name: latitude_entrega
+        data_type: double
+      - name: longitude_entrega
+        data_type: double
+      - name: bairro_entrega
+        data_type: string
+      - name: cep_entrega
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: canal
+        data_type: string
+      - name: unidade
+        data_type: string
+      - name: tipo_residencia
+        data_type: string
+      - name: velocidade
+        data_type: string
+      - name: produto
+        data_type: string
+      - name: pacote_tv
+        data_type: string
+      - name: cobranca
+        data_type: string
+      - name: tipo_canal
+        data_type: string
+      - name: valor_referencia_b2b
+        data_type: double
+      - name: duracao_desconto
+        data_type: long
+      - name: cpf_cnpj
+        data_type: string

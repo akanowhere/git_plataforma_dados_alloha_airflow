@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: air_comercial
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: air_comercial
+    tables:
+      - name: tbl_campanha
+      - name: tbl_cliente_contato
+      - name: tbl_cliente_evento
+      - name: tbl_cliente_fisico
+      - name: tbl_cliente_juridico
+      - name: tbl_cliente
+      - name: tbl_contrato_campanha
+      - name: tbl_contrato_entrega
+      - name: tbl_contrato_item
+      - name: tbl_contrato_migracao
+      - name: tbl_contrato_onu_aviso
+      - name: tbl_contrato_produto
+      - name: tbl_contrato_reajuste
+      - name: tbl_contrato_retencao
+      - name: tbl_contrato
+      - name: tbl_desconto
+      - name: tbl_endereco_cidade
+      - name: tbl_endereco
+      - name: tbl_lead
+      - name: tbl_outros_marcadores
+      - name: tbl_perfilacao_retencao
+      - name: tbl_regra_suspensao
+      - name: tbl_vencimento
+      - name: tbl_venda_adicional
+      - name: tbl_venda
+      - name: tbl_vendedor

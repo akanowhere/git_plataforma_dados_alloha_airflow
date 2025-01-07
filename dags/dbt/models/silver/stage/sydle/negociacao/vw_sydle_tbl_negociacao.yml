@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_negociacao
+    columns:
+      - name: id_registro
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: faturas_negociadas
+        data_type: string
+      - name: motivo_desconto
+        data_type: string
+      - name: regenociacao
+        data_type: string
+      - name: origem
+        data_type: string
+      - name: valor_divida
+        data_type: string
+      - name: valor_negociado
+        data_type: string
+      - name: responsavel_negociacao
+        data_type: string
+      - name: data_negociacao
+        data_type: date
+      - name: codigo_externo_contrato
+        data_type: string
+      - name: faturas_geradas
+        data_type: string
+      - name: id_plano_de_negociacao
+        data_type: string
+      - name: tipo_de_acordo
+        data_type: string
+      - name: parcelas
+        data_type: string
+      - name: pedidos_negociados
+        data_type: string
+      - name: quebra_de_acordo
+        data_type: string
+      - name: pedidos_gerados
+        data_type: string

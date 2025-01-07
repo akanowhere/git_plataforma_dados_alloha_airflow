@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: infobip
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: infobip
+    tables:
+      - name: disparos_whatsapp
+      - name: disparos_whatsapp_billing

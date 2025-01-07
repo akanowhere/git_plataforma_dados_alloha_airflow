@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: dim_chd_classificacao
+    description: Tabela que trás a classificação do chamado.
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: codigo
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: tipo
+        data_type: string
+      - name: ativo
+        data_type: boolean

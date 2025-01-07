@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: fintalk_alloha
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: fintalk_alloha
+    tables:
+      - name: customers
+      - name: events

@@ -1,0 +1,93 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_nota_fiscal
+    columns:
+      - name: id_nota_fiscal
+        data_type: string
+      - name: numero_recibo
+        data_type: string
+      - name: numero
+        data_type: string
+      - name: serie
+        data_type: string
+      - name: codigo_verificacao
+        data_type: string
+      - name: cliente_nome
+        data_type: string
+      - name: cliente_documento
+        data_type: string
+      - name: cliente_id_sydle
+        data_type: string
+      - name: fatura_codigo
+        data_type: string
+      - name: fatura_id_sydle
+        data_type: string
+      - name: status
+        data_type: string
+      - name: tipo
+        data_type: string
+      - name: entidade
+        data_type: string
+      - name: emissor_nome
+        data_type: string
+      - name: emissor_documento
+        data_type: string
+      - name: emissor_id_sydle
+        data_type: string
+      - name: valor_base
+        data_type: string
+      - name: valor_total_impostos
+        data_type: string
+      - name: valor_total_impostos_retidos
+        data_type: string
+      - name: moeda
+        data_type: string
+      - name: itens
+        data_type: string
+      - name: tomador_nome
+        data_type: string
+      - name: tomador_documento
+        data_type: string
+      - name: tomador_inscricao_estadual
+        data_type: string
+      - name: tomador_email
+        data_type: string
+      - name: tomador_id_sydle
+        data_type: string
+      - name: tomador_endereco_cep
+        data_type: string
+      - name: tomador_endereco_logradouro
+        data_type: string
+      - name: tomador_endereco_numero
+        data_type: string
+      - name: tomador_endereco_complemento
+        data_type: string
+      - name: tomador_endereco_referencia
+        data_type: string
+      - name: tomador_endereco_bairro
+        data_type: string
+      - name: tomador_endereco_cidade
+        data_type: string
+      - name: tomador_endereco_codigo_ibge
+        data_type: string
+      - name: tomador_endereco_estado
+        data_type: string
+      - name: tomador_endereco_sigla
+        data_type: string
+      - name: tomador_endereco_pais
+        data_type: string
+      - name: data_emissao_recibo
+        data_type: timestamp
+      - name: data_emissao_nota_fiscal
+        data_type: timestamp
+      - name: lote_nota_fiscal_numero
+        data_type: string
+      - name: lote_nota_fiscal_id_sydle
+        data_type: string
+      - name: lote_nota_fiscal_status
+        data_type: string
+      - name: data_integracao
+        data_type: timestamp
+      - name: data_extracao
+        data_type: timestamp

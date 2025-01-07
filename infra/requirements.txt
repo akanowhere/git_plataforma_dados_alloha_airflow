@@ -1,0 +1,5 @@
+apache-airflow-providers-databricks
+apache-airflow-providers-microsoft-azure
+astronomer-cosmos
+dbt-core==1.7.13
+dbt-databricks

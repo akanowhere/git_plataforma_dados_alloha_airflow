@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: air_chamado
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: air_chamado
+    tables:
+      - name: tbl_agenda_unidade
+      - name: tbl_agenda
+      - name: tbl_chd_chamado
+      - name: tbl_chd_classificacao
+      - name: tbl_chd_descricao
+      - name: tbl_chd_fila
+      - name: tbl_chd_tecnico_unidade
+      - name: tbl_chd_tecnico
+      - name: tbl_chd_transferencia
+      - name: tbl_os_evento
+      - name: tbl_os_hierarquia_fechamento
+      - name: tbl_os_notificacao_confirmacao
+      - name: tbl_os_tecnico
+      - name: tbl_os_terceirizada
+      - name: tbl_os

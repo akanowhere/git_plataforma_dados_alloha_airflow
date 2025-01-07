@@ -1,0 +1,35 @@
+models:
+  - name: base_faturas_meses_passados
+    column:
+      - name: id_cliente_AIR
+        data_type: long
+      - name: CODIGO_CONTRATO_AIR
+        data_type: long
+      - name: codigo_fatura_sydle
+        data_type: long
+      - name: emissao_fatura
+        data_type: timestamp
+      - name: vencimento_fatura
+        data_type: timestamp
+      - name: forma_pagamento_fatura
+        data_type: string
+      - name: data_pagamento_fatura
+        data_type: string
+      - name: mes_referencia_fatura
+        data_type: string
+      - name: classificacao_fatura
+        data_type: string
+      - name: status_fatura
+        data_type: string
+      - name: valor_fatura
+        data_type: double
+      - name: mes_referencia
+        data_type: string
+      - name: data_ativacao_contrato
+        data_type: unknown
+      - name: data_cancelamento_contrato
+        data_type: string
+      - name: ciclo
+        data_type: long
+      - name: data_extracao
+        data_type: timestamp

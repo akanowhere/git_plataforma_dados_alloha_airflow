@@ -1,0 +1,72 @@
+models:
+  - name: tbl_pagamentos_negativados
+    columns:
+      - name: documento_do_devedor
+        description: " "
+        data_type: string
+      - name: codigo_fatura
+        description: " "
+        data_type: long
+      - name: data_vencimento
+        description: " "
+        data_type: date
+      - name: valor_em_aberto
+        description: " "
+        data_type: double
+      - name: data_compromisso
+        description: " "
+        data_type: date
+      - name: valor_compromisso
+        description: " "
+        data_type: double
+      - name: codigo_contrato_air
+        description: " "
+        data_type: long
+      - name: nome_principal
+        description: " "
+        data_type: string
+      - name: endereco
+        description: " "
+        data_type: string
+      - name: complemento_endereco
+        description: " "
+        data_type: string
+      - name: bairro
+        description: " "
+        data_type: string
+      - name: cidade
+        description: " "
+        data_type: string
+      - name: estado
+        description: " "
+        data_type: string
+      - name: cep
+        description: " "
+        data_type: string
+      - name: marcador
+        description: " "
+        data_type: string
+      - name: status_fatura
+        description: " "
+        data_type: string
+      - name: codigo_cliente
+        description: " "
+        data_type: long
+      - name: fila_recente
+        description: " "
+        data_type: string
+      - name: data_abertura_fila
+        description: " "
+        data_type: date
+      - name: data_ultima_alteracao_fatura
+        description: " "
+        data_type: date
+      - name: quantidade_faturas_negociadas
+        description: " "
+        data_type: int
+      - name: faturas_negociadas
+        description: " "
+        data_type: string
+      - name: data_referencia
+        description: " "
+        data_type: date

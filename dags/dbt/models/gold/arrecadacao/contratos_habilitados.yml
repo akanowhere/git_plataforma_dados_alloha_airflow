@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: contratos_habilitados
+    description: Tabela contratos_habilitados
+    column:
+      - name: data_referencia
+        data_type: date
+      - name: id_contrato_air
+        data_type: long
+      - name: login
+        data_type: string
+      - name: status_contrato
+        data_type: string
+      - name: venc_ult_fat_gerada
+        data_type: string
+      - name: status_ult_fat_gerada
+        data_type: string
+      - name: habilitado
+        data_type: integer

@@ -1,0 +1,1145 @@
+# Metadata
+name: User Data Contract
+version: 0.0.11
+commit: init
+last-update: 2024-09-09
+owner: Data Team
+
+---
+
+pipelines:
+  job-to-landing:
+    description: Coleta dados nas origens e armazena no Data Lake.
+    owner: Engenharia de Dados
+    contact:
+      name: Leandro Frazão
+      e-mail: bi@alloha.com
+    freshness:
+      description: Atualizado conforme a data de última inserção nas tabelas da camada bronze.
+    suppliers:
+      - GCP-Cloud-SQL
+      - bronze_catalog
+    inputs:
+      catalog: bronze
+
+      hourly:
+        databases:
+          cron: 00 12-23,0-1 * * *
+
+          metadata:
+            source_type: Database
+            cost_center: BI-Alloha
+            system_owner: GCP-Cloud-SQL
+
+          air:
+            schemas:
+              air_comercial:
+                tbl_venda:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_contrato:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_cliente:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_endereco:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_endereco_cidade:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_desconto:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_criacao >= '2023-01-01' OR excluido == 0
+                tbl_contrato_produto:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+              air_base:
+                tbl_unidade:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+              air_internet:
+                tbl_produto:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+          assine:
+            schemas:
+              sumicity_db_assine:
+                user_analysis:
+                  incremental_col: updated_at
+                  incremental_where: updated_at >=
+                  full_where: created_at >= '2023-01-01'
+                user_contract:
+                  incremental_col: hiring_date
+                  incremental_where: hiring_date >=
+                  full_where: hiring_date >= '2023-01-01'
+                checkout:
+                  incremental_col: updated_at
+                  incremental_where: updated_at >=
+                  full_where: created_at >= '2023-01-01'
+
+      4x_hourly:
+        databases:
+          cron: 00 11,15,19,21,23 * * *
+
+          metadata:
+            source_type: Database
+            cost_center: BI-Alloha
+            system_owner: GCP-Cloud-SQL
+
+          air:
+            schemas:
+              air_chamado:
+                tbl_os:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+
+      daily:
+        databases:
+          cron: 10 3 * * *
+
+          metadata:
+            source_type: Database
+            cost_center: BI-Alloha
+            system_owner: GCP-Cloud-SQL
+
+          air:
+            schemas:
+              air_comercial:
+                tbl_venda:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_contrato:
+                  incremental_col: "-"
+                tbl_vendedor:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_endereco:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_cliente:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_cliente_fisico:
+                  incremental_col: "-"
+                tbl_cliente_juridico:
+                  incremental_col: "-"
+                tbl_endereco_cidade:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_desconto:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_criacao >= '2023-01-01' OR excluido == 0
+                tbl_campanha:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_lead:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_contrato_entrega:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_vencimento:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_contrato_retencao:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_contrato_migracao:
+                  incremental_col: "-"
+                tbl_cliente_contato:
+                  incremental_col: "-"
+                tbl_contrato_produto:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_contrato_item:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_regra_suspensao:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_cliente_evento:
+                  incremental_col: "-"
+                tbl_contrato_campanha:
+                  incremental_col: "-"
+                tbl_contrato_onu_aviso:
+                  incremental_col: "-"
+                tbl_contrato_reajuste:
+                  incremental_col: "-"
+                tbl_outros_marcadores:
+                  incremental_col: "-"
+                tbl_perfilacao_retencao:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_venda_adicional:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_perfilacao_cobranca:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+
+
+              air_internet:
+                tbl_login:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_banda:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_aviso:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_aviso_unidade:
+                  incremental_col: "-"
+                tbl_aviso_atividade:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_produto:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+
+              air_base:
+                tbl_unidade:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_usuario:
+                  incremental_col: "-"
+                tbl_catalogo_item:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_catalogo:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+
+
+              air_chamado:
+                tbl_chd_chamado:
+                  incremental_col: "-"
+                tbl_chd_classificacao:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_chd_descricao:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_chd_fila:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_chd_transferencia:
+                  incremental_col: data_transferencia
+                  incremental_where: data_transferencia >=
+                  full_where: data_transferencia>= '2023-01-01'
+                tbl_os:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_os_tecnico:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_os_terceirizada:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_agenda:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_chd_tecnico:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2018-01-01'
+                tbl_chd_tecnico_unidade:
+                  incremental_col: "-"
+                tbl_os_evento:
+                  incremental_col: momento
+                  incremental_where: momento >=
+                  full_where: momento>= '2018-01-01'
+                tbl_agenda_unidade:
+                  incremental_col: "-"
+                tbl_os_hierarquia_fechamento:
+                  incremental_col: "-"
+                tbl_os_notificacao_confirmacao:
+                  incremental_col: horario_disparo
+                  incremental_where: horario_disparo >
+                  full_where: horario_disparo >= '2024-10-04'
+
+              air_fttx:
+                tbl_onu:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+
+                tbl_onu_configuracao:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao >= '2018-01-01'
+
+                tbl_onu_modelo:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+
+              air_telefonia:
+                tbl_reserva:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_numero_proprio:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_numero_portado:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+
+              air_tv:
+                tbl_dtvgo_assinante:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_assinante_watch:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_assinante_youcast:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_produto_assinante_globoplay:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_assinante_skeelo:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_assinante_gigamais_tv:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+                tbl_produtos_gigamaistv:
+                  incremental_col: "-"
+                tbl_produtos_watch:
+                  incremental_col: "-"
+                tbl_sva:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_sva_urn:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                tbl_sva_produto_urn:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+
+              analise_financeira:
+                tbl_analise_financeira:
+                  incremental_col: data_alteracao
+                  incremental_where: data_alteracao >=
+                  full_where: data_alteracao>= '2023-01-01'
+
+          assine:
+            schemas:
+              sumicity_db_notification:
+                contact:
+                  incremental_col: updated_at
+                  incremental_where: updated_at >=
+                event:
+                  incremental_col: updated_at
+                  incremental_where: updated_at >=
+                  full_where: created_at >= '2023-01-01'
+                event_contact:
+                  incremental_col: updated_at
+                  incremental_where: updated_at >=
+                  full_where: created_at >= '2023-01-01'
+                event_contact_param:
+                  incremental_col: "-"
+                  full_where: created_at >= '2023-01-01'
+
+              sumicity_db_stock_control:
+                non_conforming_transfer:
+                  incremental_col: "-"
+                  full_where: created_at >= '2023-01-01'
+                non_conforming_transfer_item:
+                  incremental_col: "-"
+                technician:
+                  incremental_col: "-"
+                  full_where: created_at >= '2023-01-01'
+                transfer:
+                  incremental_col: "-"
+                  full_where: created_at >= '2023-01-01'
+                transfer_entity:
+                  incremental_col: "-"
+                transfer_item:
+                  incremental_col: "-"
+
+              sumicity_db_assine:
+                checkout_payment:
+                  incremental_col: "-"
+                install_schedule:
+                  incremental_col: "-"
+                  full_where: created_at >= '2023-01-01'
+                location:
+                  incremental_col: updated_at
+                  incremental_where: updated_at >=
+                  full_where: created_at >= '2023-01-01'
+                user_address:
+                  incremental_col: "-"
+                user_person:
+                  incremental_col: "-"
+                user_review:
+                  incremental_col: "-"
+                  full_where: created_at >= '2023-01-01'
+                user:
+                  incremental_col: updated_at
+                  incremental_where: updated_at >=
+
+          db_financeiro:
+            schemas:
+              db_financeiro_dbo:
+                TBL_CONTRATO_AIR_COBRANCAS_CENTRALIZADAS:
+                  incremental_col: "-"
+                TBL_VALIDACAO_CICLO_AUX_HISTORICO:
+                  incremental_col: dtAtualizacaoFatura
+                  incremental_where: dtAtualizacaoFatura >=
+
+        sqs:
+          cron: 10 3 * * *
+
+          metadata:
+            source_type: Sydle
+            cost_center: BI-Alloha
+            system_owner: AWS-SQS
+
+          queues:
+            - plataforma-dados-alloha-sydle-cliente
+            - plataforma-dados-alloha-sydle-contrato
+            - plataforma-dados-alloha-sydle-fatura
+            - plataforma-dados-alloha-sydle-nota_fiscal
+            - plataforma-dados-alloha-sydle-remessa
+            - plataforma-dados-alloha-sydle-venda_qualify_vendedor
+            - plataforma-dados-alloha-sydle-negociacao
+            - plataforma-dados-alloha-sydle-usuario
+
+
+      source_types:
+        api:
+          data_sources:
+            five9:
+              cron:
+                hourly: 0 12-22 * * 1-5
+                daily: 0 11 * * 1-5
+
+              metadata:
+                data_source: Five9
+                source_type: API
+                cost_center: BI-Alloha
+                system_owner: Nuveto
+
+              schemas:
+                five9_agent_reports:
+                  agent_disconnects_first:
+                    folder_name: "Meus relatorios"
+                    incremental_col: TIMESTAMPADD(HOUR, `_timezone_diff`, TO_TIMESTAMP(CONCAT(`DATE`, ' ', `TIME`), 'yyyy/MM/dd HH:mm:ss'))
+                    ingestion_freq:
+                      - hourly
+                      - daily
+                    daily_extract:
+                      days: 1
+                    time_intervals: 1
+                  agent_login_logout:
+                    folder_name: "Meus relatorios"
+                    incremental_col: TIMESTAMPADD(HOUR, `_timezone_diff`, TO_TIMESTAMP(CONCAT(`DATE`, ' ', `TIME`), 'yyyy/MM/dd HH:mm:ss'))
+                    ingestion_freq:
+                      - daily
+                    daily_extract:
+                      days: 1
+                    time_intervals: 1
+
+                five9_call_log_reports:
+                  inbound_call_log:
+                    folder_name: "Meus relatorios"
+                    incremental_col: TIMESTAMPADD(HOUR, `_timezone_diff`, TO_TIMESTAMP(CONCAT(`DATE`, ' ', `TIME`), 'yyyy/MM/dd HH:mm:ss'))
+                    ingestion_freq:
+                      - hourly
+                      - daily
+                    daily_extract:
+                      days: 1
+                    time_intervals: 1
+                  outgoing_call_log:
+                    folder_name: "Meus relatorios"
+                    incremental_col: TIMESTAMPADD(HOUR, `_timezone_diff`, TO_TIMESTAMP(CONCAT(`DATE`, ' ', `TIME`), 'yyyy/MM/dd HH:mm:ss'))
+                    ingestion_freq:
+                      - hourly
+                      - daily
+                    daily_extract:
+                      days: 1
+                    time_intervals: 3
+
+                five9_call_segment_reports:
+                  inbound_call_segment:
+                    folder_name: "Meus relatorios"
+                    incremental_col: TIMESTAMPADD(HOUR, `_timezone_diff`, TO_TIMESTAMP(CONCAT(`DATE`, ' ', `TIME`), 'yyyy/MM/dd HH:mm:ss'))
+                    ingestion_freq:
+                      - hourly
+                      - daily
+                    daily_extract:
+                      days: 1
+                    time_intervals: 1
+
+                five9_digital_channel_reports:
+                  digital_interaction_log:
+                    folder_name: "Meus relatorios"
+                    incremental_col: TIMESTAMPADD(HOUR, `_timezone_diff`, TO_TIMESTAMP(CONCAT(`DATE`, ' ', `TIME`), 'yyyy/MM/dd HH:mm:ss'))
+                    ingestion_freq:
+                      - hourly
+                      - daily
+                    daily_extract:
+                      days: 6
+                    time_intervals: 1
+                  digital_interaction_variables:
+                    folder_name: "Meus relatorios"
+                    incremental_col: TIMESTAMPADD(HOUR, `_timezone_diff`, TO_TIMESTAMP(CONCAT(`DATE`, ' ', `TIME`), 'yyyy/MM/dd HH:mm:ss'))
+                    ingestion_freq:
+                      - hourly
+                      - daily
+                    daily_extract:
+                      days: 1
+                    time_intervals: 1
+
+            rdstation:
+            totvs:
+            zabbix:
+
+        bigquery:
+          data_sources:
+            fintalk:
+              cron:
+                hourly: 0 12-22 * * *
+                daily: 20 9 * * 1-5
+
+              metadata:
+                data_source: Fintalk
+                source_type: BigQuery
+                cost_center: BI-Alloha
+                system_owner: GCP
+
+              schemas:
+                fintalk_alloha:
+                  events:
+                    incremental_col: created_at
+                    full_where: created_at >= '2024-03-21'
+                  customers:
+                    incremental_col: created_at
+                    full_where: created_at >= '2024-03-22'
+
+        databases:
+          data_sources:
+            hub_sva:
+              cron:
+                daily: 0 7 * * 1-5
+
+              metadata:
+                data_source: Hub_SVA
+                source_type: Database
+                cost_center: BI-Alloha
+                system_owner: Hub
+
+              schemas:
+                public:
+                  orders:
+                    incremental_col: updatedAt
+                    incremental_where: '"updatedAt" >'
+                    full_where: '"updatedAt" >= ''2023-01-01'''
+                  customers:
+                    incremental_col: updatedAt
+                    incremental_where: '"updatedAt" >'
+                    full_where: '"updatedAt" >= ''2023-01-01'''
+                  products:
+                    incremental_col: updatedAt
+                    incremental_where: '"updatedAt" >'
+                    full_where: '"updatedAt" >= ''2023-01-01'''
+                  partners:
+                    incremental_col: updatedAt
+                    incremental_where: '"updatedAt" >'
+                    full_where: '"updatedAt" >= ''2023-01-01'''
+                  brands:
+                    incremental_col: updatedAt
+                    incremental_where: '"updatedAt" >'
+                    full_where: '"updatedAt" >= ''2023-01-01'''
+                  providers:
+                    incremental_col: updatedAt
+                    incremental_where: '"updatedAt" >'
+                    full_where: '"updatedAt" >= ''2023-01-01'''
+
+            ofs:
+              cron:
+                daily: 0 7 * * 1-5
+
+              metadata:
+                data_source: OFS
+                source_type: Database
+                cost_center: BI-Alloha
+                system_owner: field_integration
+
+              schemas:
+                fieldintegration:
+                  alloha_ofs_bi_activity:
+                    incremental_col: updatedAt
+                    incremental_where: '"updatedAt" >'
+                    full_where: '"updatedAt" >= ''2024-01-01'''
+                  alloha_ofs_bi_inventory:
+                    incremental_col: updatedAt
+                    incremental_where: '"updatedAt" >'
+                    full_where: '"updatedAt" >= ''2024-01-01'''
+
+            atrix:
+              cron:
+                daily: 0 7 * * 1-5
+
+              metadata:
+                data_source: atrix
+                source_type: Database
+                cost_center: BI-Alloha
+                system_owner: GCP-Cloud-SQL
+
+              schemas:
+                atrixcore:
+                  tblservicesvoip:
+                    incremental_col: "-"
+                  tblclients:
+                    incremental_col: updated_at
+                    incremental_where: '"updated_at" >'
+
+            ecare:
+              cron:
+                daily: 00 6 * * 1-5
+
+              metadata:
+                data_source: ecare
+                source_type: Database
+                cost_center: BI-Alloha
+                system_owner: GCP-Cloud-SQL
+
+              schemas:
+                db_ecare:
+                  event:
+                    incremental_col: created_at
+                    incremental_where: created_at >=
+                  event_onu:
+                    incremental_col: updated_at
+                    incremental_where: updated_at >=
+                  event_type:
+                    incremental_col: created_at
+                    incremental_where: created_at >=
+                  onu:
+                    incremental_col: updated_at
+                    incremental_where: updated_at >=
+                  incident:
+                    incremental_col: updated_at
+                    incremental_where: updated_at >=
+
+            assine:
+            connectmaster:
+            dbdw:
+            glpi:
+            officetrack:
+            radius:
+
+        firebase:
+          data_sources:
+            app:
+              cron:
+                daily: 0 4 * * *
+
+              metadata:
+                data_source: app
+                source_type: Firebase
+                cost_center: BI-Alloha
+                system_owner: Nuveto
+
+              schemas:
+                app:
+                  sessions:
+                    incremental_col: createdAt
+                  events:
+                    incremental_col: createdAt
+            central_assinante:
+              cron:
+                daily: 0 4 * * *
+
+              metadata:
+                data_source: central_assinante
+                source_type: Firebase
+                cost_center: BI-Alloha
+                system_owner: Nuveto
+
+              schemas:
+                central_assinante:
+                  sessions:
+                    incremental_col: createdAt
+                  events:
+                    incremental_col: createdAt
+
+        google_cloud_sotarage:
+          data_sources:
+            loja:
+              cron:
+                daily: 0 4 * * *
+
+              metadata:
+                data_source: loja
+                source_type: google_cloud_sotarage
+                cost_center: BI-Alloha
+                system_owner: Marketing Digital
+
+              schemas:
+                loja:
+                  loja_stats:
+                  loja_ratings:
+
+        sftp:
+          data_sources:
+            infobip:
+              cron:
+                daily: 30 4 * * 1-5
+
+              metadata:
+                data_source: Infobip
+                source_type: SFTP
+                cost_center: BI-Alloha
+                system_owner: Infobip-AIR
+
+              schemas:
+                infobip:
+                  disparos_whatsapp:
+                    incremental_col: _file_generation_date
+                    prefix: whatsapp_
+                    keyword: billing
+                  disparos_whatsapp_billing:
+                    incremental_col: _file_generation_date
+                    prefix: whatsapp_billing_
+                    keyword: billing
+
+            ytpremium:
+              cron:
+                daily: 0 11 * * *
+
+              metadata:
+                data_source: YTPremium
+                source_type: SFTP
+                cost_center: BI-Alloha
+                system_owner: GFT
+
+              schemas:
+                ytpremium:
+                  email_report_globoplay:
+                    incremental_col: _file_generation_date
+                    prefix: EmailReportGloboplay
+                    path: /Import/YTPremium/
+                  sms_report_ativacao:
+                    incremental_col: _file_generation_date
+                    prefix: SMSReportAtivacao
+                    path: /Import/YTPremium/
+                  whatsapp_report_negociacao:
+                    incremental_col: _file_generation_date
+                    prefix: WhatsappReportNegociacao
+                    path: /Import/YTPremium/
+
+            watch:
+              cron:
+                daily: 0 11 * * *
+
+              metadata:
+                data_source: Watch
+                source_type: SFTP
+                cost_center: BI-Alloha
+                system_owner: GFT
+
+              schemas:
+                watch:
+                  email_report_watch:
+                    incremental_col: _file_generation_date
+                    prefix: EmailReportWatch
+                    path: /Import/Watch/
+                  sms_report_watch:
+                    incremental_col: _file_generation_date
+                    prefix: SMSReportWatch
+                    path: /Import/Watch/
+                  whatsapp_report_watch:
+                    incremental_col: _file_generation_date
+                    prefix: WhatsAppReportWatch
+                    path: /Import/Watch/
+
+    processes: Leitura da fonte e armazenamento no Data Lake (S3)
+    outputs: s3a://plataforma-dados-alloha-landing-637423315513/{origin}/{schema}/{table}/
+    customers: job-to-bronze
+
+  job-to-bronze:
+    description: Lê os dados da landing e salva na camada bronze no databricks.
+    owner: Engenharia de Dados
+    contact:
+      name: Leandro Frazão
+      e-mail: bi@alloha.com
+    freshness:
+      description: Atualizado conforme a data de última inserção na camada landing.
+    suppliers:
+      - landing
+
+    inputs:
+      s3: s3a://plataforma-dados-alloha-landing-637423315513/{origin}/{schema}/{table}/
+
+      hourly:
+        databases:
+          air:
+            schemas:
+              air_comercial:
+                - tbl_venda: append
+                - tbl_contrato: append
+                - tbl_cliente: append
+                - tbl_endereco: append
+                - tbl_endereco_cidade: append
+                - tbl_desconto: append
+                - tbl_contrato_produto: append
+              air_base:
+                - tbl_unidade: append
+              air_internet:
+                - tbl_produto: append
+                - tbl_banda: append
+          assine:
+            schemas:
+              sumicity_db_assine:
+                - user_analysis: append
+                - user_contract: append
+                - checkout: append
+
+      4x_hourly:
+        databases:
+          air:
+            schemas:
+               air_chamado:
+                - tbl_os: append
+
+      daily:
+        databases:
+          air:
+            schemas:
+              air_comercial:
+                - tbl_venda: overwrite
+                - tbl_contrato: overwrite
+                - tbl_vendedor: append
+                - tbl_endereco: append
+                - tbl_cliente: append
+                - tbl_cliente_fisico: overwrite
+                - tbl_cliente_juridico: overwrite
+                - tbl_endereco_cidade: append
+                - tbl_desconto: append
+                - tbl_campanha: append
+                - tbl_lead: append
+                - tbl_contrato_entrega: append
+                - tbl_vencimento: append
+                - tbl_contrato_retencao: append
+                - tbl_contrato_migracao: overwrite
+                - tbl_cliente_contato: overwrite
+                - tbl_contrato_produto: append
+                - tbl_contrato_item: append
+                - tbl_regra_suspensao: append
+                - tbl_cliente_evento: overwrite
+                - tbl_contrato_campanha: overwrite
+                - tbl_contrato_onu_aviso: overwrite
+                - tbl_contrato_reajuste: overwrite
+                - tbl_outros_marcadores: overwrite
+                - tbl_perfilacao_retencao: append
+                - tbl_venda_adicional: append
+                - tbl_perfilacao_cobranca: append
+
+              air_chamado:
+                - tbl_chd_chamado: append
+                - tbl_chd_classificacao: append
+                - tbl_chd_descricao: append
+                - tbl_chd_fila: append
+                - tbl_chd_transferencia: append
+                - tbl_os: append
+                - tbl_os_tecnico: append
+                - tbl_os_terceirizada: append
+                - tbl_agenda: append
+                - tbl_chd_tecnico: append
+                - tbl_chd_tecnico_unidade: overwrite
+                - tbl_os_evento: append
+                - tbl_agenda_unidade: overwrite
+                - tbl_os_hierarquia_fechamento: overwrite
+                - tbl_os_notificacao_confirmacao: append
+
+              air_fttx:
+                - tbl_onu: append
+                - tbl_onu_configuracao: append
+                - tbl_onu_modelo: append
+
+              air_telefonia:
+                - tbl_reserva: append
+                - tbl_numero_proprio: append
+                - tbl_numero_portado: append
+
+              air_tv:
+                - tbl_dtvgo_assinante: append
+                - tbl_assinante_watch: append
+                - tbl_assinante_youcast: append
+                - tbl_produto_assinante_globoplay: append
+                - tbl_assinante_skeelo: append
+                - tbl_assinante_gigamais_tv: append
+                - tbl_produtos_gigamaistv: overwrite
+                - tbl_produtos_watch: overwrite
+                - tbl_sva: append
+                - tbl_sva_urn: append
+                - tbl_sva_produto_urn: append
+
+              analise_financeira:
+                - tbl_analise_financeira: append
+
+              air_internet:
+                - tbl_login: append
+                - tbl_banda: append
+                - tbl_aviso: append
+                - tbl_aviso_unidade: overwrite
+                - tbl_aviso_atividade: append
+
+              air_base:
+                - tbl_unidade: append
+                - tbl_usuario: overwrite
+                - tbl_catalogo_item: append
+                - tbl_catalogo: append
+
+          assine:
+            schemas:
+              sumicity_db_notification:
+                - contact: append
+                - event: append
+                - event_contact: append
+                - event_contact_param: overwrite
+
+              sumicity_db_assine:
+                - checkout_payment: overwrite
+                - install_schedule: overwrite
+                - location: append
+                - user_address: overwrite
+                - user_person: overwrite
+                - user_review: overwrite
+                - user: append
+
+              sumicity_db_stock_control:
+                - non_conforming_transfer: overwrite
+                - non_conforming_transfer_item: overwrite
+                - technician: overwrite
+                - transfer: overwrite
+                - transfer_entity: overwrite
+                - transfer_item: overwrite
+
+          db_financeiro:
+            schemas:
+              db_financeiro_dbo:
+                - TBL_CONTRATO_AIR_COBRANCAS_CENTRALIZADAS: overwrite
+                - TBL_VALIDACAO_CICLO_AUX_HISTORICO: append
+
+        sqs:
+          tables:
+            - cliente
+            - contrato
+            - fatura
+            - nota_fiscal
+            - remessa
+            - venda_qualify_vendedor
+            - negociacao
+            - usuario
+
+      source_types:
+        api:
+          data_sources:
+            five9:
+              schemas:
+                five9_agent_reports:
+                  agent_disconnects_first:
+                    mode: append
+                    ingestion_freq:
+                      - hourly
+                      - daily
+                  agent_login_logout:
+                    mode: append
+                    ingestion_freq:
+                      - daily
+
+                five9_call_log_reports:
+                  inbound_call_log:
+                    mode: append
+                    ingestion_freq:
+                      - hourly
+                      - daily
+                  outgoing_call_log:
+                    mode: append
+                    ingestion_freq:
+                      - hourly
+                      - daily
+
+                five9_call_segment_reports:
+                  inbound_call_segment:
+                    mode: append
+                    ingestion_freq:
+                      - hourly
+                      - daily
+
+                five9_digital_channel_reports:
+                  digital_interaction_log:
+                    mode: append
+                    ingestion_freq:
+                      - hourly
+                      - daily
+                  digital_interaction_variables:
+                    mode: append
+                    ingestion_freq:
+                      - hourly
+                      - daily
+
+        bigquery:
+          data_sources:
+            fintalk:
+              schemas:
+                fintalk_alloha:
+                  events:
+                    mode: append
+                  customers:
+                    mode: append
+
+        databases:
+          data_sources:
+            hub_sva:
+              schemas:
+                public:
+                  orders:
+                    mode: append
+                  customers:
+                    mode: append
+                  products:
+                    mode: append
+                  partners:
+                    mode: append
+                  brands:
+                    mode: append
+                  providers:
+                    mode: append
+            ofs:
+              schemas:
+                fieldintegration:
+                  alloha_ofs_bi_activity:
+                    mode: append
+                  alloha_ofs_bi_inventory:
+                    mode: append
+            atrix:
+              schemas:
+                atrixcore:
+                  tblservicesvoip:
+                    mode: overwrite
+                  tblclients:
+                    mode: append
+
+            ecare:
+              schemas:
+                db_ecare:
+                  event:
+                    mode: append
+                  event_onu:
+                    mode: append
+                  event_type:
+                    mode: append
+                  onu:
+                    mode: append
+                  incident:
+                    mode: append
+
+        firebase:
+          data_sources:
+            app:
+              schemas:
+                app:
+                  sessions:
+                    mode: append
+                  events:
+                    mode: append
+            central_assinante:
+              schemas:
+                central_assinante:
+                  sessions:
+                    mode: append
+                  events:
+                    mode: append
+
+        google_cloud_sotarage:
+          data_sources:
+            loja:
+              schemas:
+                loja:
+                  loja_stats:
+                    mode: append
+                  loja_ratings:
+                    mode: append
+
+        sftp:
+          data_sources:
+            infobip:
+              schemas:
+                infobip:
+                  disparos_whatsapp:
+                    mode: append
+                  disparos_whatsapp_billing:
+                    mode: append
+
+            ytpremium:
+              schemas:
+                ytpremium:
+                  email_report_globoplay:
+                    mode: append
+                  sms_report_ativacao:
+                    mode: append
+                  whatsapp_report_negociacao:
+                    mode: append
+
+            watch:
+              schemas:
+                watch:
+                  email_report_watch:
+                    mode: append
+                  sms_report_watch:
+                    mode: append
+                  whatsapp_report_watch:
+                    mode: append
+
+    processes: Leitura do Data Lake (S3) e armazenamento no Delta Lake (Databricks | Unity Catalog)
+    outputs:
+      s3: s3a://plataforma-dados-alloha-bronze-637423315513/{origin}/{schema}/{table}/
+      unity_catalog:
+        catalog: "bronze"
+        schema: "{schema}"
+        table: "{table}"
+
+    customers: job-to-silver
+
+  job-cleanup:
+    description: Faz a limpeza periódica da camada bronze.
+    owner: Engenharia de Dados
+    contact:
+      name: Leandro Frazão
+      e-mail: bi@alloha.com
+    suppliers:
+      - bronze
+
+    inputs:
+      unity_catalog:
+        catalogs:
+          - bronze
+          - bronze_dev
+          - gold
+          - gold_dev
+      retention_hours: 168
+
+      weekly:
+        databases:
+          cron: 0 19 * * 1

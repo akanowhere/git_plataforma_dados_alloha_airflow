@@ -1,0 +1,903 @@
+# models:
+# - name: dim_cliente_sydle
+#   columns:
+#   - name: id_cliente
+#     data_type: string
+#   - name: versao
+#     data_type: string
+#   - name: nome
+#     data_type: string
+#   - name: razao_social
+#     data_type: string
+#   - name: email_principal
+#     data_type: string
+#   - name: data_nascimento
+#     data_type: date
+#   - name: estado_civil
+#     data_type: string
+#   - name: nacionalidade
+#     data_type: string
+#   - name: naturalidade
+#     data_type: string
+#   - name: falecido
+#     data_type: string
+#   - name: sigla
+#     data_type: string
+#   - name: codigo_externo
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_cliente_documentos
+#   columns:
+#   - name: id_cliente
+#     data_type: string
+#   - name: versao
+#     data_type: string
+#   - name: documento_tipo
+#     data_type: string
+#   - name: documento_numero
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_cliente_emails
+#   columns:
+#   - name: id_cliente
+#     data_type: string
+#   - name: versao
+#     data_type: string
+#   - name: tipo
+#     data_type: string
+#   - name: email
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_cliente_enderecos
+#   columns:
+#   - name: id_cliente
+#     data_type: string
+#   - name: versao
+#     data_type: string
+#   - name: cidade_nome
+#     data_type: string
+#   - name: tipo
+#     data_type: string
+#   - name: complemento
+#     data_type: string
+#   - name: numero
+#     data_type: string
+#   - name: logradouro
+#     data_type: string
+#   - name: bairro
+#     data_type: string
+#   - name: estado_nome
+#     data_type: string
+#   - name: referencia
+#     data_type: string
+#   - name: cidade_codigo_ibge
+#     data_type: string
+#   - name: estado_sigla
+#     data_type: string
+#   - name: cep
+#     data_type: string
+#   - name: pais
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_cliente_filiacao
+#   columns:
+#   - name: id_cliente
+#     data_type: string
+#   - name: versao
+#     data_type: string
+#   - name: grau_parentesco
+#     data_type: string
+#   - name: nome_parente
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_cliente_redes_sociais
+#   columns:
+#   - name: id_cliente
+#     data_type: string
+#   - name: versao
+#     data_type: string
+#   - name: nome_rede_social
+#     data_type: string
+#   - name: url
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_cliente_tags
+#   columns:
+#   - name: id_cliente
+#     data_type: string
+#   - name: versao
+#     data_type: string
+#   - name: tag
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_cliente_telefones
+#   columns:
+#   - name: id_cliente
+#     data_type: string
+#   - name: versao
+#     data_type: string
+#   - name: tipo_telefone
+#     data_type: string
+#   - name: numero
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_contrato_sydle
+#   columns:
+#   - name: id_contrato
+#     data_type: string
+#   - name: plano_nome
+#     data_type: string
+#   - name: plano_identificador
+#     data_type: string
+#   - name: plano_ativo
+#     data_type: string
+#   - name: comprador_nome
+#     data_type: string
+#   - name: comprador_documento
+#     data_type: string
+#   - name: comprador_id_sydle
+#     data_type: string
+#   - name: vendedor_nome
+#     data_type: string
+#   - name: vendedor_documento
+#     data_type: string
+#   - name: vendedor_id_sydle
+#     data_type: string
+#   - name: codigo_sydle
+#     data_type: string
+#   - name: responsavel_venda_nome
+#     data_type: string
+#   - name: responsavel_venda_login
+#     data_type: string
+#   - name: forma_pagamento_nome
+#     data_type: string
+#   - name: forma_pagamento_identificador
+#     data_type: string
+#   - name: forma_pagamento_ativo
+#     data_type: string
+#   - name: forma_pagamento_grupo_forma_pagamento
+#     data_type: string
+#   - name: endereco_entrega_cep
+#     data_type: string
+#   - name: endereco_entrega_logradouro
+#     data_type: string
+#   - name: endereco_entrega_numero
+#     data_type: string
+#   - name: endereco_entrega_complemento
+#     data_type: string
+#   - name: endereco_entrega_referencia
+#     data_type: string
+#   - name: endereco_entrega_bairro
+#     data_type: string
+#   - name: endereco_entrega_cidade_nome
+#     data_type: string
+#   - name: endereco_entrega_cidade_codigo_ibge
+#     data_type: string
+#   - name: endereco_entrega_estado_nome
+#     data_type: string
+#   - name: endereco_entrega_estado_sigla
+#     data_type: string
+#   - name: endereco_entrega_pais
+#     data_type: string
+#   - name: endereco_cobranca_cep
+#     data_type: string
+#   - name: endereco_cobranca_logradouro
+#     data_type: string
+#   - name: endereco_cobranca_numero
+#     data_type: string
+#   - name: endereco_cobranca_complemento
+#     data_type: string
+#   - name: endereco_cobranca_referencia
+#     data_type: string
+#   - name: endereco_cobranca_bairro
+#     data_type: string
+#   - name: endereco_cobranca_cidade_nome
+#     data_type: string
+#   - name: endereco_cobranca_cidade_codigo_ibge
+#     data_type: string
+#   - name: endereco_cobranca_estado_nome
+#     data_type: string
+#   - name: endereco_cobranca_estado_sigla
+#     data_type: string
+#   - name: endereco_cobranca_pais
+#     data_type: string
+#   - name: dados_cobranca_dia_faturamento
+#     data_type: string
+#   - name: dados_cobranca_dia_referencia_cobranca
+#     data_type: string
+#   - name: dados_cobranca_dia_vencimento
+#     data_type: string
+#   - name: dados_cobranca_desvio_vencimento
+#     data_type: string
+#   - name: status_status_servico
+#     data_type: string
+#   - name: status_data_status_servico
+#     data_type: string
+#   - name: status_status_faturamento
+#     data_type: string
+#   - name: status_data_status_faturamento
+#     data_type: string
+#   - name: status_status_financeiro
+#     data_type: string
+#   - name: status_data_status_financeiro
+#     data_type: string
+#   - name: data_venda
+#     data_type: string
+#   - name: data_ativacao
+#     data_type: string
+#   - name: tag
+#     data_type: string
+#   - name: dados_suspensao_regra_suspensao
+#     data_type: string
+#   - name: dados_suspensao_apto_suspensao
+#     data_type: string
+#   - name: dados_suspensao_data_aptidao
+#     data_type: string
+#   - name: dados_suspensao_inserido_blacklist
+#     data_type: string
+#   - name: saldo_habilitacao_confianca_valor_saldo_atual
+#     data_type: string
+#   - name: saldo_habilitacao_confianca_data_ultima_renovacao
+#     data_type: string
+#   - name: saldo_habilitacao_confianca_data_ultima_habilitacao_confianca
+#     data_type: string
+#   - name: unidade_atendimento_nome
+#     data_type: string
+#   - name: unidade_atendimento_sigla
+#     data_type: string
+#   - name: unidade_atendimento_marca_associada
+#     data_type: string
+#   - name: codigo_externo
+#     data_type: string
+#   - name: multa_fidelidade_periodo
+#     data_type: string
+#   - name: multa_fidelidade_valor_cheio_multa
+#     data_type: string
+#   - name: multa_fidelidade_data_inicio
+#     data_type: string
+#   - name: multa_fidelidade_data_fim
+#     data_type: string
+#   - name: data_ultima_alteracao
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_contrato_cidades_unidade_atendimento
+#   columns:
+#   - name: id_contrato
+#     data_type: string
+#   - name: unidade_atendimento_sigla
+#     data_type: string
+#   - name: nome_cidade
+#     data_type: string
+#   - name: cidade_codigo_ibge
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_contrato_componentes
+#   columns:
+#   - name: id_contrato
+#     data_type: string
+#   - name: tarifador
+#     data_type: string
+#   - name: precificacao_pre_pago
+#     data_type: string
+#   - name: precificacao_negociavel
+#     data_type: string
+#   - name: produto_adicional
+#     data_type: string
+#   - name: parcela_final
+#     data_type: string
+#   - name: valor_parcela
+#     data_type: string
+#   - name: parcela_inicial
+#     data_type: string
+#   - name: produto_nome
+#     data_type: string
+#   - name: produto_identificador_sydle
+#     data_type: string
+#   - name: data_de_ativacao
+#     data_type: timestamp
+#   - name: precificacao_pro_rata
+#     data_type: string
+#   - name: precificacao_valor
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_contrato_descontos
+#   columns:
+#   - name: id_contrato
+#     data_type: string
+#   - name: produto_nome
+#     data_type: string
+#   - name: produto_identificador_sydle
+#     data_type: string
+#   - name: desconto_precificacao_pre_pago
+#     data_type: string
+#   - name: desconto_precificacao_negociavel
+#     data_type: string
+#   - name: desconto_precificacao_parcela_inicial
+#     data_type: string
+#   - name: desconto_precificacao_parcela_final
+#     data_type: string
+#   - name: desconto_precificacao_pro_rata
+#     data_type: string
+#   - name: desconto_nome
+#     data_type: string
+#   - name: desconto_precificacao_nome
+#     data_type: string
+#   - name: desconto_precificacao_valor
+#     data_type: string
+#   - name: desconto_identificador
+#     data_type: string
+#   - name: data_inicio
+#     data_type: timestamp
+#   - name: data_fim_fidelidade
+#     data_type: timestamp
+#   - name: data_termino
+#     data_type: timestamp
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_faturas_mailing
+#   columns:
+#   - name: id_fatura
+#     data_type: string
+#   - name: id_cliente_sydle
+#     data_type: string
+#   - name: codigo_fatura_sydle
+#     data_type: string
+#   - name: id_cliente_air
+#     data_type: string
+#   - name: contrato_air
+#     data_type: string
+#   - name: cliente
+#     data_type: string
+#   - name: tipo_documento
+#     data_type: string
+#   - name: cpf_cnpj
+#     data_type: string
+#   - name: mes_referencia
+#     data_type: string
+#   - name: data_criacao
+#     data_type: timestamp
+#   - name: data_vencimento
+#     data_type: timestamp
+#   - name: data_pagamento
+#     data_type: timestamp
+#   - name: data_atualizacao
+#     data_type: timestamp
+#   - name: classificacao
+#     data_type: string
+#   - name: forma_pagamento
+#     data_type: string
+#   - name: beneficiario
+#     data_type: string
+#   - name: status_fatura
+#     data_type: string
+#   - name: valor_fatura
+#     data_type: string
+#   - name: valor_sem_multa_juros
+#     data_type: string
+#   - name: valor_pago
+#     data_type: string
+#   - name: data_extracao
+#     data_type: timestamp
+#   - name: data_referencia
+#     data_type: timestamp
+#   - name: id_legado_fatura
+#     data_type: string
+#   - name: unidade_atendimento
+#     data_type: string
+#   - name: marca
+#     data_type: string
+#   - name: data_extracao_db
+#     data_type: timestamp
+#   - name: fat_cobranca
+#     data_type: string
+# - name: dim_negociacoes
+#   columns:
+#   - name: id_negociacao
+#     data_type: string
+#   - name: codigo
+#     data_type: string
+#   - name: fatura_original
+#     data_type: string
+#   - name: id_negociador
+#     data_type: string
+#   - name: nm_negociador
+#     data_type: string
+#   - name: data_negociacao
+#     data_type: date
+#   - name: renegociacao
+#     data_type: string
+#   - name: data_extracao
+#     data_type: date
+# - name: dim_nota_fiscal
+#   columns:
+#   - name: id
+#     data_type: string
+#   - name: id_nota_fiscal
+#     data_type: string
+#   - name: numero_recibo
+#     data_type: string
+#   - name: numero
+#     data_type: string
+#   - name: serie
+#     data_type: string
+#   - name: codigo_verificacao
+#     data_type: string
+#   - name: cliente_nome
+#     data_type: string
+#   - name: cliente_documento
+#     data_type: string
+#   - name: cliente_id_sydle
+#     data_type: string
+#   - name: fatura_codigo
+#     data_type: string
+#   - name: fatura_id_sydle
+#     data_type: string
+#   - name: status
+#     data_type: string
+#   - name: tipo
+#     data_type: string
+#   - name: entidade
+#     data_type: string
+#   - name: emissor_nome
+#     data_type: string
+#   - name: emissor_documento
+#     data_type: string
+#   - name: emissor_id_sydle
+#     data_type: string
+#   - name: valor_total_nf
+#     data_type: string
+#   - name: valor_total_impostos
+#     data_type: string
+#   - name: valor_total_impostos_retidos
+#     data_type: string
+#   - name: moeda
+#     data_type: string
+#   - name: tomador_nome
+#     data_type: string
+#   - name: tomador_documento
+#     data_type: string
+#   - name: tomador_inscricao_estadual
+#     data_type: string
+#   - name: tomador_email
+#     data_type: string
+#   - name: tomador_id_sydle
+#     data_type: string
+#   - name: tomador_endereco_cep
+#     data_type: string
+#   - name: tomador_endereco_logradouro
+#     data_type: string
+#   - name: tomador_endereco_numero
+#     data_type: string
+#   - name: tomador_endereco_complemento
+#     data_type: string
+#   - name: tomador_endereco_referencia
+#     data_type: string
+#   - name: tomador_endereco_bairro
+#     data_type: string
+#   - name: tomador_endereco_cidade
+#     data_type: string
+#   - name: tomador_endereco_codigo_ibge
+#     data_type: string
+#   - name: tomador_endereco_estado
+#     data_type: string
+#   - name: tomador_endereco_sigla
+#     data_type: string
+#   - name: tomador_endereco_pais
+#     data_type: string
+#   - name: data_emissao_recibo
+#     data_type: string
+#   - name: data_emissao_nota_fiscal
+#     data_type: string
+#   - name: lote_nota_fiscal_numero
+#     data_type: string
+#   - name: lote_nota_fiscal_id_sydle
+#     data_type: string
+#   - name: lote_nota_fiscal_status
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_nota_fiscal_impostos
+#   columns:
+#   - name: id
+#     data_type: string
+#   - name: id_nota_fiscal
+#     data_type: string
+#   - name: descricao_produto
+#     data_type: string
+#   - name: valor_total_dos_impostos_do_produto
+#     data_type: string
+#   - name: imposto
+#     data_type: string
+#   - name: base_de_calculo
+#     data_type: string
+#   - name: aliquota
+#     data_type: string
+#   - name: valor
+#     data_type: string
+#   - name: retido
+#     data_type: string
+#   - name: impostos_retidos
+#     data_type: string
+#   - name: Exigibilidade
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_nota_fiscal_produtos
+#   columns:
+#   - name: id
+#     data_type: string
+#   - name: id_nota_fiscal
+#     data_type: string
+#   - name: descricao_produto
+#     data_type: string
+#   - name: nome_produto
+#     data_type: string
+#   - name: valor_base_produto
+#     data_type: string
+#   - name: servico_tributavel_id
+#     data_type: string
+#   - name: servico_tributavel_nome
+#     data_type: string
+#   - name: valor_total_dos_impostos_do_produto
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_remessa
+#   columns:
+#   - name: id
+#     data_type: string
+#   - name: id_remessa
+#     data_type: string
+#   - name: codigo_remessa
+#     data_type: string
+#   - name: pagador_nome
+#     data_type: string
+#   - name: pagador_documento
+#     data_type: string
+#   - name: pagador_id_sydle
+#     data_type: string
+#   - name: beneficiario_nome
+#     data_type: string
+#   - name: beneficiario_documento
+#     data_type: string
+#   - name: beneficiario_id_sydle
+#     data_type: string
+#   - name: status_remessa
+#     data_type: string
+#   - name: valor_remessa
+#     data_type: string
+#   - name: valor_pago
+#     data_type: string
+#   - name: valor_estornado
+#     data_type: string
+#   - name: convenio_nome
+#     data_type: string
+#   - name: convenio_identificador
+#     data_type: string
+#   - name: convenio_ativo
+#     data_type: string
+#   - name: convenio_emissor_nome
+#     data_type: string
+#   - name: convenio_emissor_documento
+#     data_type: string
+#   - name: convenio_emissor_id_sydle
+#     data_type: string
+#   - name: cliente_nome
+#     data_type: string
+#   - name: cliente_documento
+#     data_type: string
+#   - name: cliente_id_sydle
+#     data_type: string
+#   - name: grupo_de_forma_de_pagamento
+#     data_type: string
+#   - name: condicao_de_pagamento_nome
+#     data_type: string
+#   - name: condicao_de_pagamento_identificador
+#     data_type: string
+#   - name: condicao_de_pagamento_parcela
+#     data_type: string
+#   - name: data_vencimento
+#     data_type: string
+#   - name: multa
+#     data_type: string
+#   - name: juros
+#     data_type: string
+#   - name: data_status
+#     data_type: string
+#   - name: data_previsao_repasse
+#     data_type: string
+#   - name: data_repasse
+#     data_type: string
+#   - name: data_contestacao
+#     data_type: string
+#   - name: valor_taxas
+#     data_type: string
+#   - name: valor_liquido_repasse
+#     data_type: string
+#   - name: retorno
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_remessa_detalhes_retorno
+#   columns:
+#   - name: id
+#     data_type: string
+#   - name: id_remessa
+#     data_type: string
+#   - name: codigo_retorno
+#     data_type: string
+#   - name: nome_retorno
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_remessa_faturas
+#   columns:
+#   - name: id
+#     data_type: string
+#   - name: id_remessa
+#     data_type: string
+#   - name: fatura_codigo
+#     data_type: float
+#   - name: fatura_id
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_remessa_parcelas
+#   columns:
+#   - name: id
+#     data_type: string
+#   - name: id_remessa
+#     data_type: string
+#   - name: parcela_data_alteracao_status
+#     data_type: timestamp
+#   - name: parcela_numero
+#     data_type: string
+#   - name: parcela_valor
+#     data_type: string
+#   - name: parcela_status
+#     data_type: string
+#   - name: data_integracao
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_venda_qualify_vendedor
+#   columns:
+#   - name: id_sydle_one
+#     data_type: string
+#   - name: nome_aprovacao
+#     data_type: string
+#   - name: status_aprovacao
+#     data_type: string
+#   - name: nome_aprovador_final_da_venda
+#     data_type: string
+#   - name: executor_aprovacao
+#     data_type: string
+#   - name: data_atendimento
+#     data_type: string
+#   - name: data_conclusao
+#     data_type: string
+#   - name: duracao_total
+#     data_type: string
+#   - name: duracao_atendimento
+#     data_type: string
+#   - name: canal_venda
+#     data_type: string
+#   - name: data_criacao
+#     data_type: string
+#   - name: data_venda
+#     data_type: string
+#   - name: aprovado_pela_auditoria
+#     data_type: string
+#   - name: venda_refeita
+#     data_type: string
+#   - name: justificativa_aprovacao
+#     data_type: string
+#   - name: justificativa_aprovacao_id_sydle_one
+#     data_type: string
+#   - name: status_processo
+#     data_type: string
+#   - name: analise_financeira
+#     data_type: string
+#   - name: prospecto
+#     data_type: string
+#   - name: endereco_instalacao_estado
+#     data_type: string
+#   - name: endereco_instalacao_cidade
+#     data_type: string
+#   - name: endereco_instalacao_bairro
+#     data_type: string
+#   - name: endereco_instalacao_logradouro
+#     data_type: string
+#   - name: endereco_instalacao_numero
+#     data_type: string
+#   - name: oferta_selecionada
+#     data_type: string
+#   - name: parceiro
+#     data_type: string
+#   - name: responsavel_pela_venda_id_sydle_one
+#     data_type: string
+#   - name: responsavel_pela_venda_nome
+#     data_type: string
+#   - name: condominio_nome
+#     data_type: string
+#   - name: condominio_id_sydle_one
+#     data_type: string
+#   - name: cpf
+#     data_type: string
+#   - name: cnpj
+#     data_type: string
+#   - name: contrato_codigo
+#     data_type: string
+#   - name: status_venda
+#     data_type: string
+#   - name: resultado_analise_financeira_valor_maximo_restricoes_spc_soma
+#     data_type: string
+#   - name: resultado_analise_financeira_quantidade_maxima_restricoes_spc
+#     data_type: string
+#   - name: resultado_analise_financeira_aprovado_serasa
+#     data_type: string
+#   - name: resultado_analise_financeira_classificacao_minima_serasa
+#     data_type: string
+#   - name: regional_nome
+#     data_type: string
+#   - name: regional_id_sydle_one
+#     data_type: string
+#   - name: telefone_utilizado_na_venda
+#     data_type: string
+#   - name: air_codigo_contrato
+#     data_type: string
+#   - name: responsavel_analise_financeira_interna_nome
+#     data_type: string
+#   - name: responsavel_analise_financeira_interna_id_sydle_one
+#     data_type: string
+#   - name: responsavel_analise_financeira_externa_nome
+#     data_type: string
+#   - name: responsavel_analise_financeira_externa_id_sydle_one
+#     data_type: string
+#   - name: responsavel_analise_tecnica_nome
+#     data_type: string
+#   - name: responsavel_analise_tecnica_id_sydle_one
+#     data_type: string
+#   - name: marca_associada
+#     data_type: string
+#   - name: unidade_nome
+#     data_type: string
+#   - name: unidade_sigla
+#     data_type: string
+#   - name: motivo_auditoria_qualify
+#     data_type: string
+#   - name: valor_total_mensalidade_com_desconto
+#     data_type: string
+#   - name: data_ativacao
+#     data_type: string
+#   - name: data_integracao
+#     data_type: string
+#   - name: data_extracao
+#     data_type: timestamp
+#   - name: id_prospecto
+#     data_type: string
+# - name: faturas_itens
+#   columns:
+#   - name: id_fatura
+#     data_type: string
+#   - name: codigo_fatura_sydle
+#     data_type: string
+#   - name: nome_item
+#     data_type: string
+#   - name: valor_item
+#     data_type: string
+#   - name: tipo_item
+#     data_type: string
+#   - name: data_inicio_item
+#     data_type: timestamp
+#   - name: data_fim_item
+#     data_type: timestamp
+#   - name: data_extracao
+#     data_type: timestamp
+# - name: dim_faturas_mailing_completa
+#   columns:
+#   - name: id_fatura
+#     data_type: string
+#   - name: versao
+#     data_type: long
+#   - name: id_cliente_sydle
+#     data_type: string
+#   - name: codigo_fatura_sydle
+#     data_type: string
+#   - name: id_cliente_air
+#     data_type: string
+#   - name: contrato_air
+#     data_type: string
+#   - name: cliente
+#     data_type: string
+#   - name: tipo_documento
+#     data_type: string
+#   - name: cpf_cnpj
+#     data_type: string
+#   - name: mes_referencia
+#     data_type: string
+#   - name: data_criacao
+#     data_type: timestamp
+#   - name: data_vencimento
+#     data_type: timestamp
+#   - name: data_pagamento
+#     data_type: timestamp
+#   - name: data_atualizacao
+#     data_type: timestamp
+#   - name: classificacao
+#     data_type: string
+#   - name: forma_pagamento
+#     data_type: string
+#   - name: beneficiario
+#     data_type: string
+#   - name: status_fatura
+#     data_type: string
+#   - name: valor_fatura
+#     data_type: string
+#   - name: valor_sem_multa_juros
+#     data_type: string
+#   - name: valor_pago
+#     data_type: string
+#   - name: data_extracao
+#     data_type: timestamp
+#   - name: data_referencia
+#     data_type: timestamp
+#   - name: id_legado_fatura
+#     data_type: string
+#   - name: unidade_atendimento
+#     data_type: string
+#   - name: marca
+#     data_type: string
+#   - name: data_extracao_db
+#     data_type: timestamp
+#   - name: data_negociacao
+#     data_type: date
+#   - name: fat_cobranca
+#     data_type: string

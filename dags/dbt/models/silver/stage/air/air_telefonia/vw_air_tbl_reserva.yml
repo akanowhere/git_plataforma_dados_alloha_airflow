@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_reserva
+    description: Tabela stage vw_air_tbl_reserva
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_tarifacao
+        data_type: long
+      - name: vsc_ctrl_number
+        data_type: long
+      - name: unidade_sigla
+        data_type: string
+      - name: chamada_cobrar
+        data_type: boolean
+      - name: contrato_codigo
+        data_type: long
+      - name: cliente_nome
+        data_type: string
+      - name: credito_dia
+        data_type: long
+      - name: credito_valor
+        data_type: long
+      - name: habilitado
+        data_type: boolean
+      - name: status_integracao
+        data_type: string
+      - name: mensagem_integracao
+        data_type: string
+      - name: vsc_senha
+        data_type: string
+      - name: inbound_calls_limit
+        data_type: long
+      - name: outbound_calls_limit
+        data_type: long

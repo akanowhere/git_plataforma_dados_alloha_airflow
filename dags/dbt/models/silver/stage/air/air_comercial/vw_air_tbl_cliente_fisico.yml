@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_cliente_fisico
+    columns:
+      - name: id_cliente
+        data_type: long
+      - name: cpf
+        data_type: string
+      - name: data_nascimento
+        data_type: date
+      - name: rg_numero
+        data_type: string
+      - name: rg_orgao
+        data_type: string
+      - name: estado_civil
+        data_type: string
+      - name: nome_pai
+        data_type: string
+      - name: nome_mae
+        data_type: string

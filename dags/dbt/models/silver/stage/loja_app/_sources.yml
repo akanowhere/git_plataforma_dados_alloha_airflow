@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: loja
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: loja
+    tables:
+      - name: loja_stats
+      - name: loja_ratings

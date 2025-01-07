@@ -1,0 +1,46 @@
+models:
+  - name: vw_fluxo_disparos_infobip
+    description: ""
+    columns:
+      - name: DataHora_Disparo
+        description: ""
+        type: date
+      - name: DATA
+        description: ""
+        type: date
+      - name: Message_id_disparo
+        description: ""
+        type: string
+      - name: Status_disparo
+        description: ""
+        type: string
+      - name: message_id_Agendada
+        description: ""
+        type: string
+      - name: id_os
+        description: ""
+        type: string
+      - name: id_cliente
+        description: ""
+        type: string
+      - name: id_contrato
+        description: ""
+        type: string
+      - name: fila 
+        description: ""
+        type: string
+      - name: data_confirmacao_agendamento
+        description: ""
+        type: date
+      - name: unidade
+        description: ""
+        type: string
+      - name: origem_confirmacao_agendamento
+        description: ""
+        type: string
+      - name: status_confirmacao
+        description: ""
+        type: string
+        
+
+        

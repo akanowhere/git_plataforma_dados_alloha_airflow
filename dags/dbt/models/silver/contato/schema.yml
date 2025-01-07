@@ -1,0 +1,87 @@
+models:
+  - name: vw_contato_telefone
+    column:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_cliente
+        data_type: long
+      - name: tipo
+        data_type: string
+      - name: contato
+        data_type: string
+      - name: ativo
+        data_type: boolean
+      - name: confirmado
+        data_type: boolean
+      - name: status
+        data_type: string
+      - name: favorito
+        data_type: boolean
+      - name: canal_confirmacao
+        data_type: string
+      - name: data_alter_contato
+        data_type: string
+      - name: data_confirmacao
+        data_type: string
+      - name: origem
+        data_type: string
+
+  - name: vw_contato_email
+    column:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_cliente
+        data_type: long
+      - name: tipo
+        data_type: string
+      - name: contato
+        data_type: string
+      - name: ativo
+        data_type: boolean
+      - name: confirmado
+        data_type: boolean
+      - name: status
+        data_type: string
+      - name: favorito
+        data_type: boolean
+      - name: canal_confirmacao
+        data_type: string
+      - name: data_alter_contato
+        data_type: string
+      - name: data_confirmacao
+        data_type: string
+      - name: origem
+        data_type: string
+
+  - name: vw_contato_whatsapp
+    column:
+      - name: authorized
+        data_type: boolean
+      - name: created_at
+        data_type: string
+      - name: customer_id
+        data_type: long
+      - name: deleted
+        data_type: boolean
+      - name: favorite
+        data_type: boolean
+      - name: id
+        data_type: long
+      - name: origin
+        data_type: string
+      - name: phone
+        data_type: string
+      - name: updated_at
+        data_type: string

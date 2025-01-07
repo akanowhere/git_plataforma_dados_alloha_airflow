@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: vw_assine_tbl_contact
+    columns:
+      - name: id
+        data_type: long
+      - name: phone
+        data_type: string
+      - name: customer_id
+        data_type: long
+      - name: created_at
+        data_type: timestamp
+      - name: updated_at
+        data_type: timestamp
+      - name: origin
+        data_type: string
+      - name: favorite
+        data_type: boolean
+      - name: deleted
+        data_type: boolean
+      - name: authorized
+        data_type: boolean
+      - name: creation_user
+        data_type: void

@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_contrato_campanha
+    columns:
+      - name: id
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: id_campanha
+        data_type: long
+      - name: recorrencia_vigencia
+        data_type: date
+      - name: cancelada
+        data_type: boolean
+      - name: id_venda
+        data_type: long
+      - name: recorrencia_percentual_desconto
+        data_type: double
+      - name: recorrencia_meses_desconto
+        data_type: long
+      - name: instalacao_item_codigo
+        data_type: string
+      - name: instalacao_item_nome
+        data_type: string
+      - name: instalacao_empresa_nome
+        data_type: string
+      - name: instalacao_empresa_cnpj
+        data_type: string
+      - name: instalacao_quantidade_parcela
+        data_type: long
+      - name: instalacao_valor
+        data_type: double
+      - name: instalacao_desconto_percentual
+        data_type: double
+      - name: recorrencia_desconto_aplicado
+        data_type: boolean
+      - name: recorrencia_desconto_data_venda
+        data_type: boolean

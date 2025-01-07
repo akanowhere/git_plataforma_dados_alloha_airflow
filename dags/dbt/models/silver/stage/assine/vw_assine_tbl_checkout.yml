@@ -1,0 +1,61 @@
+version: 2
+
+models:
+  - name: vw_assine_tbl_checkout
+    columns:
+      - name: id
+        data_type: long
+      - name: user_id
+        data_type: long
+      - name: installation_addres_id
+        data_type: long
+      - name: billing_addres_id
+        data_type: void
+      - name: cart_id
+        data_type: long
+      - name: updated_at
+        data_type: timestamp
+      - name: legacy_status
+        data_type: string
+      - name: viability_status_name
+        data_type: string
+      - name: sold_at
+        data_type: date
+      - name: sold_by
+        data_type: string
+      - name: sale_notes
+        data_type: string
+      - name: legacy_step
+        data_type: string
+      - name: is_manual_approval_sale
+        data_type: boolean
+      - name: digital_agent
+        data_type: string
+      - name: failed_action_type
+        data_type: string
+      - name: last_step
+        data_type: string
+      - name: sale_restriction_type
+        data_type: string
+      - name: sale_type
+        data_type: string
+      - name: status
+        data_type: string
+      - name: user_analysis_id
+        data_type: long
+      - name: created_at
+        data_type: timestamp
+      - name: location_id
+        data_type: long
+      - name: company_brand_id
+        data_type: long
+      - name: coupon
+        data_type: string
+      - name: coupon_discount_percentage
+        data_type: long
+      - name: total_price
+        data_type: double
+      - name: marketing_parameters
+        data_type: string
+      - name: sale_id
+        data_type: string

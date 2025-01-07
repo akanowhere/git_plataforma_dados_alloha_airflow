@@ -1,0 +1,70 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_aviso
+    description: Tabela stage com informações de avisos do schema air_internet
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: data_inicio
+        data_type: timestamp
+      - name: data_fim
+        data_type: timestamp
+      - name: nivel_criticidade
+        data_type: string
+      - name: protocolo
+        data_type: long
+      - name: ocorrencia
+        data_type: string
+      - name: afeta_internet
+        data_type: boolean
+      - name: afeta_telefonia
+        data_type: boolean
+      - name: afeta_tv
+        data_type: boolean
+      - name: impacto
+        data_type: string
+      - name: equipe_responsavel
+        data_type: string
+      - name: proxima_atualizacao
+        data_type: string
+      - name: vigente
+        data_type: boolean
+      - name: ura_ativa
+        data_type: boolean
+      - name: tempo_solucao
+        data_type: long
+      - name: falha_energia
+        data_type: boolean
+      - name: falha_sabotagem
+        data_type: boolean
+      - name: sobrescrever_aviso_onu
+        data_type: boolean
+      - name: giga_mais
+        data_type: boolean
+      - name: clientes_afetados
+        data_type: long
+      - name: id_problema
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: regional
+        data_type: string
+      - name: descricao
+        data_type: string
+      - name: id_os_rede_externa
+        data_type: string
+      - name: manutencao_programada
+        data_type: long

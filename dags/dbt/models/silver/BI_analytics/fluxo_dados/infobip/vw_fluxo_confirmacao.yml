@@ -1,0 +1,34 @@
+models:
+  - name: vw_fluxo_confirmacao
+    description: ""
+    columns:
+      - name: data_confirmacao_agendamento
+        description: ""
+        type: date
+      - name: DataDisparo
+        description: ""
+        type: date
+      - name: Status_disparo
+        description: ""
+        type: string
+      - name: id_os
+        description: ""
+        type: date
+      - name: id_cliente
+        description: ""
+        type: string
+      - name: id_contrato
+        description: ""
+        type: string
+      - name: Fila
+        description: ""
+        type: string
+      - name: Unidade
+        description: ""
+        type: string
+      - name: origem_confirmacao_agendamento
+        description: ""
+        type: string
+      - name: status_confirmacao
+        description: ""
+        type: string

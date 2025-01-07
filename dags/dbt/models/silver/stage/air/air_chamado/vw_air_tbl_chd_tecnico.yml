@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_chd_tecnico
+    description: Tabela stage vw_air_tbl_chd_tecnico
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: codigo_usuario
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: codigo_deposito
+        data_type: string
+      - name: ativo
+        data_type: boolean
+      - name: terceirizado
+        data_type: boolean
+      - name: nome_terceirizada
+        data_type: string
+      - name: legado_id
+        data_type: long
+      - name: legado_sistema
+        data_type: string
+      - name: posicao_estoque
+        data_type: string

@@ -1,0 +1,19 @@
+models:
+  - name: vw_fluxo_ecare_info_serial_air
+    description: "Tabela auxiliar para unir informações do AIR com o banco novo do ecare"
+    column:
+    - name: ONU
+      description: ""
+      data_type: string
+    - name: Unidade
+      description: ""
+      data_type: string
+    - name: Cidade
+      description: ""
+      data_type: string
+    - name: Estado
+      description: ""
+      data_type: string
+    - name: regional
+      description: ""
+      data_type: string

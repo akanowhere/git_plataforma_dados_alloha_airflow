@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fato_agente_desconecta_primeiro
+    description: Tabela fato de agentes com flag de desconecta primeiro (agente ou cliente)
+    column:
+      - name: sk_chamada
+        data_type: string
+      - name: id_chamada
+        data_type: string
+      - name: data_inicio_chamada
+        data_type: timestamp
+      - name: campanha
+        data_type: string
+      - name: tipo_chamada
+        data_type: string
+      - name: agente
+        data_type: string
+      - name: flg_agente_desconecta_primeiro
+        data_type: integer
+      - name: data_extracao
+        data_type: timestamp

@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: sydle
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: sydle
+    tables:
+      - name: cliente
+      - name: contrato
+      - name: fatura
+      - name: negociacao
+      - name: nota_fiscal
+      - name: remessa
+      - name: usuario
+      - name: venda_qualify_vendedor

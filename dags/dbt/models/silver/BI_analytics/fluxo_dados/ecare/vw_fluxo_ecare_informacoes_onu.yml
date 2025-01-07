@@ -1,0 +1,64 @@
+models:
+  - name: vw_fluxo_ecare_informacoes_onu
+    description: "Fluxo para obter informacoes gerais sobre onus"
+    column:
+    - name: Serial
+      description: ""
+      data_type: string
+    - name: olt
+      description: ""
+      data_type: string
+    - name: slot
+      description: ""
+      data_type: int
+    - name: pon
+      description: ""
+      data_type: int
+    - name: manufacture
+      description: ""
+      data_type: string
+    - name: Monitorada
+      description: ""
+      data_type: string
+    - name: Provisionada
+      description: ""
+      data_type: string
+    - name: PPPoE
+      description: ""
+      data_type: string
+    - name: NomeRede
+      description: ""
+      data_type: string
+    - name: UltimoAlarme
+      description: ""
+      data_type: date
+    - name: Alarme
+      description: ""
+      data_type: string
+    - name: Cliente
+      description: ""
+      data_type: long
+    - name: Contrato
+      description: ""
+      data_type: long
+    - name: StatusContrato
+      description: ""
+      data_type: string
+    - name: Regiao
+      description: ""
+      data_type: string
+    - name: Estado
+      description: ""
+      data_type: string
+    - name: Cidade
+      description: ""
+      data_type: string
+    - name: Regional
+      description: ""
+      data_type: string
+    - name: Territorio
+      description: ""
+      data_type: string
+    - name: DataAtivacao
+      description: ""
+      data_type: date

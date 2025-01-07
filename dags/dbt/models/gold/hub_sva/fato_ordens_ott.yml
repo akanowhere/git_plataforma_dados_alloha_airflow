@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: fato_ordens_ott
+    description: Tabela fato de ordens com todos produtos SVAs
+    columns:
+      - name: id_ordem_hub
+        data_type: string
+      - name: id_transacao
+        data_type: string
+      - name: token
+        data_type: string
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_atualizacao
+        data_type: timestamp
+      - name: status
+        data_type: string
+      - name: status_esperado
+        data_type: string
+      - name: id_cliente_hub
+        data_type: string
+      - name: cpf_cnpj
+        data_type: string
+      - name: id_contrato
+        data_type: string
+      - name: id_produto_hub
+        data_type: string
+      - name: sku_produto
+        data_type: string
+      - name: produto
+        data_type: string
+      - name: id_provedor_hub
+        data_type: string
+      - name: provedor
+        data_type: string
+      - name: id_marca_hub
+        data_type: string
+      - name: marca
+        data_type: string
+      - name: id_polo_hub
+        data_type: string
+      - name: polo
+        data_type: string

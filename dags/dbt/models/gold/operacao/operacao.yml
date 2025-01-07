@@ -1,0 +1,35 @@
+models:
+- name: ativacao_operacao
+  columns:
+  - name: codigo_contrato
+    data_type: string
+  - name: status_contrato
+    data_type: string
+  - name: nome_cliente
+    data_type: string
+  - name: data_criacao
+    data_type: date
+  - name: data_primeira_ativacao
+    data_type: date
+  - name: data_ativacao_evento
+    data_type: date
+  - name: hora_ativacao
+    data_type: string
+  - name: unidade
+    data_type: string
+  - name: tecnico
+    data_type: string
+  - name: terceirizada
+    data_type: string
+  - name: sistema_origem
+    data_type: string
+  - name: codigo_os
+    data_type: string
+  - name: codigo_chamado
+    data_type: string
+  - name: data_conclusao_os
+    data_type: date
+  - name: hora_conclusao_os
+    data_type: string
+  - name: posicao_sap
+    data_type: string

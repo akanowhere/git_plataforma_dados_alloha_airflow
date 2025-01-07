@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: dim_onu
+    description: Tabela de dimensão de ONUs
+    columns:
+      - name: id
+        data_type: long
+      - name: contract_id
+        data_type: long
+      - name: customer_id
+        data_type: long
+      - name: serial
+        data_type: string
+      - name: pon
+        data_type: string
+      - name: slot
+        data_type: string
+      - name: olt
+        data_type: string
+      - name: status
+        data_type: string
+      - name: telephone
+        data_type: string
+      - name: neighborhood
+        data_type: string
+      - name: unity
+        data_type: string
+      - name: region
+        data_type: string
+      - name: manufacture
+        data_type: string
+      - name: onu_index
+        data_type: long
+      - name: rx_power
+        data_type: long
+      - name: date_status
+        data_type: timestamp
+      - name: created_at
+        data_type: timestamp
+      - name: updated_at
+        data_type: timestamp
+      - name: olt_ip
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz

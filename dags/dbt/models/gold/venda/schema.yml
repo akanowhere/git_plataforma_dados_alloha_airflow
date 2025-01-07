@@ -1,0 +1,405 @@
+models:
+  - name: dim_venda
+    columns:
+      - name: id_venda
+        data_type: long 
+      - name: data_venda
+        data_type: date 
+      - name: data_criacao
+        data_type: timestamp 
+      - name: data_alteracao
+        data_type: string 
+      - name: usuario_criacao
+        data_type: string 
+      - name: usuario_alteracao
+        data_type: string 
+      - name: excluido
+        data_type: boolean 
+      - name: natureza
+        data_type: string 
+      - name: fase_atual
+        data_type: string 
+      - name: id_vendedor
+        data_type: long 
+      - name: id_campanha
+        data_type: long 
+      - name: id_lead
+        data_type: long 
+      - name: id_regra_suspensao
+        data_type: long 
+      - name: id_vencimento
+        data_type: long 
+      - name: unidade_atendimento
+        data_type: string 
+      - name: cod_tipo_cobranca
+        data_type: string 
+      - name: concretizada
+        data_type: boolean 
+      - name: confirmada
+        data_type: boolean 
+      - name: possui_internet
+        data_type: boolean 
+      - name: possui_tv
+        data_type: boolean 
+      - name: possui_telefone
+        data_type: boolean 
+      - name: recorrencia_percentual_desconto
+        data_type: double 
+      - name: recorrencia_meses_desconto
+        data_type: long 
+      - name: id_processo_venda_sydle
+        data_type: string 
+      - name: id_contrato
+        data_type: long 
+      - name: id_cliente
+        data_type: long 
+      - name: tipo_cliente
+        data_type: string 
+      - name: segmento
+        data_type: string 
+      - name: equipe
+        data_type: string 
+      - name: canal
+        data_type: string 
+      - name: unidade
+        data_type: string 
+      - name: marca
+        data_type: string 
+      - name: tipo_residencia
+        data_type: string 
+      - name: regional
+        data_type: string 
+      - name: pacote_base_nome
+        data_type: string 
+      - name: pacote_base_codigo
+        data_type: string 
+      - name: campanha_nome
+        data_type: string 
+      - name: campanha_codigo
+        data_type: string 
+      - name: valor_total
+        data_type: double 
+      - name: pacote_valor_total
+        data_type: double 
+      - name: desconto
+        data_type: double 
+      - name: valor_final_com_desconto
+        data_type: double 
+      - name: fonte
+        data_type: string 
+      - name: data_extracao
+        data_type: timestamp 
+      - name: endereco_cobranca
+        data_type: string 
+      - name: numero_cobranca
+        data_type: string 
+      - name: latitude_cobranca
+        data_type: string 
+      - name: longitude_cobranca
+        data_type: string 
+      - name: endereco_entrega
+        data_type: string 
+      - name: numero_entrega
+        data_type: string 
+      - name: latitude_entrega
+        data_type: double 
+      - name: longitude_entrega
+        data_type: double 
+      - name: id_endereco_entrega
+        data_type: long 
+      - name: id_endereco_cobranca
+        data_type: long 
+      - name: velocidade
+        data_type: string 
+      - name: produto
+        data_type: string 
+      - name: pacote_tv
+        data_type: string 
+      - name: cobranca
+        data_type: string 
+      - name: tipo_canal
+        data_type: string 
+      - name: afiliado_assine
+        data_type: integer 
+      - name: consultor_autonomo
+        data_type: integer 
+      - name: canal_tratado
+        data_type: string 
+      - name: legado_id
+        data_type: long 
+      - name: legado_sistema
+        data_type: string 
+      - name: bairro
+        data_type: string 
+      - name: cep
+        data_type: string 
+      - name: cidade
+        data_type: string 
+      - name: estado
+        data_type: string 
+      - name: id_contrato_air
+        data_type: long 
+      - name: id_contrato_ixc
+        data_type: long 
+      - name: valor_referencia_b2b
+        data_type: double 
+      - name: cupom
+        data_type: string 
+      - name: cupom_valido
+        data_type: integer 
+      - name: macro_regional
+        data_type: string 
+      - name: nome_regional
+        data_type: string 
+      - name: duracao_desconto
+        data_type: long 
+      - name: cpf_cnpj
+        data_type: string 
+
+  - name: dim_vendedor
+    columns:
+    - name: id_vendedor
+      data_type: long 
+    - name: data_criacao
+      data_type: string 
+    - name: data_alteracao
+      data_type: string 
+    - name: excluido
+      data_type: boolean 
+    - name: equipe
+      data_type: string 
+    - name: terceirizada
+      data_type: string 
+    - name: ativo
+      data_type: string 
+    - name: id_vendedor_sydle
+      data_type: string 
+    - name: usuario
+      data_type: string 
+    - name: id_usuario
+      data_type: long 
+    - name: codigo
+      data_type: string 
+    - name: nome
+      data_type: string 
+    - name: email
+      data_type: string 
+    - name: usuario_ativo
+      data_type: boolean 
+    - name: usuario_data_criacao
+      data_type: string 
+    - name: setor
+      data_type: string 
+    - name: pode_transferir
+      data_type: boolean 
+    - name: fonte
+      data_type: string 
+    - name: data_extracao
+      data_type: timestamp_ntz 
+
+  - name: fato_venda
+    columns:
+      - name: data_venda
+        data_type: string 
+      - name: data_criacao
+        data_type: string 
+      - name: hora_criacao
+        data_type: timestamp 
+      - name: id_contrato
+        data_type: long 
+      - name: id_cliente
+        data_type: long 
+      - name: tipo_cliente
+        data_type: string 
+      - name: segmento
+        data_type: string 
+      - name: equipe
+        data_type: string 
+      - name: canal
+        data_type: string 
+      - name: canal_tratado
+        data_type: string 
+      - name: tipo_canal
+        data_type: string 
+      - name: id_vendedor
+        data_type: long 
+      - name: nome_vendedor
+        data_type: string 
+      - name: unidade_atendimento
+        data_type: string 
+      - name: unidade
+        data_type: string 
+      - name: marca
+        data_type: string 
+      - name: estado
+        data_type: string 
+      - name: cidade
+        data_type: string 
+      - name: bairro
+        data_type: string 
+      - name: tipo_residencia
+        data_type: string 
+      - name: cep
+        data_type: string 
+      - name: latitude
+        data_type: double 
+      - name: longitude
+        data_type: double 
+      - name: regional
+        data_type: string 
+      - name: pacote_nome
+        data_type: string 
+      - name: velocidade
+        data_type: string 
+      - name: campanha_nome
+        data_type: string 
+      - name: produto
+        data_type: string 
+      - name: pacote_tv
+        data_type: string 
+      - name: cobranca
+        data_type: string 
+      - name: valor_total
+        data_type: double 
+      - name: pacote_valor_total
+        data_type: double 
+      - name: desconto
+        data_type: decimal 
+      - name: duracao_desconto
+        data_type: long 
+      - name: valor_final
+        data_type: decimal 
+      - name: afiliado_assine
+        data_type: integer 
+      - name: data_extracao
+        data_type: timestamp 
+      - name: email_vendedor
+        data_type: string 
+      - name: consultor_independente
+        data_type: integer 
+      - name: fonte
+        data_type: string 
+      - name: legado_id
+        data_type: long 
+      - name: legado_sistema
+        data_type: string 
+      - name: id_contrato_air
+        data_type: long 
+      - name: id_contrato_ixc
+        data_type: long 
+      - name: valor_referencia_b2b
+        data_type: double 
+      - name: cupom
+        data_type: string 
+      - name: cupom_valido
+        data_type: integer 
+      - name: cluster
+        data_type: string 
+      - name: macro_regional
+        data_type: string 
+      - name: nome_regional
+        data_type: string 
+      - name: cpf_cnpj
+        data_type: string 
+
+  - name: dim_venda_adicional
+    column:
+      - name: id
+        data_type: long
+      - name: id_venda
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: produto_codigo
+        data_type: string
+      - name: produto_grupo
+        data_type: string
+      - name: produto_nome
+        data_type: string
+      - name: quantidade
+        data_type: long
+      - name: valor_final
+        data_type: decimal
+
+  - name: dim_venda_geral
+    column:
+      - name: id_venda
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: natureza
+        data_type: string
+      - name: fase_atual
+        data_type: string
+      - name: id_vendedor
+        data_type: long
+      - name: id_campanha
+        data_type: long
+      - name: id_contrato
+        data_type: long
+      - name: id_regra_suspensao
+        data_type: long
+      - name: id_vencimento
+        data_type: long
+      - name: id_endereco
+        data_type: long
+      - name: id_analise_credito
+        data_type: long
+      - name: unidade_atendimento
+        data_type: string
+      - name: cod_tipo_cobranca
+        data_type: string
+      - name: data_venda
+        data_type: datetime
+      - name: pacote_base_nome
+        data_type: string
+      - name: pacote_base_codigo
+        data_type: string
+      - name: pacote_valor_total
+        data_type: decimal
+      - name: concretizada
+        data_type: boolean
+      - name: confirmada
+        data_type: boolean
+      - name: valor_total
+        data_type: decimal
+      - name: possui_internet
+        data_type: boolean
+      - name: possui_tv
+        data_type: boolean
+      - name: possui_telefone
+        data_type: boolean
+      - name: quantidade_parcela_instalacao
+        data_type: long
+      - name: cancelada
+        data_type: boolean
+      - name: recorrencia_percentual_desconto
+        data_type: decimal
+      - name: recorrencia_meses_desconto
+        data_type: long
+      - name: equipe
+        data_type: string
+      - name: id_processo_venda_sydle
+        data_type: string
+      - name: valor_referencia_b2b
+        data_type: decimal
+      - name: fonte
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp

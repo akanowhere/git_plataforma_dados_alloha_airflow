@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: dim_desconto
+    description: Tabela dimensão com informações sobre desconto
+    column:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: usuario_criacao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_contrato
+        data_type: long
+      - name: desconto
+        data_type: double
+      - name: data_validade
+        data_type: string
+      - name: dia_aplicar
+        data_type: string
+      - name: item_codigo
+        data_type: string
+      - name: item_nome
+        data_type: string
+      - name: tipo
+        data_type: string
+      - name: categoria
+        data_type: string
+      - name: observacao
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz

@@ -1,0 +1,137 @@
+version: 2
+
+models:
+  - name: vw_assine_tbl_user_analysis
+    columns:
+      - name: id
+        data_type: long
+      - name: transaction_identifier
+        data_type: string
+      - name: user_contract_id
+        data_type: long
+      - name: user_id
+        data_type: long
+      - name: provided_user_name
+        data_type: string
+      - name: created_at
+        data_type: timestamp
+      - name: updated_at
+        data_type: timestamp
+      - name: legacy_lead_type
+        data_type: string
+      - name: lead_message
+        data_type: string
+      - name: total_elapsed_time
+        data_type: string
+      - name: sa_request_status
+        data_type: string
+      - name: sa_address_formatted
+        data_type: string
+      - name: sa_availability_status
+        data_type: string
+      - name: sa_location_type
+        data_type: string
+      - name: sa_address_sent
+        data_type: string
+      - name: sa_availability_radius
+        data_type: long
+      - name: sa_address_distance
+        data_type: double
+      - name: sa_address_walk_distance
+        data_type: double
+      - name: sa_config_enabled
+        data_type: boolean
+      - name: sa_walk_config_enabled
+        data_type: boolean
+      - name: sa_elapsed_time
+        data_type: string
+      - name: availability_approved
+        data_type: boolean
+      - name: spc_request_status
+        data_type: string
+      - name: spc_approved
+        data_type: boolean
+      - name: spc_document_status
+        data_type: string
+      - name: spc_name_status
+        data_type: string
+      - name: spc_mother_name_status
+        data_type: string
+      - name: spc_birthdate_status
+        data_type: string
+      - name: spc_message
+        data_type: string
+      - name: spc_number_of_restrictions
+        data_type: long
+      - name: spc_total_restrictions_value
+        data_type: double
+      - name: spc_config_enabled
+        data_type: boolean
+      - name: spc_elapsed_time
+        data_type: string
+      - name: financial_analysis_approved
+        data_type: boolean
+      - name: serasa_note
+        data_type: long
+      - name: serasa_decision
+        data_type: boolean
+      - name: serasa_status
+        data_type: string
+      - name: cs_request_status
+        data_type: string
+      - name: cs_id
+        data_type: void
+      - name: cs_reference_date
+        data_type: date
+      - name: cs_identifier
+        data_type: void
+      - name: cs_value
+        data_type: double
+      - name: cs_reason
+        data_type: void
+      - name: cs_approved
+        data_type: boolean
+      - name: cs_should_validate_sms
+        data_type: boolean
+      - name: cs_sms_validated
+        data_type: void
+      - name: cs_config_maximum_score
+        data_type: long
+      - name: cs_config_enabled
+        data_type: boolean
+      - name: cs_elapsed_time
+        data_type: string
+      - name: city_use_assine_on_register
+        data_type: boolean
+      - name: zip_code_config_enable
+        data_type: boolean
+      - name: legacy_latest_step
+        data_type: string
+      - name: partner_id
+        data_type: string
+      - name: lomadee_partner_id
+        data_type: string
+      - name: sa_state_location_name
+        data_type: string
+      - name: sold_at
+        data_type: date
+      - name: sold_by
+        data_type: string
+      - name: sale_notes
+        data_type: string
+      - name: sa_point_id
+        data_type: long
+      - name: failed_action_type
+        data_type: string
+      - name: last_checkout_status
+        data_type: string
+      - name: last_checkout_step
+        data_type: string
+      - name: sale_restriction_type
+        data_type: string
+      - name: sale_type
+        data_type: string
+      - name: lead_air_id
+        data_type: long
+      - name: personal_approved
+        data_type: boolean

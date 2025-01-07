@@ -1,0 +1,104 @@
+models:  
+  - name: tbl_ativacoes_ott_full
+    description: "Query para extrair dados de ativações OTT Gldos parceiros, relacionando contratos, vendas, produtos e endereços."
+    columns:
+      - name: data_venda_ott
+        description: "Data em que a venda OTT foi realizada."
+        datatype: date
+      - name: data_ativacao_plano
+        description: "Data de ativação do plano de acordo com o tipo de venda (novo contrato ou venda existente)."
+        datatype: date
+      - name: canal_venda
+        description: "Canal de venda tratado ou 'MIGRACAO_PLANO' se não houver informação."
+        datatype: string
+      - name: equipe_venda
+        description: "Equipe responsável pela venda, considerando a equipe tratada ou a equipe de venda original."
+        datatype: string
+      - name: id_venda
+        description: "Identificador único da venda."
+        datatype: integer
+      - name: contrato
+        description: "Número do contrato associado à venda."
+        datatype: string
+      - name: codigo_cliente
+        description: "Código do cliente associado à venda."
+        datatype: integer
+      - name: tipo_venda
+        description: "Tipo da venda, como 'VN_NOVO_CONTRATO' ou outros tipos."
+        datatype: string
+      - name: codigo_pacote
+        description: "Código do pacote vendido."
+        datatype: string
+      - name: nome_pacote
+        description: "Nome do pacote vendido."
+        datatype: string
+      - name: valor_plano
+        description: "Valor do plano contratado pelo cliente."
+        datatype: decimal
+      - name: status_ativacao_bl
+        description: "Status de ativação do contrato OTT no sistema."
+        datatype: string
+      - name: segmento
+        description: "Segmento ao qual o cliente pertence."
+        datatype: string
+      - name: data_ativacao_contrato
+        description: "Data de ativação do contrato."
+        datatype: date
+      - name: data_cancelamento_contrato
+        description: "Data de cancelamento do contrato, se aplicável."
+        datatype: date
+      - name: tipo
+        description: "Tipo de produto ou serviço vendido."
+        datatype: string
+      - name: parceiro
+        description: "Nome do parceiro envolvido na venda."
+        datatype: string
+      - name: produto
+        description: "Nome do produto vendido."
+        datatype: string
+      - name: produto_id
+        description: "Identificador único do produto."
+        datatype: integer
+      - name: sku_ott
+        description: "SKU específico do produto OTT."
+        datatype: string
+      - name: codigo_produto
+        description: "Código específico do produto vendido."
+        datatype: string
+      - name: valor_ott
+        description: "Valor do item OTT vendido."
+        datatype: decimal
+      - name: status_ott
+        description: "Status da transação de integração OTT."
+        datatype: string
+      - name: data_cancelamento_ott
+        description: "Data de cancelamento da OTT, se aplicável."
+        datatype: date
+      - name: data_criacao_ott
+        description: "Data de criação do registro OTT."
+        datatype: datetime
+      - name: integracao_status
+        description: "Status da integração com o sistema OTT."
+        datatype: string
+      - name: integracao_mensagem
+        description: "Mensagem retornada pela integração OTT."
+        datatype: string
+      - name: data_ativacao_ott
+        description: "Data de ativação da OTT."
+        datatype: date
+      - name: cidade
+        description: "Cidade associada ao cliente."
+        datatype: string
+      - name: estado
+        description: "Estado associado ao cliente."
+        datatype: string
+      - name: regional
+        description: "Classificação regional ou 'Sem Classificacao' se não houver informação."
+        datatype: string
+      - name: macro_regional
+        description: "Macro classificação regional ou 'Sem Classificacao' se não houver informação."
+        datatype: string
+      - name: data_referencia
+        description: "Data de referência definida como o dia atual menos um."
+        datatype: date
+

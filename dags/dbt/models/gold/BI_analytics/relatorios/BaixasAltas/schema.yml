@@ -1,0 +1,55 @@
+models:
+  - name: analise_contratos
+    description: |
+      Esta modelagem analisa a relação entre contratos antigos e novos,
+      verificando dados como cancelamento, ativação e endereço, além de outras informações relevantes
+      para buscar possiveis fraudes.
+    columns:
+      - name: codigo_contrato_antigo
+        description: ID do contrato antigo.
+        data_type: long
+      - name: marca
+        description: Marca associada ao contrato novo.
+        data_type: string
+      - name: codigo_contrato_novo
+        description: ID do contrato novo.
+        data_type: long
+      - name: codigo_cliente
+        description: Código do cliente.
+        data_type: long
+      - name: data_cancelamento_antigo
+        description: Data de cancelamento do contrato antigo.
+        data_type: date
+      - name: data_venda_novo
+        description: Data da venda do contrato novo.
+        data_type: date
+      - name: data_ativacao_novo
+        description: Data da primeira ativação do contrato novo.
+        data_type: date
+      - name: tempo_cancelamento_ativacao
+        description: Tempo entre o cancelamento do contrato antigo e a ativação do contrato novo em dias.
+        data_type: int
+      - name: cep_antigo
+        description: CEP do endereço associado ao contrato antigo.
+        data_type: string
+      - name: cep_novo
+        description: CEP do endereço associado ao contrato novo.
+        data_type: string
+      - name: numero_residencia_antigo
+        description: Número da residência do endereço associado ao contrato antigo.
+        data_type: string
+      - name: numero_residencia_novo
+        description: Número da residência do endereço associado ao contrato novo.
+        data_type: string
+      - name: canal
+        description: Canal tratado da venda.
+        data_type: string
+      - name: equipe
+        description: Equipe responsável pela venda.
+        data_type: string
+      - name: email_vendedor
+        description: Email do vendedor.
+        data_type: string
+      - name: cidade
+        description: Cidade do endereço associado ao contrato antigo.
+        data_type: string

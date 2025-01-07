@@ -1,0 +1,82 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_onu_configuracao
+    description: Tabela stage com informações do configuração de onu
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_onu
+        data_type: long
+      - name: contrato_codigo
+        data_type: long
+      - name: cliente_nome
+        data_type: string
+      - name: pppoe_login
+        data_type: string
+      - name: pppoe_senha
+        data_type: string
+      - name: vsc_numero
+        data_type: string
+      - name: vsc_senha
+        data_type: string
+      - name: wifi_ssid
+        data_type: string
+      - name: wifi_senha
+        data_type: string
+      - name: vigente
+        data_type: boolean
+      - name: possui_tv
+        data_type: boolean
+      - name: possui_tel
+        data_type: boolean
+      - name: possui_wifi
+        data_type: boolean
+      - name: possui_internet
+        data_type: boolean
+      - name: unidade_sigla
+        data_type: string
+      - name: status_integracao
+        data_type: string
+      - name: mensagem_integracao
+        data_type: string
+      - name: log_servidor
+        data_type: string
+      - name: tentativa_configuracao
+        data_type: long
+      - name: rx_power
+        data_type: double
+      - name: tx_power
+        data_type: double
+      - name: id_tecnico
+        data_type: long
+      - name: nome_tecnico
+        data_type: string
+      - name: id_terceirizada
+        data_type: long
+      - name: nome_terceirizada
+        data_type: string
+      - name: xml_configuracao
+        data_type: string
+      - name: codigo_integracao_ot
+        data_type: string
+      - name: id_os
+        data_type: long
+      - name: dual_box
+        data_type: boolean
+      - name: serial_roteador
+        data_type: string
+      - name: log_roteador
+        data_type: string
+      - name: motivo_provisionamento
+        data_type: string

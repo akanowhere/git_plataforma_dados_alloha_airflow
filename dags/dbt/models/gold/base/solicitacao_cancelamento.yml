@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: solicitacao_cancelamento
+    description: Tabela dimensão com informações sobre solicitacao de cancelamentos
+    column:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: string
+      - name: usuario_criacao
+        data_type: string
+      - name: email_usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: string
+      - name: usuario_alteracao
+        data_type: string
+      - name: email_usuario_alteracao
+        data_type: string
+      - name: contrato_air
+        data_type: long
+      - name: cod_primeiro_nivel
+        data_type: string
+      - name: primeiro_nivel
+        data_type: string
+      - name: cod_segundo_nivel
+        data_type: string
+      - name: segundo_nivel
+        data_type: string
+      - name: cod_motivo
+        data_type: string
+      - name: motivo
+        data_type: string
+      - name: cod_submotivo
+        data_type: string
+      - name: submotivo
+        data_type: string
+      - name: observacao
+        data_type: string
+      - name: servico
+        data_type: string
+      - name: cod_tipo_cliente
+        data_type: string
+      - name: tipo_cliente
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: estado
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp_ntz

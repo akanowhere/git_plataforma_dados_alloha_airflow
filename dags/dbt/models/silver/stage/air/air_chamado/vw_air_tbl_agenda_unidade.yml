@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_agenda_unidade
+    description: Tabela stage vw_air_tbl_agenda_unidade
+    columns:
+      - name: id_agenda
+        data_type: long
+      - name: unidades
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp

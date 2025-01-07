@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_cliente
+    columns:
+      - name: id_cliente
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: razao_social
+        data_type: string
+      - name: documentos
+        data_type: string
+      - name: emails
+        data_type: string
+      - name: email_principal
+        data_type: string
+      - name: telefones
+        data_type: string
+      - name: enderecos
+        data_type: string
+      - name: data_nascimento
+        data_type: timestamp
+      - name: estado_civil
+        data_type: string
+      - name: nacionalidade
+        data_type: string
+      - name: naturalidade
+        data_type: string
+      - name: filiacao
+        data_type: string
+      - name: redes_sociais
+        data_type: string
+      - name: falecido
+        data_type: boolean
+      - name: sigla
+        data_type: string
+      - name: tags
+        data_type: string
+      - name: codigo_externo
+        data_type: string
+      - name: data_integracao
+        data_type: timestamp
+      - name: data_extracao
+        data_type: timestamp

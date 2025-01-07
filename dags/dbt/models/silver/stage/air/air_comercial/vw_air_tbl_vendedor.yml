@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_vendedor
+    description: Tabela stage vw_air_tbl_vendedor
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: usuario
+        data_type: string
+      - name: equipe
+        data_type: string
+      - name: terceirizada
+        data_type: string
+      - name: ativo
+        data_type: boolean
+      - name: id_vendedor_sydle
+        data_type: string

@@ -1,0 +1,37 @@
+models:
+  - name: vw_fluxo_retencoes_perfiladas_air
+    description: "Fluxo para analisar retencoes perfiladas"
+    column:
+      - name: CONTRATO
+        description: ""
+        data_type: long
+      - name: UNIDADE
+        description: ""
+        data_type: string
+      - name: SERVICO
+        description: ""
+        data_type: string
+      - name: PRIMEIRO_NIVEL
+        description: ""
+        data_type: string
+      - name: SEGUNDO_NIVEL
+        description: ""
+        data_type: string
+      - name: MOTIVO
+        description: ""
+        data_type: string
+      - name: SUBMOTIVO
+        description: ""
+        data_type: string
+      - name: OBSERVACAO
+        description: ""
+        data_type: string
+      - name: CRIADOR
+        description: ""
+        data_type: string
+      - name: DATA_CRIACAO
+        description: ""
+        data_type: date
+      - name: TIPO_CLIENTE
+        description: ""
+        data_type: string

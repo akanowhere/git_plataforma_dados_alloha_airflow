@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: vw_sydle_tbl_remessa_faturas
+    columns:
+      - name: id_remessa
+        data_type: string
+      - name: fatura_codigo
+        data_type: string
+      - name: fatura_id
+        data_type: string

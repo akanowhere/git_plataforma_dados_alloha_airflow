@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_usuario
+    description: Tabela stage com informações básicas dos usuários/funcionários
+    columns:
+      - name: id
+        data_type: long
+      - name: codigo
+        data_type: string
+      - name: nome
+        data_type: string
+      - name: email
+        data_type: string
+      - name: senha
+        data_type: string
+      - name: administrador
+        data_type: boolean
+      - name: ativo
+        data_type: boolean
+      - name: data_criacao
+        data_type: timestamp
+      - name: data_validacao
+        data_type: timestamp
+      - name: token_validacao
+        data_type: string
+      - name: url_foto
+        data_type: string
+      - name: setor
+        data_type: string
+      - name: pode_transferir
+        data_type: boolean

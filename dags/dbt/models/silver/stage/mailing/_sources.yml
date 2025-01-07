@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: mailing
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: mailing
+    tables:
+      - name: fatura

@@ -1,0 +1,7 @@
+sources:
+  - name: db_financeiro
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: db_financeiro_dbo
+    tables:
+      - name: TBL_CONTRATO_AIR_COBRANCAS_CENTRALIZADAS
+      - name: TBL_VALIDACAO_CICLO_AUX_HISTORICO

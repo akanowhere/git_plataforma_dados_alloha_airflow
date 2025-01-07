@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: atrixcore
+    catalog: "{{ 'bronze_dev' if target.name == 'dev' else 'bronze' }}"
+    schema: atrixcore
+    tables:
+      - name: tblservicesvoip
+      - name: tblclients

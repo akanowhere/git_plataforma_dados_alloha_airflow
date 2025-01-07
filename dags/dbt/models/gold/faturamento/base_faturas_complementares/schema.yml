@@ -1,0 +1,151 @@
+models:
+  - name: base_faturas_alteracao_vencimento
+    column:
+      - name: CODIGO_CONTRATO_AIR
+        data_type: long
+      - name: ciclo
+        data_type: long
+      - name: mes_referencia_emissao
+        data_type: string
+      - name: ID_EVENTO
+        data_type: long
+      - name: data_evento
+        data_type: timestamp
+      - name: motivo_associado
+        data_type: string
+      - name: tipo
+        data_type: string
+      - name: Observacao
+        data_type: string
+      - name: Vencimento_Antigo
+        data_type: long
+      - name: Vencimento_Novo
+        data_type: long
+      - name: Fechamento_Antigo
+        data_type: long
+      - name: Fechamento_Novo
+        data_type: long
+      - name: data_extracao
+        data_type: timestamp
+
+  - name: base_faturas_desconto
+    column:
+      - name: id_desconto
+        data_type: long
+      - name: ID_CONTRATO_AIR
+        data_type: long
+      - name: data_primeira_ativacao_contrato
+        data_type: unknown
+      - name: data_cancelamento_contrato
+        data_type: string
+      - name: codigo_pacote
+        data_type: string
+      - name: valor_base
+        data_type: double
+      - name: valor_final
+        data_type: double
+      - name: ciclo
+        data_type: long
+      - name: dtCicloInicio
+        data_type: unknown
+      - name: dtCicloFim
+        data_type: unknown
+      - name: codigo_fatura_sydle
+        data_type: string
+      - name: mes_referencia_emissao
+        data_type: string
+      - name: classificacao_fatura
+        data_type: string
+      - name: data_validade_desconto
+        data_type: unknown
+      - name: dia_aplicar_desconto
+        data_type: unknown
+      - name: porcentagem_desconto
+        data_type: long
+      - name: categoria_desconto
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp
+
+  - name: base_faturas_migracao
+    column:
+      - name: CODIGO_CONTRATO_AIR
+        data_type: long
+      - name: id_migracao
+        data_type: long
+      - name: data_migracao
+        data_type: timestamp
+      - name: ciclo
+        data_type: long
+      - name: dtCicloInicio
+        data_type: unknown
+      - name: dtCicloFim
+        data_type: unknown
+      - name: mes_referencia_emissao
+        data_type: string
+      - name: antigo_pacote_codigo
+        data_type: string
+      - name: antigo_valor
+        data_type: double
+      - name: novo_pacote_codigo
+        data_type: string
+      - name: novo_valor
+        data_type: double
+      - name: tipo_migracao
+        data_type: string
+      - name: id_venda
+        data_type: long
+      - name: natureza_venda
+        data_type: string
+      - name: id_campanha
+        data_type: long
+      - name: nome_campanha
+        data_type: string
+      - name: data_extracao
+        data_type: timestamp
+
+  - name: base_faturas_reajustes
+    column:
+      - name: CODIGO_CONTRATO_AIR
+        data_type: long
+      - name: ciclo
+        data_type: long
+      - name: mes_referencia_emissao
+        data_type: string
+      - name: data_processamento_reajuste
+        data_type: timestamp
+      - name: porcentagem_reajustada
+        data_type: double
+      - name: valor_anterior
+        data_type: double
+      - name: valor_final
+        data_type: double
+      - name: versao_contrato
+        data_type: long
+      - name: data_extracao
+        data_type: timestamp
+
+  - name: base_faturas_venda_adicional
+    column:
+      - name: CODIGO_CONTRATO_AIR
+        data_type: long
+      - name: ciclo
+        data_type: long
+      - name: mes_referencia_emissao
+        data_type: string
+      - name: data_criacao_venda_adicional
+        data_type: timestamp
+      - name: id_venda_adicional
+        data_type: long
+      - name: produto_codigo
+        data_type: string
+      - name: produto_nome
+        data_type: string
+      - name: valor_total
+        data_type: double
+      - name: quantidade
+        data_type: long
+      - name: excluido
+        data_type: long
+      - name: data_extracao
+        data_type: timestamp

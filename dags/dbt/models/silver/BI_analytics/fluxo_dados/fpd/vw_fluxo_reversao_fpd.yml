@@ -1,0 +1,76 @@
+models:
+  - name: vw_fluxo_reversao_fpd
+    description: " "
+    column:
+      - name: codigo_contrato_air
+        description: " "
+        data_type: long
+      - name: codigo_cliente
+        description: " "
+        data_type: long
+      - name: data_ativacao
+        description: " "
+        data_type: date
+      - name: data_cancelamento
+        description: " "
+        data_type: date
+      - name: status_contrato
+        description: " "
+        data_type: string
+      - name: unidade_atendimento
+        description: " "
+        data_type: string
+      - name: marca
+        description: " "
+        data_type: string
+      - name: nome_cliente
+        description: " "
+        data_type: string
+      - name: cpf_cnpj
+        description: " "
+        data_type: string
+      - name: email
+        description: " "
+        data_type: string
+      - name: whatsapp
+        description: " "
+        data_type: string
+      - name: ultimo_telefone
+        description: " "
+        data_type: string
+      - name: codigo_fatura_sydle
+        description: " "
+        data_type: long
+      - name: classificacao
+        description: " "
+        data_type: string
+      - name: status_fatura
+        description: " "
+        data_type: string
+      - name: tipo_fatura
+        description: " "
+        data_type: string
+      - name: valor_fatura
+        description: " "
+        data_type: double
+      - name: data_vencimento
+        description: " "
+        data_type: date
+      - name: aging_atraso
+        description: " "
+        data_type: int
+      - name: sistema_origem
+        description: " "
+        data_type: string
+      - name: regional
+        description: " "
+        data_type: string
+      - name: canal
+        description: " "
+        data_type: string
+      - name: equipe
+        description: " "
+        data_type: string
+      - name: data_referencia
+        description: " "
+        data_type: date

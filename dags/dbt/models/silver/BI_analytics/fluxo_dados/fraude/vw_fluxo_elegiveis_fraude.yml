@@ -1,0 +1,67 @@
+models:
+  - name: vw_fluxo_elegiveis_fraude
+    description: "Fluxo para analisar possiveis casos de fraude"
+    column:
+      - name: CONTRATO_NOVO
+        description: ""
+        data_type: long
+      - name: CONTRATO_CANCELADO
+        description: ""
+        data_type: long
+      - name: DATA_ATIVACAO_CONTRATO_NOVO
+        description: ""
+        data_type: date
+      - name: DATA_CANCELAMENTO_CONTRATO_CANCELADO
+        description: ""
+        data_type: date
+      - name: VENDEDOR
+        description: ""
+        data_type: string
+      - name: CANAL
+        description: ""
+        data_type: string
+      - name: EQUIPE
+        description: ""
+        data_type: string
+      - name: CIDADE
+        description: ""
+        data_type: string
+      - name: REGIONAL
+        description: ""
+        data_type: string
+      - name: CEP
+        description: ""
+        data_type: string
+      - name: NUMERO
+        description: ""
+        data_type: long
+      - name: CPF_CNPJ
+        description: ""
+        data_type: string
+      - name: NOME_MAE
+        description: ""
+        data_type: string
+      - name: NOME_CLIENTE
+        description: ""
+        data_type: string
+      - name: TELEFONE
+        description: ""
+        data_type: string
+      - name: EMAIL
+        description: ""
+        data_type: string
+      - name: FLG_CPF_CNPJ
+        description: ""
+        data_type: int
+      - name: FLG_ENDERECO
+        description: ""
+        data_type: int
+      - name: FLG_PARENTE
+        description: ""
+        data_type: int
+      - name: FLG_TELEFONE
+        description: ""
+        data_type: int
+      - name: FLG_EMAIL
+        description: ""
+        data_type: int

@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_contrato_item
+    description: Tabela stage para os itens do contrato do cliente
+    columns:
+      - name: id
+        data_type: long
+      - name: data_criacao
+        data_type: timestamp
+      - name: usuario_criacao
+        data_type: string
+      - name: data_alteracao
+        data_type: timestamp
+      - name: usuario_alteracao
+        data_type: string
+      - name: excluido
+        data_type: boolean
+      - name: id_contrato_produto
+        data_type: long
+      - name: valor_unitario
+        data_type: double
+      - name: valor_base
+        data_type: double
+      - name: quantidade
+        data_type: long
+      - name: valor_final
+        data_type: double
+      - name: item_codigo
+        data_type: string
+      - name: item_nome
+        data_type: string
+      - name: empresa_cnpj
+        data_type: string
+      - name: empresa_nome
+        data_type: string
+      - name: regra_desconto
+        data_type: long
+      - name: valor_unitario_sap
+        data_type: double
+      - name: indice_reajuste_sap
+        data_type: double

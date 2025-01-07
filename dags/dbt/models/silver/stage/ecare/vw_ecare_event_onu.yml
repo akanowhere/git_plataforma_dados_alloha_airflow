@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: vw_ecare_event_onu
+    description: View na camada Silver, schema stage vw_stg_ecare_event
+    columns:
+      - name: id
+        data_type: long
+      - name: event_id
+        data_type: long
+      - name: contract_id
+        data_type: long
+      - name: nature_type
+        data_type: string
+      - name: description
+        data_type: string
+      - name: status
+        data_type: string
+      - name: message
+        data_type: string
+      - name: created_at
+        data_type: timestamp
+      - name: updated_at
+        data_type: timestamp
+      - name: event_onu_status
+        data_type: string
+      - name: onu_id
+        data_type: long
+      - name: integrated
+        data_type: long
+      - name: rx_power
+        data_type: long

@@ -1,0 +1,60 @@
+version: 2
+
+models:
+  - name: vw_air_tbl_chd_chamado
+    description: Tabela stage com informações dos chamados abertos pelos clientes
+    columns:
+      - name: id
+        data_type: long
+      - name: id_classificacao
+        data_type: long
+      - name: id_fila
+        data_type: long
+      - name: data_abertura
+        data_type: timestamp
+      - name: data_transferencia
+        data_type: timestamp
+      - name: data_conclusao
+        data_type: timestamp
+      - name: usuario_abertura
+        data_type: string
+      - name: usuario_atribuido
+        data_type: string
+      - name: motivo_conclusao
+        data_type: string
+      - name: codigo_contrato
+        data_type: long
+      - name: codigo_cliente
+        data_type: long
+      - name: nome_cliente
+        data_type: string
+      - name: endereco_unidade
+        data_type: string
+      - name: endereco_bairro
+        data_type: string
+      - name: endereco_logradouro
+        data_type: string
+      - name: agendamento_status
+        data_type: string
+      - name: id_tecnico
+        data_type: long
+      - name: agendamento_data
+        data_type: date
+      - name: agendamento_turno
+        data_type: string
+      - name: enviado_office_track
+        data_type: boolean
+      - name: identificador_chamado
+        data_type: string
+      - name: id_aviso
+        data_type: long
+      - name: prioridade
+        data_type: string
+      - name: data_prioridade
+        data_type: timestamp
+      - name: contrato_b2b
+        data_type: boolean
+      - name: protocolo_primario
+        data_type: long
+      - name: data_confirmacao_agendamento
+        data_type: timestamp

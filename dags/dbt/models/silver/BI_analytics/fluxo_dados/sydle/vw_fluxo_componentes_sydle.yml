@@ -1,0 +1,58 @@
+models:
+  - name: vw_fluxo_componentes_sydle
+    description: "Fluxo que disponibiliza dados dos contratos a nivel de componente"
+    column:
+      - name: codigo_contrato_air 
+        description: "Código do contrato no Air"
+        data_type: long 
+      - name: codigo_plano 
+        description: "Código do plano na sydle"
+        data_type: string
+      - name: nome_plano 
+        description: "Nome do plano na sydle"
+        data_type: string
+      - name: valor_plano 
+        description: "Valor do plano"
+        data_type: double
+      - name: valor_plano_desconto 
+        description: "Valor do plano com descontos"
+        data_type: double
+      - name: nome_produto 
+        description: "Nome do componente/produto do plano"
+        data_type: string
+      - name: flag_produto_adicional 
+        description: "Flg para indicar se o componente é opcional no plano"
+        data_type: bool
+      - name: valor_produto 
+        description: "Valor do produto/componente"
+        data_type: double
+      - name: valor_produto_desconto 
+        description: "Valor do produto/componente com desconto"
+        data_type: double
+      - name: desconto_produto 
+        description: "Desconto aplicado no produto/componente"
+        data_type: double
+      - name: data_ativacao_contrato 
+        description: "Data de ativação do contrato"
+        data_type: date
+      - name: data_ativacao_componente 
+        description: "Data do componente do plano"
+        data_type: date
+      - name: cidade 
+        description: "Cidade do contrato"
+        data_type: string
+      - name: uf 
+        description: "Estado do contrato"
+        data_type: string
+      - name: marca 
+        description: "Marca do contrato"
+        data_type: string
+      - name: status_servico_sydle 
+        description: "Status do servico da sydle"
+        data_type: string
+      - name: tipo_contrato 
+        description: "Tipo de contrato: PF ou PJ"
+        data_type: string
+      - name: data_referencia 
+        description: "Data referencia dos dados"
+        data_type: date
