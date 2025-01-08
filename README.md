@@ -106,9 +106,3 @@ git commit -m "<categoria>: <comentário>"
 git push origin dev-<seu_nome>-<tarefa_a_ser_realizada>
 ```
 4. Quando finalizar as alterações, crie um PR (Pull Request) no [<u> Azure DevOps </u>](https://dev.azure.com/allohafibra/BI-ALLOHA/_git/plataforma-dados-alloha-airflow) e aguarde a Aprovação do Tech Lead
-
-# Contribuidores
-Stack - [<u> Pedro Fogaça </u>](mailto:pedrofogaca@stacktecnologias.com.br
-)  
-Stack - [<u> Karinne Cristina </u>](mailto:karinnecristina@stacktecnologias.com.br
-)
