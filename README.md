@@ -2,7 +2,7 @@
 [DBT__BADGE]:https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white
 [AIRFLOW__BADGE]:https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white
 
-![alloha](inutils\logo_alloha_positivo.png)  
+![alloha]
 ![python][PYTHON__BADGE]
 ![dbt][DBT__BADGE]
 ![airflow][AIRFLOW__BADGE]
